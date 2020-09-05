@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTCC.Views.AboutPage"
+             xmlns:vm="clr-namespace:AppTCC.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">black</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid BackgroundColor="#000000">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <StackLayout>
+            <Frame BackgroundColor="#000000">
+                <ContentView VerticalOptions="FillAndExpand">
+                    <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
+                </ContentView>
+            </Frame>
+        </StackLayout>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="20,50,20,100" Spacing="10">
+                <Label Text="Sobre nós!" FontSize="Title" TextColor="Orange"/>
+                <Label FontSize="20" Padding="0,50,0,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Para mais informações, clique no botão abaixo e veja nossos projetos!" TextColor="Orange"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                
+            </StackLayout>
+        </ScrollView>
+        <ScrollView Grid.Row="2">
+            <StackLayout Orientation="Vertical" Padding="20,150,20,100" Spacing="10">
+                <Button Text="Nossos Projetos" Command="{Binding OpenWebCommand}" BackgroundColor="Yellow" TextColor="Black" FontSize="20"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
