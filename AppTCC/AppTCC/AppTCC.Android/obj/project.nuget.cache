@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nhj4AwAhfppRZRxxruLy1F98YJMiNAIIiTstMqWLRA6FlJbhJtYFTJxJbyEZ1tLO1hHqtWpJ+xbC4jWxsfVb0g==",
+  "dgSpecHash": "uJieMqZS53gtZb7zRXBNZZsZvRrH7r1fIQlgve5XFHCdxVdWgPVjbsRQm3q1DmBv97u6IQ1cZINqkURArZCoYQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\beatr\\Desktop\\AppTCC\\AppTCC\\AppTCC.Android\\AppTCC.Android.csproj",
+  "projectFilePath": "C:\\Users\\beatr\\Desktop\\Smartlight\\AppTCC\\AppTCC\\AppTCC.Android\\AppTCC.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",

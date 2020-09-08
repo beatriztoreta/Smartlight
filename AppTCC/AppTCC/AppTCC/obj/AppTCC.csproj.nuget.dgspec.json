@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\beatr\\Desktop\\AppTCC\\AppTCC\\AppTCC\\AppTCC.csproj": {}
+    "C:\\Users\\beatr\\Desktop\\Smartlight\\AppTCC\\AppTCC\\AppTCC\\AppTCC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\beatr\\Desktop\\AppTCC\\AppTCC\\AppTCC\\AppTCC.csproj": {
+    "C:\\Users\\beatr\\Desktop\\Smartlight\\AppTCC\\AppTCC\\AppTCC\\AppTCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\beatr\\Desktop\\AppTCC\\AppTCC\\AppTCC\\AppTCC.csproj",
+        "projectUniqueName": "C:\\Users\\beatr\\Desktop\\Smartlight\\AppTCC\\AppTCC\\AppTCC\\AppTCC.csproj",
         "projectName": "AppTCC",
-        "projectPath": "C:\\Users\\beatr\\Desktop\\AppTCC\\AppTCC\\AppTCC\\AppTCC.csproj",
+        "projectPath": "C:\\Users\\beatr\\Desktop\\Smartlight\\AppTCC\\AppTCC\\AppTCC\\AppTCC.csproj",
         "packagesPath": "C:\\Users\\beatr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\beatr\\Desktop\\AppTCC\\AppTCC\\AppTCC\\obj\\",
+        "outputPath": "C:\\Users\\beatr\\Desktop\\Smartlight\\AppTCC\\AppTCC\\AppTCC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

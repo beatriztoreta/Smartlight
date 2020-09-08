@@ -1936,11 +1936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\beatr\\Desktop\\AppTCC\\AppTCC\\AppTCC.Android\\AppTCC.Android.csproj",
+      "projectUniqueName": "C:\\Users\\beatr\\Desktop\\Smartlight\\AppTCC\\AppTCC\\AppTCC.Android\\AppTCC.Android.csproj",
       "projectName": "AppTCC.Android",
-      "projectPath": "C:\\Users\\beatr\\Desktop\\AppTCC\\AppTCC\\AppTCC.Android\\AppTCC.Android.csproj",
+      "projectPath": "C:\\Users\\beatr\\Desktop\\Smartlight\\AppTCC\\AppTCC\\AppTCC.Android\\AppTCC.Android.csproj",
       "packagesPath": "C:\\Users\\beatr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\beatr\\Desktop\\AppTCC\\AppTCC\\AppTCC.Android\\obj\\",
+      "outputPath": "C:\\Users\\beatr\\Desktop\\Smartlight\\AppTCC\\AppTCC\\AppTCC.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1961,8 +1961,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\beatr\\Desktop\\AppTCC\\AppTCC\\AppTCC\\AppTCC.csproj": {
-              "projectPath": "C:\\Users\\beatr\\Desktop\\AppTCC\\AppTCC\\AppTCC\\AppTCC.csproj"
+            "C:\\Users\\beatr\\Desktop\\Smartlight\\AppTCC\\AppTCC\\AppTCC\\AppTCC.csproj": {
+              "projectPath": "C:\\Users\\beatr\\Desktop\\Smartlight\\AppTCC\\AppTCC\\AppTCC\\AppTCC.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pIFVfADSkNsF5oY9L5lF09twc8yrX3O3cXytcR1RbTjdVVrJefGkuxwZC5cfKv7SXufYUPdMtpNcRhez9SV5yA==",
+  "dgSpecHash": "pLabS5XdibdZ/Dp66mmuaIjfjl56ytacfsX6rhj7Up9hYXKY9xocX2SVQ2DV3uslUSiwyLLpaE4pwlMz09Pz8g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\beatr\\Desktop\\AppTCC\\AppTCC\\AppTCC\\AppTCC.csproj",
+  "projectFilePath": "C:\\Users\\beatr\\Desktop\\Smartlight\\AppTCC\\AppTCC\\AppTCC\\AppTCC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\beatr\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\beatr\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
