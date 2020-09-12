@@ -19,22 +19,26 @@ namespace AppTCC.Views
 
         private async void Graphics_Tapped(object sender, System.EventArgs e)
         {
-            await Shell.Current.GoToAsync($"//{nameof(GraphicsPage)}");
+            //await Shell.Current.GoToAsync($"//{nameof(GraphicsPage)}");
+            Application.Current.MainPage = new GraphicsPage();
         }
 
         private async void Projections_Tapped(object sender, System.EventArgs e)
         {
-            await Shell.Current.GoToAsync($"//{nameof(ProjectionsPage)}");
+            //await Shell.Current.GoToAsync($"//{nameof(ProjectionsPage)}");
+            Application.Current.MainPage = new ProjectionsPage();
         }
 
         private async void Monitors_Tapped(object sender, System.EventArgs e)
         {
-            await Shell.Current.GoToAsync($"//{nameof(MonitorsPage)}");
+            //await Shell.Current.GoToAsync($"//{nameof(MonitorsPage)}");
+            Application.Current.MainPage = new MonitorsPage();
         }
 
         private async void Parameters_Tapped(object sender, System.EventArgs e)
         {
-            await Shell.Current.GoToAsync($"//{nameof(ParametersPage)}");
+            //await Shell.Current.GoToAsync($"//{nameof(ParametersPage)}");
+            Application.Current.MainPage = new ParametersPage();
         }
     }
 }
