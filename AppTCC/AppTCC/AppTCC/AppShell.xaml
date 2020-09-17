@@ -81,7 +81,7 @@
     -->
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent Title="Login" Icon="login.png" Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
-        <ShellContent Title="Dashboard" Icon="dashboard.png" ContentTemplate="{DataTemplate local:DashboardPage}" />
+        <ShellContent Title="Dashboard" Icon="dashboard.png" Route="DashboardPage" ContentTemplate="{DataTemplate local:DashboardPage}" />
     </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
