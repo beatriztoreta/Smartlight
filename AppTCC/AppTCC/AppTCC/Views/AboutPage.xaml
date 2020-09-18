@@ -18,8 +18,7 @@
     <Grid BackgroundColor="#000000">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="100" />
-            <RowDefinition Height="100" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <StackLayout>
             <Frame BackgroundColor="#000000">
