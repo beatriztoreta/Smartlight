@@ -5,13 +5,7 @@
        Title="AppTCC"
        x:Class="AppTCC.AppShell">
 
-    <!--
-        The overall app visual hierarchy is defined here, along with navigation.
-    
-        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
-    -->
-
-    <Shell.Resources>
+   <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
@@ -63,9 +57,13 @@
         <ShellContent Title="Dashboard" Icon="dashboard.png" Route="DashboardPage" ContentTemplate="{DataTemplate local:DashboardPage}" />
         <ShellContent Title="About" Icon="tab_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
-
+    
+    
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
-    <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
-    </MenuItem>
+    <MenuItem Text="Login" Icon="login.png" Clicked="OnLoginClicked"></MenuItem>
+    <MenuItem Text="Dashboard" Icon="dashboard.png" Clicked="OnDashboardClicked"></MenuItem>
+    <MenuItem Text="About" Icon="tab_about.png" Clicked="OnAboutClicked"></MenuItem>
+
+    <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked"></MenuItem>
 
 </Shell>

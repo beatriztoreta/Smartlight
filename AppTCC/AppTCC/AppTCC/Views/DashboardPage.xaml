@@ -2,9 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppTCC.Views.DashboardPage"
-             Shell.PresentationMode="ModalAnimated"
-             Shell.NavBarIsVisible="True"
-             Title="Dashboard">
+             Shell.NavBarIsVisible="False">
 
     <StackLayout BackgroundColor="#000000">
         <Frame BackgroundColor="#000000">

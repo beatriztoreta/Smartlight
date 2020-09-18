@@ -4,7 +4,6 @@ using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using AppTCC.Models;
 using AppTCC.ViewModels;
 
 namespace AppTCC.Views

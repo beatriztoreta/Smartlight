@@ -5,15 +5,10 @@ using System.Runtime.CompilerServices;
 
 using Xamarin.Forms;
 
-using AppTCC.Models;
-using AppTCC.Services;
-
 namespace AppTCC.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
-
         bool isBusy = false;
         public bool IsBusy
         {

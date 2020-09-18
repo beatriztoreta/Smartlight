@@ -34,7 +34,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Para mais informações, clique no botão abaixo e veja nossos projetos!" TextColor="Orange"/>
+                                <Span Text="Para mais informações, clique no botão abaixo e veja conheça nossa equipe!" TextColor="Orange"/>
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
@@ -43,8 +43,8 @@
             </StackLayout>
         </ScrollView>
         <ScrollView Grid.Row="2">
-            <StackLayout Orientation="Vertical" Padding="20,150,20,100" Spacing="10">
-                <Button Text="Nossos Projetos" Command="{Binding OpenWebCommand}" BackgroundColor="Yellow" TextColor="Black" FontSize="20"/>
+            <StackLayout Orientation="Vertical" Padding="20,50,20,100" Spacing="10">
+                <Button Text="Nossa Equipe" Command="{Binding AboutCommand}"  BackgroundColor="Yellow" TextColor="Black" FontSize="20"/>
             </StackLayout>
         </ScrollView>
     </Grid>

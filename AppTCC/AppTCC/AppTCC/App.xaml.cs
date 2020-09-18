@@ -1,7 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using AppTCC.Services;
 using AppTCC.Views;
 
 
@@ -14,7 +13,6 @@ namespace AppTCC
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
 

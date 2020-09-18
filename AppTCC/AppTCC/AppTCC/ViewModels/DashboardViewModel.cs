@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Text;
 using System.Windows.Input;
-using AppTCC.Models;
 using Xamarin.Forms;
 
 namespace AppTCC.ViewModels
@@ -12,7 +12,7 @@ namespace AppTCC.ViewModels
      
         public DashboardViewModel()
         {
-           
+            
         }
 
        
