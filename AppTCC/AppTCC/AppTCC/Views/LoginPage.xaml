@@ -15,12 +15,12 @@
                     <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
                 </ContentView>
             </Frame>
-            <StackLayout>
+            <StackLayout Padding="50">
                 <Label Text="Usuário" FontSize="Large" />
                 <Entry Text="{Binding User, Mode=TwoWay}" FontSize="Large" />
                 <Label Text="Senha" FontSize="Large" />
                 <Editor Text="{Binding Password, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Large" Margin="0" />
-                <StackLayout Padding="0,50,0,0" VerticalOptions="Center">
+                <StackLayout  VerticalOptions="Center">
                     <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}" FontSize="Large"/>
                 </StackLayout>
             </StackLayout>
