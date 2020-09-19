@@ -54,7 +54,7 @@
     -->
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent Title="Login" Icon="login.png" Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
-        <ShellContent Title="Dashboard" Icon="dashboard.png" Route="DashboardPage" ContentTemplate="{DataTemplate local:DashboardPage}" />
+        <ShellContent Title="Dashboard" Icon="dashboard.png" Route="DashboardPage2" ContentTemplate="{DataTemplate local:DashboardPage2}" />
         <ShellContent Title="About" Icon="tab_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
     

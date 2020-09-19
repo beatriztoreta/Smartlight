@@ -11,6 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\DashboardPage2.xaml.cs">
+      <DependentUpon>DashboardPage2.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\DashboardPage.xaml.cs">
       <DependentUpon>DashboardPage.xaml</DependentUpon>
     </Compile>

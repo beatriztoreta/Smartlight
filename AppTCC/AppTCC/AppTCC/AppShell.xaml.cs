@@ -15,7 +15,6 @@ namespace AppTCC
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
         {
-            //await Shell.Current.GoToAsync("//LoginPage");
             Application.Current.MainPage = new LoginPage();
             //Application.Current.MainPage = new DashboardPage();
         }
@@ -27,7 +26,7 @@ namespace AppTCC
 
         private async void OnDashboardClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new DashboardPage();
+            Application.Current.MainPage = new DashboardPage2();
         }
         private async void OnAboutClicked(object sender, EventArgs e)
         {
