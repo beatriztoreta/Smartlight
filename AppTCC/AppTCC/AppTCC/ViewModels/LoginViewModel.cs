@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
+using AppTCC;
+using Plugin.Toast;
 
 namespace AppTCC.ViewModels
 {
@@ -30,10 +32,9 @@ namespace AppTCC.ViewModels
             set => SetProperty(ref password, value);
         }
 
+
         private async void OnLoginClicked(object obj)
         {
-            // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
-            //await Shell.Current.GoToAsync("//AboutPage");
             Application.Current.MainPage = new AboutPage();
         }
     }

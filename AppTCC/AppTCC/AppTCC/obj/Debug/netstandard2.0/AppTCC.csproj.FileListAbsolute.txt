@@ -33,10 +33,10 @@ C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\ProjectionsPage.xaml.g.cs
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\AppTCC.AssemblyInfoInputs.cache
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\AppTCC.AssemblyInfo.cs
-C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\AppTCC.csproj.CoreCompileInputs.cache
-C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\AppTCC.dll
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\ref\AppTCC.dll
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\AppTCC.pdb
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\DashboardPage2.xaml.g.cs
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\AppTCC.csprojAssemblyReference.cache
+C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\AppTCC.csproj.CoreCompileInputs.cache
+C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\XamlC.stamp
