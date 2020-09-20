@@ -12,8 +12,15 @@ namespace AppTCC.Views
     {
         public DashboardPage()
         {
-            InitializeComponent();
-            BindingContext = new DashboardViewModel();
+            try
+            {
+                InitializeComponent();
+                BindingContext = new DashboardViewModel();
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err);
+            }
         }
 
         private async void Graphics_Tapped(object sender, System.EventArgs e)

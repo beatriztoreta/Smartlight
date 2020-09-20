@@ -26,7 +26,7 @@ namespace AppTCC
 
         private async void OnDashboardClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new DashboardPage2();
+            Application.Current.MainPage = new DashboardPage();
         }
         private async void OnAboutClicked(object sender, EventArgs e)
         {
