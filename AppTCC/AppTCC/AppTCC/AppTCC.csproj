@@ -16,6 +16,12 @@
     <Compile Update="Views\DashboardPage.xaml.cs">
       <DependentUpon>DashboardPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\GraphicsFinanPage.xaml.cs">
+      <DependentUpon>GraphicsFinanPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\GraphicsEficienPage.xaml.cs">
+      <DependentUpon>GraphicsEficienPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\ParametersPage.xaml.cs">
       <DependentUpon>ParametersPage.xaml</DependentUpon>
     </Compile>
@@ -28,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\GraphicsPage.xaml">
+    <EmbeddedResource Update="Views\GraphicsEficienPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

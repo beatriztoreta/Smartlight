@@ -26,7 +26,7 @@ namespace AppTCC.Views
         private async void Graphics_Tapped(object sender, System.EventArgs e)
         {
             //await Shell.Current.GoToAsync($"//{nameof(GraphicsPage)}");
-            Application.Current.MainPage = new GraphicsPage();
+            Application.Current.MainPage = new GraphicsEficienPage();
         }
 
         private async void Projections_Tapped(object sender, System.EventArgs e)

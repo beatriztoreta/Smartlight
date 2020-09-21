@@ -38,3 +38,6 @@ C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\AppTCC.pdb
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\AppTCC.csproj.CoreCompileInputs.cache
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\AppTCC.csprojAssemblyReference.cache
+C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\GraphicsEficienPage.xaml.g.cs
+C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\GraphicsFinanPage.xaml.g.cs
