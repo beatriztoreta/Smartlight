@@ -3,13 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppTCC.Views.GraphicsPage">
 
-    <StackLayout>
+    <StackLayout BackgroundColor="#000000">
         <Frame BackgroundColor="#000000">
             <ContentView VerticalOptions="FillAndExpand">
                 <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
             </ContentView>
         </Frame>
-        <Label Text="Gráficos" FontSize="Large" BackgroundColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="0,200,0,200" Margin="50"/>
+        <Label Text="Status Semanal" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center"/>
+        <Frame BackgroundColor="#000000" BorderColor="Orange" Margin="20">
+            <StackLayout>
+                <Label Text="Período Ativo                             10 h 18 min" FontSize="Large" TextColor="White" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                <Label Text="Apagado                                                    5 h 18 min" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="OrangeRed"/>
+                <Label Text="Intensidade Mínima                                 3 h" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="Orange"/>
+                <Label Text="Intensidade Máxima                                2 h" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="Yellow"/>
+            </StackLayout>
+        </Frame>
+        <Label Text="Eficiência Estimada" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center"/>
+        <Label Text="Gráficos" FontSize="Large" BackgroundColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="0,100,0,100" Margin="20"/>
     </StackLayout>
 
 </ContentPage>
