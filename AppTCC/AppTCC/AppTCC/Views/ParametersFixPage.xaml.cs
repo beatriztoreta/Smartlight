@@ -10,16 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace AppTCC.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ParametersPage : ContentPage
+    public partial class ParametersFixPage : ContentPage
     {
-        public ParametersPage()
+        public ParametersFixPage()
         {
             InitializeComponent();
         }
 
-        private async void Section_Tapped(object sender, System.EventArgs e)
-        {
-            await Navigation.PushAsync(new ParametersFixPage());
-        }
     }
 }

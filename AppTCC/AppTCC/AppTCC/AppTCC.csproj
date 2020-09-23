@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -15,6 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\DashboardOperPage.xaml.cs">
+      <DependentUpon>DashboardOperPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\DashboardPage.xaml.cs">
       <DependentUpon>DashboardPage.xaml</DependentUpon>
     </Compile>
@@ -23,6 +26,9 @@
     </Compile>
     <Compile Update="Views\GraphicsEficienPage.xaml.cs">
       <DependentUpon>GraphicsEficienPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ParametersFixPage.xaml.cs">
+      <DependentUpon>ParametersFixPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\ParametersPage.xaml.cs">
       <DependentUpon>ParametersPage.xaml</DependentUpon>

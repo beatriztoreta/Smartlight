@@ -3,13 +3,43 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppTCC.Views.ParametersPage">
 
-    <StackLayout>
+    <StackLayout BackgroundColor="#000000">
         <Frame BackgroundColor="#000000">
             <ContentView VerticalOptions="FillAndExpand">
                 <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
             </ContentView>
         </Frame>
-        <Label Text="Parâmetros" FontSize="Large" BackgroundColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="0,200,0,200" Margin="50"/>
+        <Label Text="Parametrização" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center"/>
+        <Frame BackgroundColor="#000000" BorderColor="Orange" Margin="10">
+            <StackLayout>
+                <Label Text="Período Ativo                             10 h 18 min" FontSize="Large" TextColor="White" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                <Label Text="Apagado                                                    5 h 18 min" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="OrangeRed"/>
+                <Label Text="Intensidade Mínima                                 3 h" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="Orange"/>
+                <Label Text="Intensidade Máxima                                2 h" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="Yellow"/>
+            </StackLayout>
+        </Frame>
+        <Label Text="Clique em um setor para ajustar" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+        <Frame BackgroundColor="Yellow" Margin="30,10,30,0">
+            <Label Text="Setor Alpha" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Section_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </Frame>
+        <Frame BackgroundColor="Orange" Margin="30,0,30,0">
+            <Label Text="Setor Beta" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Section_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </Frame>
+        <Frame BackgroundColor="OrangeRed" Margin="30,0,30,0">
+            <Label Text="Setor Gama" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Section_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </Frame>
     </StackLayout>
 
 </ContentPage>
