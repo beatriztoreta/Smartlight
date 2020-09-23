@@ -16,5 +16,10 @@ namespace AppTCC.Views
         {
             InitializeComponent();
         }
+
+        async void OnFinanClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GraphicsFinanPage());
+        }
     }
 }

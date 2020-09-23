@@ -39,8 +39,8 @@ namespace AppTCC.Views
 
                 CrossToastPopUp.Current.ShowToastMessage("Registro efetuado com sucesso!", ToastLength.Long);
 
-                Application.Current.MainPage = new AboutPage();
-
+                //Application.Current.MainPage = new AboutPage();
+                await Navigation.PushAsync(new AboutPage());
             }
 
         }
@@ -55,7 +55,8 @@ namespace AppTCC.Views
                
             }
 
-            Application.Current.MainPage = new AboutPage();
+            //Application.Current.MainPage = new AboutPage();
+            await Navigation.PushAsync(new AboutPage());
 
         }
     }

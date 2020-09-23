@@ -32,7 +32,6 @@ namespace AppTCC.ViewModels
             set => SetProperty(ref password, value);
         }
 
-
         private async void OnLoginClicked(object obj)
         {
             Application.Current.MainPage = new AboutPage();

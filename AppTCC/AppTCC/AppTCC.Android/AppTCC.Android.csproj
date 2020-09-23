@@ -58,6 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="MongoDB.Bson">
+      <Version>2.11.2</Version>
+    </PackageReference>
+    <PackageReference Include="MongoDB.Driver">
+      <Version>2.11.2</Version>
+    </PackageReference>
     <PackageReference Include="Plugin.Toast">
       <Version>2.2.0</Version>
     </PackageReference>

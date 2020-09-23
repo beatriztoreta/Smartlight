@@ -15,22 +15,25 @@ namespace AppTCC
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new LoginPage();
-            //Application.Current.MainPage = new DashboardPage();
+            //Application.Current.MainPage = new LoginPage();
+            await Navigation.PushAsync(new LoginPage());
         }
 
         private async void OnLoginClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new LoginPage();
+            //Application.Current.MainPage = new LoginPage();
+            await Navigation.PushAsync(new LoginPage());
         }
 
         private async void OnDashboardClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new DashboardPage();
+            //Application.Current.MainPage = new DashboardPage();
+            await Navigation.PushAsync(new DashboardPage());
         }
         private async void OnAboutClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new AboutPage();
+            //Application.Current.MainPage = new AboutPage();
+            await Navigation.PushAsync(new AboutPage());
         }
     }
 }

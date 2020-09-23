@@ -26,7 +26,6 @@ C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\DashboardPage.xaml.g.cs
-C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\GraphicsPage.xaml.g.cs
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\MonitorsPage.xaml.g.cs
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\ParametersPage.xaml.g.cs
