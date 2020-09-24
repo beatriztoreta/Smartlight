@@ -8,27 +8,26 @@
              Shell.NavBarIsVisible="True">
     
     <ContentPage.Content>
-        
-        <StackLayout>
-            <Frame BackgroundColor="#000000">
-                <ContentView VerticalOptions="FillAndExpand">
-                    <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
-                </ContentView>
-            </Frame>
-            <StackLayout Padding="50">
-                <Label Text="Usuário" FontSize="Large" />
-                <Entry x:Name="userEntry" Text="{Binding User, Mode=TwoWay}" FontSize="Large"/>
-                <Label Text="Senha" FontSize="Large" />
-                <Entry x:Name="passwordEntry" Text="{Binding Password, Mode=TwoWay}" IsPassword="true" />
-                <StackLayout  VerticalOptions="Center">
-                    <Button VerticalOptions="Center" Text="Login" Clicked="OnLoginClicked" FontSize="Large"/>
+        <ScrollView>
+            <StackLayout>
+                <Frame BackgroundColor="#000000">
+                    <ContentView VerticalOptions="FillAndExpand">
+                        <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
+                    </ContentView>
+                </Frame>
+                <StackLayout Padding="50">
+                    <Label Text="Usuário" FontSize="Large" />
+                    <Entry x:Name="userEntry" Text="{Binding User, Mode=TwoWay}" FontSize="Large"/>
+                    <Label Text="Senha" FontSize="Large" />
+                    <Entry x:Name="passwordEntry" Text="{Binding Password, Mode=TwoWay}" IsPassword="true" />
+                    <StackLayout  VerticalOptions="Center">
+                        <Button VerticalOptions="Center" Text="Login" Clicked="OnLoginClicked" FontSize="Large"/>
+                    </StackLayout>
+                    <StackLayout  VerticalOptions="Center">
+                        <Button VerticalOptions="Center" Text="Registrar" Clicked="OnRegisterClicked" FontSize="Large"/>
+                    </StackLayout>
                 </StackLayout>
-                <StackLayout  VerticalOptions="Center">
-                    <Button VerticalOptions="Center" Text="Registrar" Clicked="OnRegisterClicked" FontSize="Large"/>
-                </StackLayout>
-                
             </StackLayout>
-        </StackLayout>
-        
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

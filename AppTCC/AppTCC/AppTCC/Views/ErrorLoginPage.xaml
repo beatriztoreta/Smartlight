@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTCC.Views.ErrorLoginPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#000000">
+                <Frame BackgroundColor="#000000">
+                    <ContentView VerticalOptions="FillAndExpand">
+                        <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
+                    </ContentView>
+                </Frame>
+                <Frame BackgroundColor="#000000" Margin="10">
+                    <StackLayout>
+                        <Label Text="UPS... Parece que algo deu errado" FontSize="Title" TextColor="Gray" HorizontalTextAlignment="Center" Margin="30"/>
+                        <Label Text="Favor conferir usuário e senha" FontSize="Large" TextColor="Gray" HorizontalTextAlignment="Center" Margin="30"/>
+                    </StackLayout>
+                </Frame>
+                <StackLayout  VerticalOptions="Center">
+                    <Button VerticalOptions="Center" Text="Tentar Novamente" Clicked="OnTryClicked" FontSize="Title" BackgroundColor="OrangeRed" Margin="30" TextColor="Yellow"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

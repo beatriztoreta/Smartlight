@@ -5,32 +5,33 @@
              xmlns:vm="clr-namespace:AppTCC.ViewModels"
              Shell.NavBarIsVisible="True">
 
-    <StackLayout BackgroundColor="#000000">
-        <Frame BackgroundColor="#000000">
-            <ContentView VerticalOptions="FillAndExpand">
-                <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
-            </ContentView>
-        </Frame>
-        <Grid Padding="50">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            
-            <Image Grid.Row="0" Grid.Column="0" Source="monitor.png" BackgroundColor="Yellow">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Monitors_Tapped"/>
-                </Image.GestureRecognizers>
-            </Image>
-            <Image Grid.Row="1" Grid.Column="0" Source="parametros.png" BackgroundColor="Orange">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Parameters_Tapped"/>
-                </Image.GestureRecognizers>
-            </Image>
-        </Grid>
-    </StackLayout>
+    <ScrollView>
+        <StackLayout BackgroundColor="#000000">
+            <Frame BackgroundColor="#000000">
+                <ContentView VerticalOptions="FillAndExpand">
+                    <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
+                </ContentView>
+            </Frame>
+            <Grid Padding="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
 
+                <Image Grid.Row="0" Grid.Column="0" Source="monitor.png" BackgroundColor="Yellow">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Monitors_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Grid.Row="1" Grid.Column="0" Source="parametros.png" BackgroundColor="Orange">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Parameters_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

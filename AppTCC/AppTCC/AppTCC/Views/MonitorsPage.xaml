@@ -3,52 +3,53 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppTCC.Views.MonitorsPage">
 
-    <StackLayout BackgroundColor="#000000">
-        <Frame BackgroundColor="#000000">
-            <ContentView VerticalOptions="FillAndExpand">
-                <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
-            </ContentView>
-        </Frame>
-        <Frame BackgroundColor="#000000" BorderColor="Orange" Margin="10">
-            <StackLayout>
-                <Label Text="Período Ativo                             10 h 18 min" FontSize="Large" TextColor="White" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-                <Label Text="Apagado                                                    5 h 18 min" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="OrangeRed"/>
-                <Label Text="Intensidade Mínima                                 3 h" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="Orange"/>
-                <Label Text="Intensidade Máxima                                2 h" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="Yellow"/>
-            </StackLayout>
-        </Frame>
-        <Frame BackgroundColor="#000000" Margin="10">
-            <StackLayout>
-                <Label Text="Status do Edifício" FontSize="Title" TextColor="White" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-                <Label Text="Tudo em ordem, por enquanto!" FontSize="Large" TextColor="Yellow" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-            </StackLayout>
-        </Frame>
-        <Frame BackgroundColor="LightGreen" Margin="10,0,10,0">
-            <StackLayout>
-                <Label Text="Setor Alpha" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-                <Label Text="Sensor de luminosidade: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-                <Label Text="Sensor de movimento: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-                <Label Text="Microcontrolador: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-                <Label Text="Lâmpadas: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-                <Label Text="WiFi: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-            </StackLayout>
-        </Frame>
-        <Frame BackgroundColor="Red" Margin="10,0,10,0">
-            <StackLayout>
-                <Label Text="Setor Beta" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-                <Label Text="Não recebidos sinais do sensor de iluminação, por favor, vá até o local!" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-            </StackLayout>
-        </Frame>
-        <Frame BackgroundColor="LightGreen" Margin="10,0,10,0">
-            <StackLayout>
-                <Label Text="Setor Gama" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-                <Label Text="Sensor de luminosidade: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-                <Label Text="Sensor de movimento: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-                <Label Text="Microcontrolador: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-                <Label Text="Lâmpadas: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-                <Label Text="WiFi: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-            </StackLayout>
-        </Frame>
-    </StackLayout>
-
+    <ScrollView>    
+        <StackLayout BackgroundColor="#000000">
+            <Frame BackgroundColor="#000000">
+                <ContentView VerticalOptions="FillAndExpand">
+                    <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
+                </ContentView>
+            </Frame>
+            <Frame BackgroundColor="#000000" BorderColor="Orange" Margin="10">
+                <StackLayout>
+                    <Label Text="Período Ativo  10 h 18 min" FontSize="Large" TextColor="White" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                    <Label Text="Apagado    5 h 18 min" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="OrangeRed"/>
+                    <Label Text="Intensidade Mínima 3 h" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="Orange"/>
+                    <Label Text="Intensidade Máxima 2 h" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="Yellow"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="#000000" Margin="10">
+                <StackLayout>
+                    <Label Text="Status do Edifício" FontSize="Title" TextColor="White" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                    <Label Text="Tudo em ordem, por enquanto!" FontSize="Large" TextColor="Yellow" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="LightGreen" Margin="10,0,10,0">
+                <StackLayout>
+                    <Label Text="Setor Alpha" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                    <Label Text="Sensor de luminosidade: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                    <Label Text="Sensor de movimento: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                    <Label Text="Microcontrolador: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                    <Label Text="Lâmpadas: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                    <Label Text="WiFi: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="Red" Margin="10,0,10,0">
+                <StackLayout>
+                    <Label Text="Setor Beta" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                    <Label Text="Não recebidos sinais do sensor de iluminação, por favor, vá até o local!" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="LightGreen" Margin="10,0,10,0">
+                <StackLayout>
+                    <Label Text="Setor Gama" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                    <Label Text="Sensor de luminosidade: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                    <Label Text="Sensor de movimento: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                    <Label Text="Microcontrolador: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                    <Label Text="Lâmpadas: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                    <Label Text="WiFi: funcionando" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

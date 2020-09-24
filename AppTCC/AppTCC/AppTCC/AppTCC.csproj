@@ -21,11 +21,17 @@
     <Compile Update="Views\DashboardPage.xaml.cs">
       <DependentUpon>DashboardPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\ErrorConPage.xaml.cs">
+      <DependentUpon>ErrorConPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\GraphicsFinanPage.xaml.cs">
       <DependentUpon>GraphicsFinanPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\GraphicsEficienPage.xaml.cs">
       <DependentUpon>GraphicsEficienPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ErrorLoginPage.xaml.cs">
+      <DependentUpon>ErrorLoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\ParametersFixPage.xaml.cs">
       <DependentUpon>ParametersFixPage.xaml</DependentUpon>
@@ -43,6 +49,9 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Views\GraphicsEficienPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ErrorLoginPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

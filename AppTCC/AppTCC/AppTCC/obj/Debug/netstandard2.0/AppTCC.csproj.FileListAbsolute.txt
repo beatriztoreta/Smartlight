@@ -40,3 +40,7 @@ C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\AppTCC.csprojAssemblyReference.cache
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\GraphicsEficienPage.xaml.g.cs
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\GraphicsFinanPage.xaml.g.cs
+C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\DashboardOperPage.xaml.g.cs
+C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\ParametersFixPage.xaml.g.cs
+C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\ErrorConPage.xaml.g.cs
+C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\ErrorLoginPage.xaml.g.cs

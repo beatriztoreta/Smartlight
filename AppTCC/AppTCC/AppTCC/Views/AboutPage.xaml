@@ -14,39 +14,40 @@
             <Color x:Key="Accent">black</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
-
-    <Grid BackgroundColor="#000000">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <StackLayout>
-            <Frame BackgroundColor="#000000">
-                <ContentView VerticalOptions="FillAndExpand">
-                    <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
-                </ContentView>
-            </Frame>
-        </StackLayout>
-        <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="20,50,20,100" Spacing="10">
-                <Label Text="Sobre nós!" FontSize="Title" TextColor="Orange"/>
-                <Label FontSize="20" Padding="0,50,0,0">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="Para mais informações, clique no botão abaixo e veja conheça nossa equipe!" TextColor="Orange"/>
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
+    
+    <ScrollView>
+        <Grid BackgroundColor="#000000">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <StackLayout>
+                <Frame BackgroundColor="#000000">
+                    <ContentView VerticalOptions="FillAndExpand">
+                        <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
+                    </ContentView>
+                </Frame>
+            </StackLayout>
+            <ScrollView Grid.Row="1">
+                <StackLayout Orientation="Vertical" Padding="20,50,20,100" Spacing="10">
+                    <Label Text="Sobre nós!" FontSize="Title" TextColor="Orange"/>
+                    <Label FontSize="20" Padding="0,50,0,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Para mais informações, clique no botão abaixo e veja conheça nossa equipe!" TextColor="Orange"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
                 
-            </StackLayout>
-        </ScrollView>
-        <ScrollView Grid.Row="2">
-            <StackLayout Orientation="Vertical" Padding="20,50,20,100" Spacing="10">
-                <Button Text="Nossa Equipe" Command="{Binding AboutCommand}"  BackgroundColor="Yellow" TextColor="Black" FontSize="20"/>
-            </StackLayout>
-        </ScrollView>
-    </Grid>
-
+                </StackLayout>
+            </ScrollView>
+            <ScrollView Grid.Row="2">
+                <StackLayout Orientation="Vertical" Padding="20,50,20,100" Spacing="10">
+                    <Button Text="Nossa Equipe" Command="{Binding AboutCommand}"  BackgroundColor="Yellow" TextColor="Black" FontSize="20"/>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ScrollView>
 </ContentPage>

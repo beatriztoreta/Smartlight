@@ -12,9 +12,17 @@ namespace AppTCC.Services
     public static class MongoService
     {
         static IMongoCollection<Person> personsCollection;
-        readonly static string dbName = "dbPerson";
-        readonly static string collectionName = "Person";
+        readonly static string dbName = "orion";
+        readonly static string collectionName = "entities";
         static MongoClient client;
+
+        /*Username: helix
+        Password: H3l1xNG
+        Porta: 27000
+        
+        ec2-54-157-172-217.compute-1.amazonaws.com
+        database: orion
+        collection: entities*/
 
         static IMongoCollection<Person> PersonsCollection
         {
@@ -22,7 +30,7 @@ namespace AppTCC.Services
             {
                 if (client == null || personsCollection == null)
                 {
-                    var conx = "** ENTER YOUR CONNECTION STRING HERE **";
+                    var conx = "ec2-54-157-172-217.compute-1.amazonaws.com";
                     MongoClientSettings settings = MongoClientSettings.FromUrl(
                         new MongoUrl(conx)
                     );
