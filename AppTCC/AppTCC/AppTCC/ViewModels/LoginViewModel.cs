@@ -5,6 +5,8 @@ using System.Text;
 using Xamarin.Forms;
 using AppTCC;
 using Plugin.Toast;
+using AppTCC.Services;
+using Plugin.Toast.Abstractions;
 
 namespace AppTCC.ViewModels
 {
@@ -34,7 +36,18 @@ namespace AppTCC.ViewModels
 
         private async void OnLoginClicked(object obj)
         {
-            Application.Current.MainPage = new AboutPage();
+            CrossToastPopUp.Current.ShowToastMessage("Registro efetuado com sucesso!", ToastLength.Long);
+
+            Person newItem = new Person()
+            {
+                id = Convert.ToInt32(Guid.NewGuid()),
+                user = User,
+                password = Password
+            };
+
+            await MongoService.InsertItem(newItem);
+            
+            
         }
     }
 }

@@ -20,7 +20,13 @@ namespace AppTCC.Views
         public LoginPage()
         {
             InitializeComponent();
-            //this.BindingContext = new LoginViewModel();
+            this.BindingContext = new LoginViewModel();
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            //listView.ItemsSource = await App.Database.GetPeopleAsync();
         }
 
         async void OnRegisterClicked(object sender, EventArgs e)
@@ -36,11 +42,11 @@ namespace AppTCC.Views
                 p.user = userEntry.Text;
                 p.password = passwordEntry.Text;
                 userEntry.Text = passwordEntry.Text = string.Empty;
+                //listView.ItemsSource = await App.Database.GetPeopleAsync();
 
                 CrossToastPopUp.Current.ShowToastMessage("Registro efetuado com sucesso!", ToastLength.Long);
 
-                //Application.Current.MainPage = new AboutPage();
-                await Navigation.PushAsync(new AboutPage());
+                //await Navigation.PushAsync(new AboutPage());
             }
 
         }
@@ -49,14 +55,21 @@ namespace AppTCC.Views
         {
             if (!string.IsNullOrWhiteSpace(userEntry.Text) && !string.IsNullOrWhiteSpace(passwordEntry.Text))
             {
-                l.ItemsSource = await App.Database.GetPeopleAsync();
-              
-                CrossToastPopUp.Current.ShowToastMessage("Login efetuado com sucesso!", ToastLength.Long);
-               
-            }
+                await App.Database.SavePersonAsync(new Person
+                {
+                    user = userEntry.Text,
+                    password = passwordEntry.Text
+                });
 
-            //Application.Current.MainPage = new AboutPage();
-            await Navigation.PushAsync(new AboutPage());
+                p.user = userEntry.Text;
+                p.password = passwordEntry.Text;
+                userEntry.Text = passwordEntry.Text = string.Empty;
+                //listView.ItemsSource = await App.Database.GetPeopleAsync();
+
+                CrossToastPopUp.Current.ShowToastMessage("Registro efetuado com sucesso!", ToastLength.Long);
+
+                await Navigation.PushAsync(new AboutPage());
+            }
 
         }
     }

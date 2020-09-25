@@ -12,17 +12,19 @@ namespace AppTCC.Services
     public static class MongoService
     {
         static IMongoCollection<Person> personsCollection;
-        readonly static string dbName = "orion";
-        readonly static string collectionName = "entities";
+        readonly static string dbName = "SL";
+        readonly static string collectionName = "users";
         static MongoClient client;
 
-        /*Username: helix
-        Password: H3l1xNG
-        Porta: 27000
-        
+        /*
         ec2-54-157-172-217.compute-1.amazonaws.com
+        Dados do protótipo:
         database: orion
-        collection: entities*/
+        collection: entities
+        Dados dos usuários:
+        database: SL
+        collection: users
+        */
 
         static IMongoCollection<Person> PersonsCollection
         {
@@ -31,9 +33,7 @@ namespace AppTCC.Services
                 if (client == null || personsCollection == null)
                 {
                     var conx = "ec2-54-157-172-217.compute-1.amazonaws.com";
-                    MongoClientSettings settings = MongoClientSettings.FromUrl(
-                        new MongoUrl(conx)
-                    );
+                    MongoClientSettings settings = MongoClientSettings.FromUrl(new MongoUrl(conx));
 
                     settings.SslSettings = new SslSettings { EnabledSslProtocols = SslProtocols.Tls12 };
 
