@@ -15,7 +15,7 @@ namespace AppTCC
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new LoginPage());
+            Application.Current.MainPage = new LoginPage();
         }
 
         private async void OnLoginClicked(object sender, EventArgs e)
