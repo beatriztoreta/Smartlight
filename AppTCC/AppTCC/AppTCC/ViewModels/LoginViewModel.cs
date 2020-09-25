@@ -6,7 +6,15 @@ using Xamarin.Forms;
 using AppTCC;
 using Plugin.Toast;
 using AppTCC.Services;
+using AppTCC.Models;
 using Plugin.Toast.Abstractions;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.Threading.Tasks;
+using Amazon.DynamoDBv2.Model;
+using System.Linq;
+using System.ComponentModel;
+using Android.Bluetooth.LE;
 
 namespace AppTCC.ViewModels
 {
@@ -17,10 +25,12 @@ namespace AppTCC.ViewModels
 
         public Command LoginCommand { get; }
 
-        public LoginViewModel()
-        {
+       public LoginViewModel()
+       {
             LoginCommand = new Command(OnLoginClicked);
-        }
+
+            //FetchData();
+       }
 
         public string User
         {
@@ -36,18 +46,49 @@ namespace AppTCC.ViewModels
 
         private async void OnLoginClicked(object obj)
         {
-            CrossToastPopUp.Current.ShowToastMessage("Registro efetuado com sucesso!", ToastLength.Long);
-
             Person newItem = new Person()
             {
-                id = Convert.ToInt32(Guid.NewGuid()),
+                _id = Convert.ToInt32(Guid.NewGuid()),
                 user = User,
                 password = Password
             };
 
             await MongoService.InsertItem(newItem);
-            
-            
+
+            CrossToastPopUp.Current.ShowToastMessage("Registro efetuado com sucesso!", ToastLength.Long);
+        }
+
+        public IEnumerable<object> Data { get; private set; }
+
+        private async Task FetchData() 
+        {
+            var credentials = new Amazon.CognitoIdentity.CognitoAWSCredentials("us-east-1:45984fda-069a-4c08-bdb7-55c115e90259", Amazon.RegionEndpoint.USEast1);
+
+            var ddbClient = new Amazon.DynamoDBv2.AmazonDynamoDBClient(credentials, Amazon.RegionEndpoint.USEast1);
+
+            ScanRequest request = new ScanRequest
+            {
+                TableName = "Auth",
+                AttributesToGet = new List<string> { "id", "password", "user" }
+            };
+
+            var results = await ddbClient.ScanAsync(request);
+
+            Data = results.Items.Select(i => new
+            {
+                id = i["id"].S,
+                user = i["user"].S,
+                password = i["password"].S
+            }).OrderBy(i => i.user);
+
+            RaisePropertyChanged(nameof(Data));
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void RaisePropertyChanged(string prop)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(prop));
         }
     }
 }

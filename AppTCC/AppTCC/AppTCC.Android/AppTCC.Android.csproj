@@ -58,11 +58,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="AWSSDK.CognitoIdentity">
+      <Version>3.5.0.19</Version>
+    </PackageReference>
+    <PackageReference Include="AWSSDK.DocDB">
+      <Version>3.5.1.6</Version>
+    </PackageReference>
+    <PackageReference Include="AWSSDK.DynamoDBv2">
+      <Version>3.5.0.19</Version>
+    </PackageReference>
     <PackageReference Include="MongoDB.Bson">
       <Version>2.11.2</Version>
     </PackageReference>
     <PackageReference Include="MongoDB.Driver">
       <Version>2.11.2</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmLightLibs">
+      <Version>5.4.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="PCLExt.FileStorage">
+      <Version>1.4.1.1</Version>
     </PackageReference>
     <PackageReference Include="Plugin.Toast">
       <Version>2.2.0</Version>

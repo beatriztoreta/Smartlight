@@ -3,7 +3,7 @@ using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using AppTCC.Views;
-
+using AppTCC.ViewModels;
 
 namespace AppTCC
 {

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AppTCC.ViewModels;
+using AppTCC.Models;
+using AppTCC.Services;
 using Plugin.Toast;
 using Plugin.Toast.Abstractions;
 using Xamarin.Forms;
@@ -23,13 +25,7 @@ namespace AppTCC.Views
             this.BindingContext = new LoginViewModel();
         }
 
-        protected override async void OnAppearing()
-        {
-            base.OnAppearing();
-            //listView.ItemsSource = await App.Database.GetPeopleAsync();
-        }
-
-        async void OnRegisterClicked(object sender, EventArgs e)
+       async void OnRegisterClicked(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(userEntry.Text) && !string.IsNullOrWhiteSpace(passwordEntry.Text))
             {
@@ -42,11 +38,10 @@ namespace AppTCC.Views
                 p.user = userEntry.Text;
                 p.password = passwordEntry.Text;
                 userEntry.Text = passwordEntry.Text = string.Empty;
-                //listView.ItemsSource = await App.Database.GetPeopleAsync();
-
+                
                 CrossToastPopUp.Current.ShowToastMessage("Registro efetuado com sucesso!", ToastLength.Long);
 
-                //await Navigation.PushAsync(new AboutPage());
+                await Navigation.PushAsync(new AboutPage());
             }
 
         }
@@ -64,9 +59,8 @@ namespace AppTCC.Views
                 p.user = userEntry.Text;
                 p.password = passwordEntry.Text;
                 userEntry.Text = passwordEntry.Text = string.Empty;
-                //listView.ItemsSource = await App.Database.GetPeopleAsync();
-
-                CrossToastPopUp.Current.ShowToastMessage("Registro efetuado com sucesso!", ToastLength.Long);
+                
+                CrossToastPopUp.Current.ShowToastMessage("Login efetuado com sucesso!", ToastLength.Long);
 
                 await Navigation.PushAsync(new AboutPage());
             }

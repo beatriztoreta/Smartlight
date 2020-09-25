@@ -5,21 +5,22 @@ using SQLite;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace AppTCC
+namespace AppTCC.Models
 {
+    [Table("users")]
     public class Person
     {
         [PrimaryKey, AutoIncrement]
-        [BsonId, BsonRepresentation(BsonType.ObjectId)]
-        public int id { get; set; }
+        /*[BsonId, BsonRepresentation(BsonType.ObjectId)]*/
+        public int _id { get; set; }
 
-        [MaxLength(20)]
-        [BsonElement("user")]
+        /*[MaxLength(20)]
+        [BsonElement("user")]*/
         public string user { get; set; }
         
         
-        [MaxLength(20)]
-        [BsonElement("password")]
+        /*[MaxLength(20)]
+        [BsonElement("password")]*/
         public string password { get; set; }
     }
 }

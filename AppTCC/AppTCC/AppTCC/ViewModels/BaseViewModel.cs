@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-
 using Xamarin.Forms;
+using AppTCC.Models;
+using AppTCC.Services;
 
 namespace AppTCC.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
+        public IDataStore<Person> DataStore => DependencyService.Get<IDataStore<Person>>();
+
         bool isBusy = false;
         public bool IsBusy
         {

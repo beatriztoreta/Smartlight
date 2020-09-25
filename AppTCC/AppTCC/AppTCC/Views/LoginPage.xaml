@@ -30,18 +30,20 @@
                         <Button VerticalOptions="Center" Text="Login" Clicked="OnLoginClicked" FontSize="Large"/>
                     </StackLayout>
                     <StackLayout  VerticalOptions="Center">
-                        <Button VerticalOptions="Center" Text="Registrar" BindingContext="LoginCommand" FontSize="Large"/>
+                        <Button VerticalOptions="Center" Text="Registrar" Command="{Binding LoginCommand}" FontSize="Large"/>
                     </StackLayout>
-                    <!--
-                    <ListView x:Name="listView">
+                    <!--<ListView ItemsSource="{Binding Data}">
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <TextCell Text="{Binding User}"
-                              Detail="{Binding Password}" TextColor="Black"/>
+                                <ViewCell>
+                                    <StackLayout>
+                                        <Label Text="{Binding user}" FontSize="Large" FontAttributes="Bold"/>
+                                        <Label Text="{Binding password}" FontSize="Large" />
+                                    </StackLayout>
+                                </ViewCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>
-                    </ListView>
-                    -->
+                    </ListView>-->
                 </StackLayout>
             </StackLayout>
         </ScrollView>
