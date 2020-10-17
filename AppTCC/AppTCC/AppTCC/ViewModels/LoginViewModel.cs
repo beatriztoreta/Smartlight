@@ -16,7 +16,7 @@ using System.Linq;
 using System.ComponentModel;
 using Android.Bluetooth.LE;
 using System.Windows.Input;
-
+using Android.Content.Res;
 
 namespace AppTCC.ViewModels
 {
@@ -70,6 +70,8 @@ namespace AppTCC.ViewModels
                 await DataStore.AddItemAsync(newItem);
 
                 await Shell.Current.GoToAsync("..");
+
+                CrossToastPopUp.Current.ShowToastMessage("Login efetuado com sucesso!", ToastLength.Long);
             }
             else
                 CrossToastPopUp.Current.ShowToastMessage("Preencha os campos!", ToastLength.Long);
