@@ -33,7 +33,7 @@ namespace AppTCC.ViewModels
 
             //FetchData();
 
-            LoginCommand = new Command(OnSave, ValidateSave);
+            LoginCommand = new Command(OnSave);
 
             this.PropertyChanged += (_, __) => LoginCommand.ChangeCanExecute();
         }
@@ -58,24 +58,29 @@ namespace AppTCC.ViewModels
 
         private async void OnSave()
         {
-            Person newItem = new Person()
+            if (ValidateSave() == true)
             {
-                _id = Convert.ToInt32(Guid.NewGuid().ToString()),
-                user = User,
-                password = Password
-            };
+                Person newItem = new Person()
+                {
+                    _id = Guid.NewGuid().ToString(),
+                    user = User,
+                    password = Password
+                };
 
-            await DataStore.AddItemAsync(newItem);
+                await DataStore.AddItemAsync(newItem);
 
-            // This will pop the current page off the navigation stack
-            await Shell.Current.GoToAsync("..");
+                await Shell.Current.GoToAsync("..");
+            }
+            else
+                CrossToastPopUp.Current.ShowToastMessage("Preencha os campos!", ToastLength.Long);
+
         }
 
         private async void OnLoginClicked(object obj)
         {
             Person newItem = new Person()
             {
-                _id = Convert.ToInt32(Guid.NewGuid()),
+                _id = Guid.NewGuid().ToString(),
                 user = User,
                 password = Password
             };

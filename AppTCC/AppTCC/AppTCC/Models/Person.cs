@@ -12,7 +12,7 @@ namespace AppTCC.Models
     {
         [PrimaryKey, AutoIncrement]
         /*[BsonId, BsonRepresentation(BsonType.ObjectId)]*/
-        public int _id { get; set; }
+        public string _id { get; set; }
 
         /*[MaxLength(20)]
         [BsonElement("user")]*/

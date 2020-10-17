@@ -15,12 +15,12 @@ namespace AppTCC.Services
         {
             items = new List<Person>()
             {
-                new Person { _id = Convert.ToInt32(Guid.NewGuid()), user = "First", password = "One" },
-                new Person { _id = Convert.ToInt32(Guid.NewGuid()), user = "Second", password = "Two" },
-                new Person { _id = Convert.ToInt32(Guid.NewGuid()), user = "Third", password = "Three" },
-                new Person { _id = Convert.ToInt32(Guid.NewGuid()), user = "Fourth", password = "Four" },
-                new Person { _id = Convert.ToInt32(Guid.NewGuid()), user = "Fifth", password = "Five" },
-                new Person { _id = Convert.ToInt32(Guid.NewGuid()), user = "Sixth", password = "Six" }
+                new Person { _id = Guid.NewGuid().ToString(), user = "First", password = "One" },
+                new Person { _id = Guid.NewGuid().ToString(), user = "Second", password = "Two" },
+                new Person { _id = Guid.NewGuid().ToString(), user = "Third", password = "Three" },
+                new Person { _id = Guid.NewGuid().ToString(), user = "Fourth", password = "Four" },
+                new Person { _id = Guid.NewGuid().ToString(), user = "Fifth", password = "Five" },
+                new Person { _id = Guid.NewGuid().ToString(), user = "Sixth", password = "Six" }
             };
         }
 

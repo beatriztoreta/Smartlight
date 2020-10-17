@@ -4,6 +4,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using AppTCC.Views;
 using AppTCC.ViewModels;
+using AppTCC.Services;
 
 namespace AppTCC
 {
@@ -26,6 +27,7 @@ namespace AppTCC
         {
             InitializeComponent();
 
+            DependencyService.Register<ApiPeopleDataStore>();
             MainPage = new AppShell();
         }
 

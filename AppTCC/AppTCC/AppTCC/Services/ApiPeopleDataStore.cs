@@ -11,7 +11,7 @@ namespace AppTCC.Services
 {
     class ApiPeopleDataStore : IDataStore<Person>
     {
-        private const string API_BASE_URL = "ec2-54-157-172-217.compute-1.amazonaws.com:6042";
+        private const string API_BASE_URL = "http://ec2-54-157-172-217.compute-1.amazonaws.com:6042/";
         private const string API_PESSOAS = "users";
         public ApiPeopleDataStore()
         {
