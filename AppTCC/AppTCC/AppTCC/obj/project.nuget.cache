@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "S4E+5p0Jb5MtBTE6c2Sje0PzYNxH9dLOO1tEU1Qsi8yjo3mpP4u8wU0CF8828Y2byYB9OGlNDz9Nib4G75Qvhg==",
+  "dgSpecHash": "nWRcoUeLqmxpfF9hbnC0SuU1N/YGURF4fx9BjmcVYlr119EUdi34Z5IIWD3DCs6x7V1E6an7/2kQI/Gmxto6gA==",
   "success": true,
   "projectFilePath": "C:\\Users\\beatr\\Desktop\\Smartlight\\AppTCC\\AppTCC\\AppTCC\\AppTCC.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,8 @@
     "C:\\Users\\beatr\\.nuget\\packages\\mongodb.driver.core\\2.11.3\\mongodb.driver.core.2.11.3.nupkg.sha512",
     "C:\\Users\\beatr\\.nuget\\packages\\mongodb.libmongocrypt\\1.0.0\\mongodb.libmongocrypt.1.0.0.nupkg.sha512",
     "C:\\Users\\beatr\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\beatr\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\beatr\\.nuget\\packages\\pclext.filestorage\\1.4.1.1\\pclext.filestorage.1.4.1.1.nupkg.sha512",
     "C:\\Users\\beatr\\.nuget\\packages\\plugin.toast\\2.2.0\\plugin.toast.2.2.0.nupkg.sha512",
     "C:\\Users\\beatr\\.nuget\\packages\\sharpcompress\\0.23.0\\sharpcompress.0.23.0.nupkg.sha512",
     "C:\\Users\\beatr\\.nuget\\packages\\skiasharp\\2.80.2\\skiasharp.2.80.2.nupkg.sha512",

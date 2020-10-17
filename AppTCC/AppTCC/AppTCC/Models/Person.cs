@@ -22,5 +22,6 @@ namespace AppTCC.Models
         /*[MaxLength(20)]
         [BsonElement("password")]*/
         public string password { get; set; }
+
     }
 }

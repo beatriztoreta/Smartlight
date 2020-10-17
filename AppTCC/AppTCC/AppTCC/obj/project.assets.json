@@ -208,6 +208,26 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PCLExt.FileStorage/1.4.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/PCLExt.FileStorage.Abstractions.dll": {},
+          "lib/netstandard2.0/PCLExt.FileStorage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/PCLExt.FileStorage.Abstractions.dll": {},
+          "lib/netstandard2.0/PCLExt.FileStorage.dll": {}
+        }
+      },
       "Plugin.Toast/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -924,6 +944,84 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "PCLExt.FileStorage/1.4.1.1": {
+      "sha512": "1obyFostdhYsRVTld0Lo/h5c9ZgXPWfe/BRkd2TKn6M33bE+LLJVdLfPcfUxrjUvYElwor4hh8zJ2DkH/l0KYA==",
+      "type": "package",
+      "path": "pclext.filestorage/1.4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/PCLExt.FileStorage.Abstractions.dll",
+        "lib/MonoAndroid/PCLExt.FileStorage.Abstractions.xml",
+        "lib/MonoAndroid/PCLExt.FileStorage.dll",
+        "lib/MonoAndroid/PCLExt.FileStorage.xml",
+        "lib/Xamarin.Mac20/PCLExt.FileStorage.Abstractions.dll",
+        "lib/Xamarin.Mac20/PCLExt.FileStorage.Abstractions.xml",
+        "lib/Xamarin.Mac20/PCLExt.FileStorage.dll",
+        "lib/Xamarin.Mac20/PCLExt.FileStorage.xml",
+        "lib/Xamarin.iOS/PCLExt.FileStorage.Abstractions.dll",
+        "lib/Xamarin.iOS/PCLExt.FileStorage.Abstractions.xml",
+        "lib/Xamarin.iOS/PCLExt.FileStorage.dll",
+        "lib/Xamarin.iOS/PCLExt.FileStorage.xml",
+        "lib/net45/PCLExt.FileStorage.Abstractions.dll",
+        "lib/net45/PCLExt.FileStorage.Abstractions.xml",
+        "lib/net45/PCLExt.FileStorage.dll",
+        "lib/net45/PCLExt.FileStorage.xml",
+        "lib/netcoreapp2.0/PCLExt.FileStorage.Abstractions.dll",
+        "lib/netcoreapp2.0/PCLExt.FileStorage.Abstractions.xml",
+        "lib/netcoreapp2.0/PCLExt.FileStorage.dll",
+        "lib/netcoreapp2.0/PCLExt.FileStorage.xml",
+        "lib/netstandard2.0/PCLExt.FileStorage.Abstractions.dll",
+        "lib/netstandard2.0/PCLExt.FileStorage.Abstractions.xml",
+        "lib/netstandard2.0/PCLExt.FileStorage.dll",
+        "lib/netstandard2.0/PCLExt.FileStorage.xml",
+        "lib/portable-net45+win8+wpa81+wp8/PCLExt.FileStorage.Abstractions.dll",
+        "lib/portable-net45+win8+wpa81+wp8/PCLExt.FileStorage.Abstractions.xml",
+        "lib/portable-net45+win8+wpa81+wp8/PCLExt.FileStorage.dll",
+        "lib/portable-net45+win8+wpa81+wp8/PCLExt.FileStorage.xml",
+        "lib/portable-net45+win8+wpa81/PCLExt.FileStorage.Abstractions.dll",
+        "lib/portable-net45+win8+wpa81/PCLExt.FileStorage.Abstractions.xml",
+        "lib/portable-net45+win8+wpa81/PCLExt.FileStorage.dll",
+        "lib/portable-net45+win8+wpa81/PCLExt.FileStorage.xml",
+        "lib/uap10.0/PCLExt.FileStorage.Abstractions.dll",
+        "lib/uap10.0/PCLExt.FileStorage.Abstractions.xml",
+        "lib/uap10.0/PCLExt.FileStorage.dll",
+        "lib/uap10.0/PCLExt.FileStorage.xml",
+        "pclext.filestorage.1.4.1.1.nupkg.sha512",
+        "pclext.filestorage.nuspec"
       ]
     },
     "Plugin.Toast/2.2.0": {
@@ -1790,6 +1888,8 @@
       "MongoDB.Bson >= 2.11.3",
       "MongoDB.Driver >= 2.11.3",
       "NETStandard.Library >= 2.0.3",
+      "Newtonsoft.Json >= 12.0.3",
+      "PCLExt.FileStorage >= 1.4.1.1",
       "Plugin.Toast >= 2.2.0",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.8.0.1560",
@@ -1863,6 +1963,14 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
+          },
+          "PCLExt.FileStorage": {
+            "target": "Package",
+            "version": "[1.4.1.1, )"
           },
           "Plugin.Toast": {
             "target": "Package",

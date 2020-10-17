@@ -15,6 +15,8 @@ using Amazon.DynamoDBv2.Model;
 using System.Linq;
 using System.ComponentModel;
 using Android.Bluetooth.LE;
+using System.Windows.Input;
+
 
 namespace AppTCC.ViewModels
 {
@@ -27,10 +29,20 @@ namespace AppTCC.ViewModels
 
        public LoginViewModel()
        {
-            LoginCommand = new Command(OnLoginClicked);
+            //LoginCommand = new Command(OnLoginClicked);
 
             //FetchData();
-       }
+
+            LoginCommand = new Command(OnSave, ValidateSave);
+
+            this.PropertyChanged += (_, __) => LoginCommand.ChangeCanExecute();
+        }
+
+        private bool ValidateSave()
+        {
+            return !String.IsNullOrWhiteSpace(user)
+                && !String.IsNullOrWhiteSpace(password);
+        }
 
         public string User
         {
@@ -42,6 +54,21 @@ namespace AppTCC.ViewModels
         {
             get => password;
             set => SetProperty(ref password, value);
+        }
+
+        private async void OnSave()
+        {
+            Person newItem = new Person()
+            {
+                _id = Convert.ToInt32(Guid.NewGuid().ToString()),
+                user = User,
+                password = Password
+            };
+
+            await DataStore.AddItemAsync(newItem);
+
+            // This will pop the current page off the navigation stack
+            await Shell.Current.GoToAsync("..");
         }
 
         private async void OnLoginClicked(object obj)
