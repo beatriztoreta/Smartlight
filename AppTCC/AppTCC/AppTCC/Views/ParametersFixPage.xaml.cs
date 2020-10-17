@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppTCC.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace AppTCC.Views
         public ParametersFixPage()
         {
             InitializeComponent();
+            this.BindingContext = new ParamViewModel();
         }
 
     }

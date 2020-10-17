@@ -9,14 +9,15 @@
     ".NETStandard,Version=v2.0/": {
       "AppTCC/1.0.0": {
         "dependencies": {
-          "AWSSDK.CognitoIdentity": "3.5.0.19",
-          "AWSSDK.DynamoDBv2": "3.5.0.19",
-          "MongoDB.Bson": "2.11.2",
-          "MongoDB.Driver": "2.11.2",
+          "AWSSDK.CognitoIdentity": "3.5.0.28",
+          "AWSSDK.DynamoDBv2": "3.5.1.4",
+          "Microcharts.Forms": "0.9.5.8",
+          "MongoDB.Bson": "2.11.3",
+          "MongoDB.Driver": "2.11.3",
           "NETStandard.Library": "2.0.3",
           "Plugin.Toast": "2.2.0",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Forms": "4.8.0.1560",
           "sqlite-net-pcl": "1.7.335",
           "Mono.Android": "0.0.0.0"
         },
@@ -24,48 +25,48 @@
           "AppTCC.dll": {}
         }
       },
-      "AWSSDK.CognitoIdentity/3.5.0.19": {
+      "AWSSDK.CognitoIdentity/3.5.0.28": {
         "dependencies": {
-          "AWSSDK.Core": "3.5.1.17",
-          "AWSSDK.SecurityToken": "3.5.0.19"
+          "AWSSDK.Core": "3.5.1.26",
+          "AWSSDK.SecurityToken": "3.5.1.8"
         },
         "runtime": {
           "lib/netstandard2.0/AWSSDK.CognitoIdentity.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.5.0.19"
+            "fileVersion": "3.5.0.28"
           }
         }
       },
-      "AWSSDK.Core/3.5.1.17": {
+      "AWSSDK.Core/3.5.1.26": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
         },
         "runtime": {
           "lib/netstandard2.0/AWSSDK.Core.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.5.1.17"
+            "fileVersion": "3.5.1.26"
           }
         }
       },
-      "AWSSDK.DynamoDBv2/3.5.0.19": {
+      "AWSSDK.DynamoDBv2/3.5.1.4": {
         "dependencies": {
-          "AWSSDK.Core": "3.5.1.17"
+          "AWSSDK.Core": "3.5.1.26"
         },
         "runtime": {
           "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.5.0.19"
+            "fileVersion": "3.5.1.4"
           }
         }
       },
-      "AWSSDK.SecurityToken/3.5.0.19": {
+      "AWSSDK.SecurityToken/3.5.1.8": {
         "dependencies": {
-          "AWSSDK.Core": "3.5.1.17"
+          "AWSSDK.Core": "3.5.1.26"
         },
         "runtime": {
           "lib/netstandard2.0/AWSSDK.SecurityToken.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.5.0.19"
+            "fileVersion": "3.5.1.8"
           }
         }
       },
@@ -77,6 +78,37 @@
           "lib/netstandard2.0/DnsClient.dll": {
             "assemblyVersion": "1.3.1.0",
             "fileVersion": "1.3.1.0"
+          }
+        }
+      },
+      "Microcharts/0.9.5.8": {
+        "dependencies": {
+          "SkiaSharp": "2.80.2",
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microcharts.dll": {
+            "assemblyVersion": "0.9.5.1",
+            "fileVersion": "0.9.5.1"
+          }
+        }
+      },
+      "Microcharts.Forms/0.9.5.8": {
+        "dependencies": {
+          "Microcharts": "0.9.5.8",
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views.Forms": "2.80.2",
+          "System.ValueTuple": "4.5.0",
+          "Xamarin.Forms": "4.8.0.1560"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microcharts.Forms.dll": {
+            "assemblyVersion": "0.9.5.1",
+            "fileVersion": "0.9.5.1"
+          },
+          "lib/netstandard2.0/Microcharts.dll": {
+            "assemblyVersion": "0.9.5.1",
+            "fileVersion": "0.9.5.1"
           }
         }
       },
@@ -92,39 +124,39 @@
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
-      "MongoDB.Bson/2.11.2": {
+      "MongoDB.Bson/2.11.3": {
         "runtime": {
           "lib/netstandard2.0/MongoDB.Bson.dll": {
-            "assemblyVersion": "2.11.2.0",
-            "fileVersion": "2.11.2.0"
+            "assemblyVersion": "2.11.3.0",
+            "fileVersion": "2.11.3.0"
           }
         }
       },
-      "MongoDB.Driver/2.11.2": {
+      "MongoDB.Driver/2.11.3": {
         "dependencies": {
-          "MongoDB.Bson": "2.11.2",
-          "MongoDB.Driver.Core": "2.11.2",
+          "MongoDB.Bson": "2.11.3",
+          "MongoDB.Driver.Core": "2.11.3",
           "MongoDB.Libmongocrypt": "1.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/MongoDB.Driver.dll": {
-            "assemblyVersion": "2.11.2.0",
-            "fileVersion": "2.11.2.0"
+            "assemblyVersion": "2.11.3.0",
+            "fileVersion": "2.11.3.0"
           }
         }
       },
-      "MongoDB.Driver.Core/2.11.2": {
+      "MongoDB.Driver.Core/2.11.3": {
         "dependencies": {
           "DnsClient": "1.3.1",
-          "MongoDB.Bson": "2.11.2",
+          "MongoDB.Bson": "2.11.3",
           "MongoDB.Libmongocrypt": "1.0.0",
           "SharpCompress": "0.23.0",
           "System.Buffers": "4.4.0"
         },
         "runtime": {
           "lib/netstandard2.0/MongoDB.Driver.Core.dll": {
-            "assemblyVersion": "2.11.2.0",
-            "fileVersion": "2.11.2.0"
+            "assemblyVersion": "2.11.3.0",
+            "fileVersion": "2.11.3.0"
           }
         }
       },
@@ -168,6 +200,23 @@
             "assemblyVersion": "0.23.0.0",
             "fileVersion": "0.23.0.0"
           }
+        }
+      },
+      "SkiaSharp/2.80.2": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.dll": {
+            "assemblyVersion": "2.80.0.0",
+            "fileVersion": "2.80.2.0"
+          }
+        }
+      },
+      "SkiaSharp.Views.Forms/2.80.2": {
+        "dependencies": {
+          "SkiaSharp": "2.80.2",
+          "Xamarin.Forms": "4.8.0.1560"
         }
       },
       "sqlite-net-pcl/1.7.335": {
@@ -276,6 +325,7 @@
           }
         }
       },
+      "System.ValueTuple/4.5.0": {},
       "Xamarin.Essentials/1.5.3.2": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -287,19 +337,19 @@
           }
         }
       },
-      "Xamarin.Forms/4.8.0.1451": {
+      "Xamarin.Forms/4.8.0.1560": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.8.0.372"
+            "fileVersion": "4.8.0.385"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.8.0.372"
+            "fileVersion": "4.8.0.385"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.8.0.372"
+            "fileVersion": "4.8.0.385"
           }
         }
       },
@@ -319,33 +369,33 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AWSSDK.CognitoIdentity/3.5.0.19": {
+    "AWSSDK.CognitoIdentity/3.5.0.28": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-yxK5WorcQVE/InCoJqpK6xwcuc4sSvkMc6/1T/xnPDRqMVMP7cbmC4XJVzMza7198HpMhgzXfED0ps1ixfQe2w==",
-      "path": "awssdk.cognitoidentity/3.5.0.19",
-      "hashPath": "awssdk.cognitoidentity.3.5.0.19.nupkg.sha512"
+      "sha512": "sha512-YGY5z5AkgsNONNJ7d70O4xV4XwNJ2uixeIEh4Wzvz2oN7gQEjdjExxnWLYWrEIn3ZTzUY6EmffXhUreE+5bRpQ==",
+      "path": "awssdk.cognitoidentity/3.5.0.28",
+      "hashPath": "awssdk.cognitoidentity.3.5.0.28.nupkg.sha512"
     },
-    "AWSSDK.Core/3.5.1.17": {
+    "AWSSDK.Core/3.5.1.26": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IVHdZviW5eG/EZ3ZvTvduwVqQZgNw1W6QfAy40eeAxDpSMhSzYGK7wvzBjXxX/iJUT/bjOylrzXuVZ5jq9TJXg==",
-      "path": "awssdk.core/3.5.1.17",
-      "hashPath": "awssdk.core.3.5.1.17.nupkg.sha512"
+      "sha512": "sha512-0w+/ffFifvxV04/ik1gnqWcMJf2YIg/HeXB+122zaxsCeC/QiHsNSyG+VEzy/uzBfhjH59NCnic27ZyfsWNLzA==",
+      "path": "awssdk.core/3.5.1.26",
+      "hashPath": "awssdk.core.3.5.1.26.nupkg.sha512"
     },
-    "AWSSDK.DynamoDBv2/3.5.0.19": {
+    "AWSSDK.DynamoDBv2/3.5.1.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qWZ5h4FphmUp9iw5xvJFrxsnNWZTJxaD8lEuh/0qvMaD6XiVeNQnWgQrFM1Ch1tSmKXt0VCO1G+ZRJOmeOAZpA==",
-      "path": "awssdk.dynamodbv2/3.5.0.19",
-      "hashPath": "awssdk.dynamodbv2.3.5.0.19.nupkg.sha512"
+      "sha512": "sha512-kLsPzPO7CnNSt4+xmDPCObcDijDpd51s10ZJAlvAKz06oqn2NUFV7pimtiXqoGlPLdgdzkMB3GfKcjzsYcniig==",
+      "path": "awssdk.dynamodbv2/3.5.1.4",
+      "hashPath": "awssdk.dynamodbv2.3.5.1.4.nupkg.sha512"
     },
-    "AWSSDK.SecurityToken/3.5.0.19": {
+    "AWSSDK.SecurityToken/3.5.1.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-B62sOExyJODKK5rAcQwF1bohY0F/tvfMtK8PWnA0Bh+5GudGhH9RgxUclHrk8djQQ6D1s8xUCU4YOpNky7EFPg==",
-      "path": "awssdk.securitytoken/3.5.0.19",
-      "hashPath": "awssdk.securitytoken.3.5.0.19.nupkg.sha512"
+      "sha512": "sha512-ij0FXu2B030lWt3ed22KtIZe9YJZ0BvOjkOqK6/iXy6t4XdGuCv80Cy+kwWnXw0398QUSMjOhAoUeI7LSj5XFA==",
+      "path": "awssdk.securitytoken/3.5.1.8",
+      "hashPath": "awssdk.securitytoken.3.5.1.8.nupkg.sha512"
     },
     "DnsClient/1.3.1": {
       "type": "package",
@@ -353,6 +403,20 @@
       "sha512": "sha512-b9XczgqSjs3dd+OlV799jn+LXxdfirln1q36GKjs3QwWBhjhgIvgHLEG5s2VrBLcP4ogQjtA0PZ5+AmRJ35Vhg==",
       "path": "dnsclient/1.3.1",
       "hashPath": "dnsclient.1.3.1.nupkg.sha512"
+    },
+    "Microcharts/0.9.5.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-igm9t5XVPR4Zm3IYp0zWgVdAdIbDMwT4Mcu8uV45nHyt9iI9cyxhu5UO6fjucWNvHb+GS5ttpYjnOH935gIv4A==",
+      "path": "microcharts/0.9.5.8",
+      "hashPath": "microcharts.0.9.5.8.nupkg.sha512"
+    },
+    "Microcharts.Forms/0.9.5.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-helFPngesuWXGJ9apVc+vuc9ol9ZB7sPLCF3x/v5P4jET9HgT4VBBToZkMoQ9bmUrpRMauI6v2h/CdWrz11FqQ==",
+      "path": "microcharts.forms/0.9.5.8",
+      "hashPath": "microcharts.forms.0.9.5.8.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
       "type": "package",
@@ -368,26 +432,26 @@
       "path": "microsoft.netcore.platforms/1.1.0",
       "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
     },
-    "MongoDB.Bson/2.11.2": {
+    "MongoDB.Bson/2.11.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7vJoaUKPPnW6Ej0r4UHV8DeYD0/SKk/73WlDfc5JMRJRjTj3jRUtGIXwpaFYq3wT8MRHmLwbM/KvkEAb7deHRw==",
-      "path": "mongodb.bson/2.11.2",
-      "hashPath": "mongodb.bson.2.11.2.nupkg.sha512"
+      "sha512": "sha512-pz8qtNVGLRRdDHmkRb5r/w4KYAnPClkGbQUPAuYudlMc2cd1HRIgIQMvY3lE5F0qFAhrceObbF57UHDwcSK5xg==",
+      "path": "mongodb.bson/2.11.3",
+      "hashPath": "mongodb.bson.2.11.3.nupkg.sha512"
     },
-    "MongoDB.Driver/2.11.2": {
+    "MongoDB.Driver/2.11.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4DT/VcE/6sw73tInWmQ1C92p1kHgKiuRx/DgYRtaUUILRaAdL8X1Gl3f8FXNMwH2rzH+KhOYCliYK7/+XWWZIw==",
-      "path": "mongodb.driver/2.11.2",
-      "hashPath": "mongodb.driver.2.11.2.nupkg.sha512"
+      "sha512": "sha512-SqDCN7a8ejLB9q1lowxf6v6mD2Q/1ZSle4aEfrB0ITs0+GxjMe2zNPzxIGgsIaux1HuAwAOEP4le9SaicSj+5g==",
+      "path": "mongodb.driver/2.11.3",
+      "hashPath": "mongodb.driver.2.11.3.nupkg.sha512"
     },
-    "MongoDB.Driver.Core/2.11.2": {
+    "MongoDB.Driver.Core/2.11.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-e5/q9bqGEfGSsAq9Gn6+qWKEPs0s/U41tgfcWNtwAEpyg/btWO4RkeV0Jv8tG/KaXey1E151npmDPcwTrg7qjQ==",
-      "path": "mongodb.driver.core/2.11.2",
-      "hashPath": "mongodb.driver.core.2.11.2.nupkg.sha512"
+      "sha512": "sha512-BKX6HlO2RuNO3lX4jjwdHChmjisgjm9BsSPAiUXTEG6SSithL1IxuM+xqVRG8e/w7Z6YWZdU2ruTUZM4BVyN3A==",
+      "path": "mongodb.driver.core/2.11.3",
+      "hashPath": "mongodb.driver.core.2.11.3.nupkg.sha512"
     },
     "MongoDB.Libmongocrypt/1.0.0": {
       "type": "package",
@@ -416,6 +480,20 @@
       "sha512": "sha512-HBbT47JHvNrsZX2dTBzUBOSzBt+EmIRGLIBkbxcP6Jef7DB4eFWQX5iHWV3Nj7hABFPCjISrZ8s0z72nF2zFHQ==",
       "path": "sharpcompress/0.23.0",
       "hashPath": "sharpcompress.0.23.0.nupkg.sha512"
+    },
+    "SkiaSharp/2.80.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D25rzdCwh+3L+XyXqpNa+H/yiLJbE3/R3K/XexwHyQjGdzZvSufFW3oqf3En7hhqSIsxsJ8f5NEZ0J5W5wlGBg==",
+      "path": "skiasharp/2.80.2",
+      "hashPath": "skiasharp.2.80.2.nupkg.sha512"
+    },
+    "SkiaSharp.Views.Forms/2.80.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8aRDb98O2cHymB94O8FBj85qMC+MYEY6591wBpHcwgfz4HMo4orSMApD5y8VDmHpA5KR0Yh2ija+HTylz/9CgA==",
+      "path": "skiasharp.views.forms/2.80.2",
+      "hashPath": "skiasharp.views.forms.2.80.2.nupkg.sha512"
     },
     "sqlite-net-pcl/1.7.335": {
       "type": "package",
@@ -494,6 +572,13 @@
       "path": "system.threading.tasks.extensions/4.5.2",
       "hashPath": "system.threading.tasks.extensions.4.5.2.nupkg.sha512"
     },
+    "System.ValueTuple/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "path": "system.valuetuple/4.5.0",
+      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
+    },
     "Xamarin.Essentials/1.5.3.2": {
       "type": "package",
       "serviceable": true,
@@ -501,12 +586,12 @@
       "path": "xamarin.essentials/1.5.3.2",
       "hashPath": "xamarin.essentials.1.5.3.2.nupkg.sha512"
     },
-    "Xamarin.Forms/4.8.0.1451": {
+    "Xamarin.Forms/4.8.0.1560": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3RUzBpcaBxOjufLLqJnuZRGLhzAbVyfe/Pyp0AFY/H1MkCHYxXIRzgB8h6yC9NTs39NLK2SgGiaMbvC4TJ/zFA==",
-      "path": "xamarin.forms/4.8.0.1451",
-      "hashPath": "xamarin.forms.4.8.0.1451.nupkg.sha512"
+      "sha512": "sha512-uWw6knrT26YOI+vZXB8YvYAEimycokY0qN58u++Rb7Y4tcWm/Fzn6UWaGaTCY1VppTXA1JrQMsb5vxBvoyYFhg==",
+      "path": "xamarin.forms/4.8.0.1560",
+      "hashPath": "xamarin.forms.4.8.0.1560.nupkg.sha512"
     },
     "Mono.Android/0.0.0.0": {
       "type": "reference",

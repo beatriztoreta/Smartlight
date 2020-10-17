@@ -1,8 +1,8 @@
 package mono;
 public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
-		/* We need to ensure that "AppTCC.Android.dll" comes first in this list. */
-		"AppTCC.Android.dll",
+		/* We need to ensure that "br.com.smartlight.Android.dll" comes first in this list. */
+		"br.com.smartlight.Android.dll",
 		"AppTCC.dll",
 		"AWSSDK.CognitoIdentity.dll",
 		"AWSSDK.Core.dll",
@@ -15,6 +15,9 @@ public class MonoPackageManager_Resources {
 		"GalaSoft.MvvmLight.dll",
 		"GalaSoft.MvvmLight.Extras.dll",
 		"GalaSoft.MvvmLight.Platform.dll",
+		"Microcharts.dll",
+		"Microcharts.Droid.dll",
+		"Microcharts.Forms.dll",
 		"Microsoft.Bcl.AsyncInterfaces.dll",
 		"MongoDB.Bson.dll",
 		"MongoDB.Driver.Core.dll",
@@ -26,6 +29,9 @@ public class MonoPackageManager_Resources {
 		"Plugin.Toast.Abstractions.dll",
 		"Plugin.Toast.dll",
 		"SharpCompress.dll",
+		"SkiaSharp.dll",
+		"SkiaSharp.Views.Android.dll",
+		"SkiaSharp.Views.Forms.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",

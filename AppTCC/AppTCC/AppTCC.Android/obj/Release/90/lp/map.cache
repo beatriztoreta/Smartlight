@@ -1,7 +1,11 @@
 FormsViewGroup
 GalaSoft.MvvmLight.Platform
+Microcharts.Droid
 PCLExt.FileStorage
 Plugin.Toast
+SkiaSharp
+SkiaSharp.Views.Android
+SkiaSharp.Views.Forms
 SQLitePCLRaw.lib.e_sqlite3.android
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Core.Runtime

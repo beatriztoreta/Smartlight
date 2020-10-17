@@ -4572,35 +4572,36 @@ public final class R {
     public static final int design_password_eye=0x7f070062;
     public static final int design_snackbar_background=0x7f070063;
     public static final int grafico=0x7f070064;
-    public static final int ic_mtrl_chip_checked_black=0x7f070065;
-    public static final int ic_mtrl_chip_checked_circle=0x7f070066;
-    public static final int ic_mtrl_chip_close_circle=0x7f070067;
-    public static final int login=0x7f070068;
-    public static final int logofinv=0x7f070069;
-    public static final int monitor=0x7f07006a;
-    public static final int mtrl_snackbar_background=0x7f07006b;
-    public static final int mtrl_tabs_default_indicator=0x7f07006c;
-    public static final int navigation_empty_icon=0x7f07006d;
-    public static final int notification_action_background=0x7f07006e;
-    public static final int notification_bg=0x7f07006f;
-    public static final int notification_bg_low=0x7f070070;
-    public static final int notification_bg_low_normal=0x7f070071;
-    public static final int notification_bg_low_pressed=0x7f070072;
-    public static final int notification_bg_normal=0x7f070073;
-    public static final int notification_bg_normal_pressed=0x7f070074;
-    public static final int notification_icon_background=0x7f070075;
-    public static final int notification_template_icon_bg=0x7f070076;
-    public static final int notification_template_icon_low_bg=0x7f070077;
-    public static final int notification_tile_bg=0x7f070078;
-    public static final int notify_panel_notification_icon_bg=0x7f070079;
-    public static final int parametros=0x7f07007a;
-    public static final int slicon=0x7f07007b;
-    public static final int tab_about=0x7f07007c;
-    public static final int tab_feed=0x7f07007d;
-    public static final int tooltip_frame_dark=0x7f07007e;
-    public static final int tooltip_frame_light=0x7f07007f;
-    public static final int verde=0x7f070080;
-    public static final int xamarin_logo=0x7f070081;
+    public static final int ic_launcher=0x7f070065;
+    public static final int ic_mtrl_chip_checked_black=0x7f070066;
+    public static final int ic_mtrl_chip_checked_circle=0x7f070067;
+    public static final int ic_mtrl_chip_close_circle=0x7f070068;
+    public static final int login=0x7f070069;
+    public static final int logofinv=0x7f07006a;
+    public static final int monitor=0x7f07006b;
+    public static final int mtrl_snackbar_background=0x7f07006c;
+    public static final int mtrl_tabs_default_indicator=0x7f07006d;
+    public static final int navigation_empty_icon=0x7f07006e;
+    public static final int notification_action_background=0x7f07006f;
+    public static final int notification_bg=0x7f070070;
+    public static final int notification_bg_low=0x7f070071;
+    public static final int notification_bg_low_normal=0x7f070072;
+    public static final int notification_bg_low_pressed=0x7f070073;
+    public static final int notification_bg_normal=0x7f070074;
+    public static final int notification_bg_normal_pressed=0x7f070075;
+    public static final int notification_icon_background=0x7f070076;
+    public static final int notification_template_icon_bg=0x7f070077;
+    public static final int notification_template_icon_low_bg=0x7f070078;
+    public static final int notification_tile_bg=0x7f070079;
+    public static final int notify_panel_notification_icon_bg=0x7f07007a;
+    public static final int parametros=0x7f07007b;
+    public static final int slicon=0x7f07007c;
+    public static final int tab_about=0x7f07007d;
+    public static final int tab_feed=0x7f07007e;
+    public static final int tooltip_frame_dark=0x7f07007f;
+    public static final int tooltip_frame_light=0x7f070080;
+    public static final int verde=0x7f070081;
+    public static final int xamarin_logo=0x7f070082;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
@@ -4959,15 +4960,16 @@ public final class R {
     public static final int fab_transformation_scrim_behavior=0x7f0d002b;
     public static final int fab_transformation_sheet_behavior=0x7f0d002c;
     public static final int hide_bottom_view_on_scroll_behavior=0x7f0d002d;
-    public static final int mtrl_chip_close_icon_content_description=0x7f0d002e;
-    public static final int overflow_tab_title=0x7f0d002f;
-    public static final int password_toggle_content_description=0x7f0d0030;
-    public static final int path_password_eye=0x7f0d0031;
-    public static final int path_password_eye_mask_strike_through=0x7f0d0032;
-    public static final int path_password_eye_mask_visible=0x7f0d0033;
-    public static final int path_password_strike_through=0x7f0d0034;
-    public static final int search_menu_title=0x7f0d0035;
-    public static final int status_bar_notification_info_overflow=0x7f0d0036;
+    public static final int library_name=0x7f0d002e;
+    public static final int mtrl_chip_close_icon_content_description=0x7f0d002f;
+    public static final int overflow_tab_title=0x7f0d0030;
+    public static final int password_toggle_content_description=0x7f0d0031;
+    public static final int path_password_eye=0x7f0d0032;
+    public static final int path_password_eye_mask_strike_through=0x7f0d0033;
+    public static final int path_password_eye_mask_visible=0x7f0d0034;
+    public static final int path_password_strike_through=0x7f0d0035;
+    public static final int search_menu_title=0x7f0d0036;
+    public static final int status_bar_notification_info_overflow=0x7f0d0037;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0e0000;
@@ -5170,7 +5172,6 @@ public final class R {
     public static final int CardView_Light=0x7f0e00c5;
     public static final int MainTheme=0x7f0e00c6;
     /**
-     * Base theme applied no matter what API
      * Base theme applied no matter what API
      */
     public static final int MainTheme_Base=0x7f0e00c7;

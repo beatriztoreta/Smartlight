@@ -10,11 +10,9 @@
     </ContentPage.BindingContext>
 
     <ScrollView>
-        <StackLayout BackgroundColor="#000000">
+        <StackLayout>
             <Frame BackgroundColor="#000000">
-                <ContentView VerticalOptions="FillAndExpand">
-                    <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
-                </ContentView>
+                <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
             </Frame>
             <Grid Padding="50">
                 <Grid.ColumnDefinitions>
@@ -25,7 +23,7 @@
                     <RowDefinition Height="200"/>
                     <RowDefinition Height="200"/>
                 </Grid.RowDefinitions>
-            
+
                 <Image Grid.Row="0" Grid.Column="0" Source="grafico.png" BackgroundColor="Yellow">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Graphics_Tapped"/>
@@ -46,32 +44,6 @@
                         <TapGestureRecognizer Tapped="Parameters_Tapped"/>
                     </Image.GestureRecognizers>
                 </Image>
-            
-                <!--<Label Grid.Row="0" Grid.Column="0" Text="" FontSize="20" BackgroundColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="Graphics_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Image Grid.Row="0" Grid.Column="0" Source="grafico.png" Margin="10" />
-                <Label Grid.Row="0" Grid.Column="1" Text="" FontSize="20" BackgroundColor="Orange" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="Projections_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Image Grid.Row="0" Grid.Column="1" Source="analytics.png" Margin="10" />
-                <Label Grid.Row="1" Grid.Column="0" Text="" FontSize="20" BackgroundColor="Orange" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="Monitors_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Image Grid.Row="1" Grid.Column="0" Source="monitor.png" Margin="10" />
-                <Label Grid.Row="1" Grid.Column="1" Text="" FontSize="20" BackgroundColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="Parameters_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Image Grid.Row="1" Grid.Column="1" Source="parametros.png" Margin="10" />-->
-            
             </Grid>
         </StackLayout>
     </ScrollView>

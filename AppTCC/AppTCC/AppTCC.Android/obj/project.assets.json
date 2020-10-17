@@ -2,11 +2,11 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
-      "AWSSDK.CognitoIdentity/3.5.0.19": {
+      "AWSSDK.CognitoIdentity/3.5.0.28": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.5.1.17, 3.6.0)",
-          "AWSSDK.SecurityToken": "[3.5.0.19, 3.6.0)"
+          "AWSSDK.Core": "[3.5.1.26, 3.6.0)",
+          "AWSSDK.SecurityToken": "[3.5.1.8, 3.6.0)"
         },
         "compile": {
           "lib/netstandard2.0/AWSSDK.CognitoIdentity.dll": {}
@@ -15,7 +15,7 @@
           "lib/netstandard2.0/AWSSDK.CognitoIdentity.dll": {}
         }
       },
-      "AWSSDK.Core/3.5.1.17": {
+      "AWSSDK.Core/3.5.1.26": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
@@ -27,10 +27,10 @@
           "lib/netstandard2.0/AWSSDK.Core.dll": {}
         }
       },
-      "AWSSDK.DocDB/3.5.1.6": {
+      "AWSSDK.DocDB/3.5.1.15": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.5.1.17, 3.6.0)"
+          "AWSSDK.Core": "[3.5.1.26, 3.6.0)"
         },
         "compile": {
           "lib/netstandard2.0/AWSSDK.DocDB.dll": {}
@@ -39,10 +39,10 @@
           "lib/netstandard2.0/AWSSDK.DocDB.dll": {}
         }
       },
-      "AWSSDK.DynamoDBv2/3.5.0.19": {
+      "AWSSDK.DynamoDBv2/3.5.1.4": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.5.1.17, 3.6.0)"
+          "AWSSDK.Core": "[3.5.1.26, 3.6.0)"
         },
         "compile": {
           "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
@@ -51,10 +51,10 @@
           "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
         }
       },
-      "AWSSDK.SecurityToken/3.5.0.19": {
+      "AWSSDK.SecurityToken/3.5.1.8": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.5.1.17, 3.6.0)"
+          "AWSSDK.Core": "[3.5.1.26, 3.6.0)"
         },
         "compile": {
           "lib/netstandard2.0/AWSSDK.SecurityToken.dll": {}
@@ -79,6 +79,39 @@
         },
         "runtime": {
           "lib/netstandard2.1/DnsClient.dll": {}
+        }
+      },
+      "Microcharts/0.9.5.8": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views": "2.80.2"
+        },
+        "compile": {
+          "lib/MonoAndroid10/Microcharts.Droid.dll": {},
+          "lib/MonoAndroid10/Microcharts.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Microcharts.Droid.dll": {},
+          "lib/MonoAndroid10/Microcharts.dll": {}
+        }
+      },
+      "Microcharts.Forms/0.9.5.8": {
+        "type": "package",
+        "dependencies": {
+          "Microcharts": "0.9.5.8",
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views.Forms": "2.80.2",
+          "System.ValueTuple": "4.5.0",
+          "Xamarin.Forms": "4.7.0.1351"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microcharts.Forms.dll": {},
+          "lib/netstandard2.0/Microcharts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microcharts.Forms.dll": {},
+          "lib/netstandard2.0/Microcharts.dll": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
@@ -111,7 +144,7 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "MongoDB.Bson/2.11.2": {
+      "MongoDB.Bson/2.11.3": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/MongoDB.Bson.dll": {}
@@ -120,11 +153,11 @@
           "lib/netstandard2.0/MongoDB.Bson.dll": {}
         }
       },
-      "MongoDB.Driver/2.11.2": {
+      "MongoDB.Driver/2.11.3": {
         "type": "package",
         "dependencies": {
-          "MongoDB.Bson": "2.11.2",
-          "MongoDB.Driver.Core": "2.11.2",
+          "MongoDB.Bson": "2.11.3",
+          "MongoDB.Driver.Core": "2.11.3",
           "MongoDB.Libmongocrypt": "1.0.0"
         },
         "compile": {
@@ -134,11 +167,11 @@
           "lib/netstandard2.0/MongoDB.Driver.dll": {}
         }
       },
-      "MongoDB.Driver.Core/2.11.2": {
+      "MongoDB.Driver.Core/2.11.3": {
         "type": "package",
         "dependencies": {
           "DnsClient": "1.3.1",
-          "MongoDB.Bson": "2.11.2",
+          "MongoDB.Bson": "2.11.3",
           "MongoDB.Libmongocrypt": "1.0.0",
           "SharpCompress": "0.23.0",
           "System.Buffers": "4.4.0"
@@ -295,6 +328,62 @@
         },
         "runtime": {
           "lib/netstandard2.0/SharpCompress.dll": {}
+        }
+      },
+      "SkiaSharp/2.80.2": {
+        "type": "package",
+        "compile": {
+          "lib/monoandroid1.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid1.0/SkiaSharp.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid1.0/SkiaSharp.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SkiaSharp.Views/2.80.2": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2"
+        },
+        "compile": {
+          "lib/monoandroid1.0/SkiaSharp.Views.Android.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid1.0/SkiaSharp.Views.Android.dll": {}
+        }
+      },
+      "SkiaSharp.Views.Forms/2.80.2": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views": "2.80.2",
+          "Xamarin.Forms": "4.6.0.772"
+        },
+        "compile": {
+          "ref/monoandroid1.0/SkiaSharp.Views.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid1.0/SkiaSharp.Views.Forms.dll": {}
         }
       },
       "sqlite-net-pcl/1.7.335": {
@@ -836,6 +925,15 @@
         }
       },
       "System.Threading.Timer/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
         "type": "package",
         "compile": {
           "ref/MonoAndroid10/_._": {}
@@ -1616,7 +1714,7 @@
           "lib/monoandroid90/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.8.0.1451": {
+      "Xamarin.Forms/4.8.0.1560": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.CustomTabs": "28.0.0.3",
@@ -1648,13 +1746,14 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "AWSSDK.CognitoIdentity": "3.5.0.19",
-          "AWSSDK.DynamoDBv2": "3.5.0.19",
-          "MongoDB.Bson": "2.11.2",
-          "MongoDB.Driver": "2.11.2",
+          "AWSSDK.CognitoIdentity": "3.5.0.28",
+          "AWSSDK.DynamoDBv2": "3.5.1.4",
+          "Microcharts.Forms": "0.9.5.8",
+          "MongoDB.Bson": "2.11.3",
+          "MongoDB.Driver": "2.11.3",
           "Plugin.Toast": "2.2.0",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Forms": "4.8.0.1560",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -1667,16 +1766,16 @@
     }
   },
   "libraries": {
-    "AWSSDK.CognitoIdentity/3.5.0.19": {
-      "sha512": "yxK5WorcQVE/InCoJqpK6xwcuc4sSvkMc6/1T/xnPDRqMVMP7cbmC4XJVzMza7198HpMhgzXfED0ps1ixfQe2w==",
+    "AWSSDK.CognitoIdentity/3.5.0.28": {
+      "sha512": "YGY5z5AkgsNONNJ7d70O4xV4XwNJ2uixeIEh4Wzvz2oN7gQEjdjExxnWLYWrEIn3ZTzUY6EmffXhUreE+5bRpQ==",
       "type": "package",
-      "path": "awssdk.cognitoidentity/3.5.0.19",
+      "path": "awssdk.cognitoidentity/3.5.0.28",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.CognitoIdentity.CodeAnalysis.dll",
-        "awssdk.cognitoidentity.3.5.0.19.nupkg.sha512",
+        "awssdk.cognitoidentity.3.5.0.28.nupkg.sha512",
         "awssdk.cognitoidentity.nuspec",
         "lib/net35/AWSSDK.CognitoIdentity.dll",
         "lib/net35/AWSSDK.CognitoIdentity.pdb",
@@ -1697,15 +1796,15 @@
         "tools/uninstall.ps1"
       ]
     },
-    "AWSSDK.Core/3.5.1.17": {
-      "sha512": "IVHdZviW5eG/EZ3ZvTvduwVqQZgNw1W6QfAy40eeAxDpSMhSzYGK7wvzBjXxX/iJUT/bjOylrzXuVZ5jq9TJXg==",
+    "AWSSDK.Core/3.5.1.26": {
+      "sha512": "0w+/ffFifvxV04/ik1gnqWcMJf2YIg/HeXB+122zaxsCeC/QiHsNSyG+VEzy/uzBfhjH59NCnic27ZyfsWNLzA==",
       "type": "package",
-      "path": "awssdk.core/3.5.1.17",
+      "path": "awssdk.core/3.5.1.26",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "awssdk.core.3.5.1.17.nupkg.sha512",
+        "awssdk.core.3.5.1.26.nupkg.sha512",
         "awssdk.core.nuspec",
         "lib/net35/AWSSDK.Core.dll",
         "lib/net35/AWSSDK.Core.pdb",
@@ -1725,16 +1824,16 @@
         "tools/account-management.ps1"
       ]
     },
-    "AWSSDK.DocDB/3.5.1.6": {
-      "sha512": "E/u3sr9Hoc3rR4M5OhxtlVxUfFiqffZlgVQ9/baesr65Fq8l9Q8zDkq4UVfgCCerEw8p+0KQPwIoQQd0ge3UQg==",
+    "AWSSDK.DocDB/3.5.1.15": {
+      "sha512": "wym1+OKp3GOhuT6CN5ZHIBUBBf+1eWPbYx5c0yze9hEYLcVQ8Cp1gi+0AlfiT+2RUbJO8z2Ug/qs5sCYf6u6zw==",
       "type": "package",
-      "path": "awssdk.docdb/3.5.1.6",
+      "path": "awssdk.docdb/3.5.1.15",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.DocDB.CodeAnalysis.dll",
-        "awssdk.docdb.3.5.1.6.nupkg.sha512",
+        "awssdk.docdb.3.5.1.15.nupkg.sha512",
         "awssdk.docdb.nuspec",
         "lib/net35/AWSSDK.DocDB.dll",
         "lib/net35/AWSSDK.DocDB.pdb",
@@ -1755,16 +1854,16 @@
         "tools/uninstall.ps1"
       ]
     },
-    "AWSSDK.DynamoDBv2/3.5.0.19": {
-      "sha512": "qWZ5h4FphmUp9iw5xvJFrxsnNWZTJxaD8lEuh/0qvMaD6XiVeNQnWgQrFM1Ch1tSmKXt0VCO1G+ZRJOmeOAZpA==",
+    "AWSSDK.DynamoDBv2/3.5.1.4": {
+      "sha512": "kLsPzPO7CnNSt4+xmDPCObcDijDpd51s10ZJAlvAKz06oqn2NUFV7pimtiXqoGlPLdgdzkMB3GfKcjzsYcniig==",
       "type": "package",
-      "path": "awssdk.dynamodbv2/3.5.0.19",
+      "path": "awssdk.dynamodbv2/3.5.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.DynamoDBv2.CodeAnalysis.dll",
-        "awssdk.dynamodbv2.3.5.0.19.nupkg.sha512",
+        "awssdk.dynamodbv2.3.5.1.4.nupkg.sha512",
         "awssdk.dynamodbv2.nuspec",
         "lib/net35/AWSSDK.DynamoDBv2.dll",
         "lib/net35/AWSSDK.DynamoDBv2.pdb",
@@ -1785,16 +1884,16 @@
         "tools/uninstall.ps1"
       ]
     },
-    "AWSSDK.SecurityToken/3.5.0.19": {
-      "sha512": "B62sOExyJODKK5rAcQwF1bohY0F/tvfMtK8PWnA0Bh+5GudGhH9RgxUclHrk8djQQ6D1s8xUCU4YOpNky7EFPg==",
+    "AWSSDK.SecurityToken/3.5.1.8": {
+      "sha512": "ij0FXu2B030lWt3ed22KtIZe9YJZ0BvOjkOqK6/iXy6t4XdGuCv80Cy+kwWnXw0398QUSMjOhAoUeI7LSj5XFA==",
       "type": "package",
-      "path": "awssdk.securitytoken/3.5.0.19",
+      "path": "awssdk.securitytoken/3.5.1.8",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.SecurityToken.CodeAnalysis.dll",
-        "awssdk.securitytoken.3.5.0.19.nupkg.sha512",
+        "awssdk.securitytoken.3.5.1.8.nupkg.sha512",
         "awssdk.securitytoken.nuspec",
         "lib/net35/AWSSDK.SecurityToken.dll",
         "lib/net35/AWSSDK.SecurityToken.pdb",
@@ -1852,6 +1951,39 @@
         "lib/netstandard2.0/DnsClient.xml",
         "lib/netstandard2.1/DnsClient.dll",
         "lib/netstandard2.1/DnsClient.xml"
+      ]
+    },
+    "Microcharts/0.9.5.8": {
+      "sha512": "igm9t5XVPR4Zm3IYp0zWgVdAdIbDMwT4Mcu8uV45nHyt9iI9cyxhu5UO6fjucWNvHb+GS5ttpYjnOH935gIv4A==",
+      "type": "package",
+      "path": "microcharts/0.9.5.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Microcharts.Droid.dll",
+        "lib/MonoAndroid10/Microcharts.dll",
+        "lib/netstandard2.0/Microcharts.dll",
+        "lib/uap10.0/Microcharts.Uwp.dll",
+        "lib/uap10.0/Microcharts.dll",
+        "lib/xamarinios1.0/Microcharts.dll",
+        "lib/xamarinios1.0/Microcharts.iOS.dll",
+        "lib/xamarinmac2.0/Microcharts.dll",
+        "lib/xamarinmac2.0/Microcharts.macOS.dll",
+        "microcharts.0.9.5.8.nupkg.sha512",
+        "microcharts.nuspec"
+      ]
+    },
+    "Microcharts.Forms/0.9.5.8": {
+      "sha512": "helFPngesuWXGJ9apVc+vuc9ol9ZB7sPLCF3x/v5P4jET9HgT4VBBToZkMoQ9bmUrpRMauI6v2h/CdWrz11FqQ==",
+      "type": "package",
+      "path": "microcharts.forms/0.9.5.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microcharts.Forms.dll",
+        "lib/netstandard2.0/Microcharts.dll",
+        "microcharts.forms.0.9.5.8.nupkg.sha512",
+        "microcharts.forms.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
@@ -1931,10 +2063,10 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "MongoDB.Bson/2.11.2": {
-      "sha512": "7vJoaUKPPnW6Ej0r4UHV8DeYD0/SKk/73WlDfc5JMRJRjTj3jRUtGIXwpaFYq3wT8MRHmLwbM/KvkEAb7deHRw==",
+    "MongoDB.Bson/2.11.3": {
+      "sha512": "pz8qtNVGLRRdDHmkRb5r/w4KYAnPClkGbQUPAuYudlMc2cd1HRIgIQMvY3lE5F0qFAhrceObbF57UHDwcSK5xg==",
       "type": "package",
-      "path": "mongodb.bson/2.11.2",
+      "path": "mongodb.bson/2.11.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1945,15 +2077,15 @@
         "lib/netstandard1.5/MongoDB.Bson.xml",
         "lib/netstandard2.0/MongoDB.Bson.dll",
         "lib/netstandard2.0/MongoDB.Bson.xml",
-        "mongodb.bson.2.11.2.nupkg.sha512",
+        "mongodb.bson.2.11.3.nupkg.sha512",
         "mongodb.bson.nuspec",
         "packageIcon.png"
       ]
     },
-    "MongoDB.Driver/2.11.2": {
-      "sha512": "4DT/VcE/6sw73tInWmQ1C92p1kHgKiuRx/DgYRtaUUILRaAdL8X1Gl3f8FXNMwH2rzH+KhOYCliYK7/+XWWZIw==",
+    "MongoDB.Driver/2.11.3": {
+      "sha512": "SqDCN7a8ejLB9q1lowxf6v6mD2Q/1ZSle4aEfrB0ITs0+GxjMe2zNPzxIGgsIaux1HuAwAOEP4le9SaicSj+5g==",
       "type": "package",
-      "path": "mongodb.driver/2.11.2",
+      "path": "mongodb.driver/2.11.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1964,15 +2096,15 @@
         "lib/netstandard1.5/MongoDB.Driver.xml",
         "lib/netstandard2.0/MongoDB.Driver.dll",
         "lib/netstandard2.0/MongoDB.Driver.xml",
-        "mongodb.driver.2.11.2.nupkg.sha512",
+        "mongodb.driver.2.11.3.nupkg.sha512",
         "mongodb.driver.nuspec",
         "packageIcon.png"
       ]
     },
-    "MongoDB.Driver.Core/2.11.2": {
-      "sha512": "e5/q9bqGEfGSsAq9Gn6+qWKEPs0s/U41tgfcWNtwAEpyg/btWO4RkeV0Jv8tG/KaXey1E151npmDPcwTrg7qjQ==",
+    "MongoDB.Driver.Core/2.11.3": {
+      "sha512": "BKX6HlO2RuNO3lX4jjwdHChmjisgjm9BsSPAiUXTEG6SSithL1IxuM+xqVRG8e/w7Z6YWZdU2ruTUZM4BVyN3A==",
       "type": "package",
-      "path": "mongodb.driver.core/2.11.2",
+      "path": "mongodb.driver.core/2.11.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1997,7 +2129,7 @@
         "lib/netstandard1.5/MongoDB.Driver.Core.xml",
         "lib/netstandard2.0/MongoDB.Driver.Core.dll",
         "lib/netstandard2.0/MongoDB.Driver.Core.xml",
-        "mongodb.driver.core.2.11.2.nupkg.sha512",
+        "mongodb.driver.core.2.11.3.nupkg.sha512",
         "mongodb.driver.core.nuspec",
         "packageIcon.png",
         "runtimes/win/native/libzstd.dll",
@@ -2277,6 +2409,160 @@
         "lib/netstandard2.0/SharpCompress.dll",
         "sharpcompress.0.23.0.nupkg.sha512",
         "sharpcompress.nuspec"
+      ]
+    },
+    "SkiaSharp/2.80.2": {
+      "sha512": "D25rzdCwh+3L+XyXqpNa+H/yiLJbE3/R3K/XexwHyQjGdzZvSufFW3oqf3En7hhqSIsxsJ8f5NEZ0J5W5wlGBg==",
+      "type": "package",
+      "path": "skiasharp/2.80.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/monoandroid1.0/SkiaSharp.targets",
+        "build/monoandroid1.0/arm/libSkiaSharp.so",
+        "build/monoandroid1.0/arm64/libSkiaSharp.so",
+        "build/monoandroid1.0/x64/libSkiaSharp.so",
+        "build/monoandroid1.0/x86/libSkiaSharp.so",
+        "build/net462/SkiaSharp.targets",
+        "build/tizen40/SkiaSharp.targets",
+        "build/tizen40/arm/libSkiaSharp.so",
+        "build/tizen40/x86/libSkiaSharp.so",
+        "build/xamarinios1.0/SkiaSharp.targets",
+        "build/xamarinios1.0/libSkiaSharp.framework/Info.plist",
+        "build/xamarinios1.0/libSkiaSharp.framework/Modules/module.modulemap",
+        "build/xamarinios1.0/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "build/xamarinios1.0/libSkiaSharp.framework/libSkiaSharp",
+        "build/xamarinmac2.0/SkiaSharp.targets",
+        "build/xamarintvos1.0/SkiaSharp.targets",
+        "build/xamarintvos1.0/libSkiaSharp.framework/Info.plist",
+        "build/xamarintvos1.0/libSkiaSharp.framework/Modules/module.modulemap",
+        "build/xamarintvos1.0/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "build/xamarintvos1.0/libSkiaSharp.framework/libSkiaSharp",
+        "build/xamarinwatchos1.0/SkiaSharp.targets",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/Info.plist",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/Modules/module.modulemap",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/libSkiaSharp",
+        "buildTransitive/monoandroid1.0/SkiaSharp.targets",
+        "buildTransitive/net462/SkiaSharp.targets",
+        "buildTransitive/tizen40/SkiaSharp.targets",
+        "buildTransitive/xamarinios1.0/SkiaSharp.targets",
+        "buildTransitive/xamarinmac2.0/SkiaSharp.targets",
+        "buildTransitive/xamarintvos1.0/SkiaSharp.targets",
+        "buildTransitive/xamarinwatchos1.0/SkiaSharp.targets",
+        "lib/monoandroid1.0/SkiaSharp.dll",
+        "lib/monoandroid1.0/SkiaSharp.xml",
+        "lib/net462/SkiaSharp.dll",
+        "lib/net462/SkiaSharp.xml",
+        "lib/netstandard1.3/SkiaSharp.dll",
+        "lib/netstandard1.3/SkiaSharp.xml",
+        "lib/netstandard2.0/SkiaSharp.dll",
+        "lib/netstandard2.0/SkiaSharp.xml",
+        "lib/tizen40/SkiaSharp.dll",
+        "lib/tizen40/SkiaSharp.xml",
+        "lib/uap10.0.10240/SkiaSharp.dll",
+        "lib/uap10.0.10240/SkiaSharp.xml",
+        "lib/uap10.0.16299/SkiaSharp.dll",
+        "lib/uap10.0.16299/SkiaSharp.xml",
+        "lib/xamarinios1.0/SkiaSharp.dll",
+        "lib/xamarinios1.0/SkiaSharp.xml",
+        "lib/xamarinmac2.0/SkiaSharp.dll",
+        "lib/xamarinmac2.0/SkiaSharp.xml",
+        "lib/xamarintvos1.0/SkiaSharp.dll",
+        "lib/xamarintvos1.0/SkiaSharp.xml",
+        "lib/xamarinwatchos1.0/SkiaSharp.dll",
+        "lib/xamarinwatchos1.0/SkiaSharp.xml",
+        "runtimes/osx/native/libSkiaSharp.dylib",
+        "runtimes/win-arm64/native/libSkiaSharp.dll",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libSkiaSharp.dll",
+        "skiasharp.2.80.2.nupkg.sha512",
+        "skiasharp.nuspec"
+      ]
+    },
+    "SkiaSharp.Views/2.80.2": {
+      "sha512": "qOvmMOZ2lkT6BTbmSNjsA46ugUeo6X6Vonok5RE3rYWpCEFxB1FvBqbKoaLY5XpdLWzyS3qinAuT2JLSyoPRvg==",
+      "type": "package",
+      "path": "skiasharp.views/2.80.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/monoandroid1.0/SkiaSharp.Views.Android.dll",
+        "lib/monoandroid1.0/SkiaSharp.Views.Android.xml",
+        "lib/net462/SkiaSharp.Views.Desktop.dll",
+        "lib/net462/SkiaSharp.Views.Desktop.xml",
+        "lib/tizen40/SkiaSharp.Views.Tizen.dll",
+        "lib/tizen40/SkiaSharp.Views.Tizen.xml",
+        "lib/uap10.0/SkiaSharp.Views.UWP.dll",
+        "lib/uap10.0/SkiaSharp.Views.UWP.xml",
+        "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll",
+        "lib/xamarinios1.0/SkiaSharp.Views.iOS.xml",
+        "lib/xamarinmac2.0/SkiaSharp.Views.Mac.dll",
+        "lib/xamarinmac2.0/SkiaSharp.Views.Mac.xml",
+        "lib/xamarintvos1.0/SkiaSharp.Views.tvOS.dll",
+        "lib/xamarintvos1.0/SkiaSharp.Views.tvOS.xml",
+        "lib/xamarinwatchos1.0/SkiaSharp.Views.watchOS.dll",
+        "lib/xamarinwatchos1.0/SkiaSharp.Views.watchOS.xml",
+        "runtimes/win10-arm/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "skiasharp.views.2.80.2.nupkg.sha512",
+        "skiasharp.views.nuspec"
+      ]
+    },
+    "SkiaSharp.Views.Forms/2.80.2": {
+      "sha512": "8aRDb98O2cHymB94O8FBj85qMC+MYEY6591wBpHcwgfz4HMo4orSMApD5y8VDmHpA5KR0Yh2ija+HTylz/9CgA==",
+      "type": "package",
+      "path": "skiasharp.views.forms/2.80.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/net462/SkiaSharp.Views.Forms.targets",
+        "lib/monoandroid1.0/SkiaSharp.Views.Forms.dll",
+        "lib/monoandroid1.0/SkiaSharp.Views.Forms.xml",
+        "lib/net462/_._",
+        "lib/tizen40/SkiaSharp.Views.Forms.dll",
+        "lib/tizen40/SkiaSharp.Views.Forms.xml",
+        "lib/uap10.0/SkiaSharp.Views.Forms.dll",
+        "lib/uap10.0/SkiaSharp.Views.Forms.xml",
+        "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll",
+        "lib/xamarinios1.0/SkiaSharp.Views.Forms.xml",
+        "lib/xamarinmac2.0/SkiaSharp.Views.Forms.dll",
+        "lib/xamarinmac2.0/SkiaSharp.Views.Forms.xml",
+        "ref/monoandroid1.0/SkiaSharp.Views.Forms.dll",
+        "ref/monoandroid1.0/SkiaSharp.Views.Forms.xml",
+        "ref/net462/_._",
+        "ref/netstandard1.3/SkiaSharp.Views.Forms.dll",
+        "ref/netstandard1.3/SkiaSharp.Views.Forms.xml",
+        "ref/netstandard2.0/SkiaSharp.Views.Forms.dll",
+        "ref/netstandard2.0/SkiaSharp.Views.Forms.xml",
+        "ref/tizen40/SkiaSharp.Views.Forms.dll",
+        "ref/tizen40/SkiaSharp.Views.Forms.xml",
+        "ref/uap10.0/SkiaSharp.Views.Forms.dll",
+        "ref/uap10.0/SkiaSharp.Views.Forms.xml",
+        "ref/xamarinios1.0/SkiaSharp.Views.Forms.dll",
+        "ref/xamarinios1.0/SkiaSharp.Views.Forms.xml",
+        "ref/xamarinmac2.0/SkiaSharp.Views.Forms.dll",
+        "ref/xamarinmac2.0/SkiaSharp.Views.Forms.xml",
+        "skiasharp.views.forms.2.80.2.nupkg.sha512",
+        "skiasharp.views.forms.nuspec"
       ]
     },
     "sqlite-net-pcl/1.7.335": {
@@ -4961,6 +5247,50 @@
         "system.threading.timer.nuspec"
       ]
     },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Xml.ReaderWriter/4.3.0": {
       "sha512": "GrprA+Z0RUXaR4N7/eW71j1rgMnEnEVlgii49GZyAjTH7uliMnrOU3HNFBr6fEDBCJCIdlVNq9hHbaDR621XBA==",
       "type": "package",
@@ -5905,10 +6235,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.8.0.1451": {
-      "sha512": "3RUzBpcaBxOjufLLqJnuZRGLhzAbVyfe/Pyp0AFY/H1MkCHYxXIRzgB8h6yC9NTs39NLK2SgGiaMbvC4TJ/zFA==",
+    "Xamarin.Forms/4.8.0.1560": {
+      "sha512": "uWw6knrT26YOI+vZXB8YvYAEimycokY0qN58u++Rb7Y4tcWm/Fzn6UWaGaTCY1VppTXA1JrQMsb5vxBvoyYFhg==",
       "type": "package",
-      "path": "xamarin.forms/4.8.0.1451",
+      "path": "xamarin.forms/4.8.0.1560",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6217,7 +6547,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.8.0.1451.nupkg.sha512",
+        "xamarin.forms.4.8.0.1560.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -6229,18 +6559,19 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
-      "AWSSDK.CognitoIdentity >= 3.5.0.19",
-      "AWSSDK.DocDB >= 3.5.1.6",
-      "AWSSDK.DynamoDBv2 >= 3.5.0.19",
+      "AWSSDK.CognitoIdentity >= 3.5.0.28",
+      "AWSSDK.DocDB >= 3.5.1.15",
+      "AWSSDK.DynamoDBv2 >= 3.5.1.4",
       "AppTCC >= 1.0.0",
-      "MongoDB.Bson >= 2.11.2",
-      "MongoDB.Driver >= 2.11.2",
+      "Microcharts.Forms >= 0.9.5.8",
+      "MongoDB.Bson >= 2.11.3",
+      "MongoDB.Driver >= 2.11.3",
       "MvvmLightLibs >= 5.4.1.1",
       "Newtonsoft.Json >= 12.0.3",
       "PCLExt.FileStorage >= 1.4.1.1",
       "Plugin.Toast >= 2.2.0",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.8.0.1451",
+      "Xamarin.Forms >= 4.8.0.1560",
       "sqlite-net-pcl >= 1.7.335"
     ]
   },
@@ -6288,23 +6619,27 @@
         "dependencies": {
           "AWSSDK.CognitoIdentity": {
             "target": "Package",
-            "version": "[3.5.0.19, )"
+            "version": "[3.5.0.28, )"
           },
           "AWSSDK.DocDB": {
             "target": "Package",
-            "version": "[3.5.1.6, )"
+            "version": "[3.5.1.15, )"
           },
           "AWSSDK.DynamoDBv2": {
             "target": "Package",
-            "version": "[3.5.0.19, )"
+            "version": "[3.5.1.4, )"
+          },
+          "Microcharts.Forms": {
+            "target": "Package",
+            "version": "[0.9.5.8, )"
           },
           "MongoDB.Bson": {
             "target": "Package",
-            "version": "[2.11.2, )"
+            "version": "[2.11.3, )"
           },
           "MongoDB.Driver": {
             "target": "Package",
-            "version": "[2.11.2, )"
+            "version": "[2.11.3, )"
           },
           "MvvmLightLibs": {
             "target": "Package",
@@ -6328,7 +6663,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.8.0.1451, )"
+            "version": "[4.8.0.1560, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

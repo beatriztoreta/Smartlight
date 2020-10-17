@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
              x:Class="AppTCC.Views.GraphicsEficienPage">
 
     <ScrollView>
@@ -20,7 +21,8 @@
                 </StackLayout>
             </Frame>
             <Label Text="Eficiência Estimada" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center"/>
-            <Label Text="Gráficos" FontSize="Large" BackgroundColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="0,50,0,50" Margin="20"/>
+            <forms:ChartView x:Name="Grafico" HeightRequest="150" />
+            <!--<Label Text="Gráficos" FontSize="Large" BackgroundColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="0,50,0,50" Margin="20"/>-->
             <StackLayout  VerticalOptions="Center">
                 <Button VerticalOptions="Center" Text="Análise Financeira" TextColor="Black" Clicked="OnFinanClicked" FontSize="Large" BackgroundColor="Orange" Margin="20"/>
             </StackLayout>
