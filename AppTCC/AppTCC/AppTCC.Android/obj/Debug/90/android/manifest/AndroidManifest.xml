@@ -8,7 +8,7 @@
   <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
   <uses-permission android:name="android.permission.GET_TASKS" />
-  <application android:label="Smartlight.Android" android:icon="@drawable/ic_launcher" android:theme="@style/MainTheme" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+  <application android:label="Smartlight.Android" android:icon="@drawable/ic_launcher" android:theme="@style/MainTheme" android:usesCleartextTraffic="true" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@drawable/slicon" android:label="AppTCC" android:theme="@style/MainTheme" android:name="crc643ed3d1c290aadc39.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
