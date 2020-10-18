@@ -12,6 +12,8 @@ namespace AppTCC.ViewModels
     {
         public IDataStore<Person> DataStore => DependencyService.Get<IDataStore<Person>>();
 
+        public IDataStore<Entity> Data_Entities_Store => DependencyService.Get<IDataStore<Entity>>();
+
         bool isBusy = false;
         public bool IsBusy
         {

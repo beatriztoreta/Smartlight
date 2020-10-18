@@ -28,6 +28,7 @@ namespace AppTCC
             InitializeComponent();
 
             DependencyService.Register<ApiPeopleDataStore>();
+            DependencyService.Register<ApiEntitiesDataStore>();
             MainPage = new AppShell();
         }
 

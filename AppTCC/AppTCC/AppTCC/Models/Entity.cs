@@ -15,20 +15,44 @@ namespace AppTCC.Models
 
         public string _entity_id { get; set; }
 
-        public List<Obj_proto> presence { get; set; }
-        
-        public List<Obj_proto> light { get; set; }
+        public List<Obj_Sector> sectors { get; set; }
 
-        public List<Obj_proto> power { get; set; }
     }
 
-    public class Obj_proto
+    public class Obj_Sector
     {
-       
-        public int main_tag { get; set; }
+        public int sector_tag { get; set; }
 
+        public string sector { get; set; }
+
+        public List<bool> status { get; set; }
+
+        public int max_intensity { get; set; }
+
+        public int min_intensity { get; set; }
+
+        public List<Info_sensor> sensors { get; set; }
+
+        public List<Info> power { get; set; }
+
+    }
+
+    public class Info_sensor
+    {
         public int sensor_tag { get; set; }
 
+        public int sensor_name { get; set; }
+
+        public List<Info> presence { get; set; }
+
+        public List<Info> light { get; set; }
+
+    }
+
+    public class Info
+    {
         public List<int> values { get; set; }
+
+        public int timestamp { get; set; }
     }
 }
