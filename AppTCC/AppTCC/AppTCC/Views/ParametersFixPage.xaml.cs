@@ -13,7 +13,7 @@ namespace AppTCC.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ParametersFixPage : ContentPage
     {
-        public ParametersFixPage()
+        public ParametersFixPage(int sector_tag)
         {
             InitializeComponent();
             this.BindingContext = new ParamViewModel();

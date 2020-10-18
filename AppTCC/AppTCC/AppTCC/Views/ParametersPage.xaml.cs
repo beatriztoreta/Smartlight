@@ -15,6 +15,8 @@ namespace AppTCC.Views
     {
         ParamViewModel _viewModel;
 
+        int sector_tag = 0;
+
         public ParametersPage()
         {
             InitializeComponent();
@@ -24,7 +26,7 @@ namespace AppTCC.Views
 
         private async void Section_Tapped(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new ParametersFixPage());
+            await Navigation.PushAsync(new ParametersFixPage(sector_tag));
         }
 
         protected override void OnAppearing()

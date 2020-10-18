@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppTCC.Views.ParametersPage">
+             x:Class="AppTCC.Views.ParametersPage"
+             xmlns:local="clr-namespace:AppTCC.ViewModels"  
+             xmlns:model="clr-namespace:AppTCC.Models">
 
     <ScrollView>
         <StackLayout BackgroundColor="#000000">
