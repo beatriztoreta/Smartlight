@@ -28,10 +28,14 @@ namespace AppTCC.ViewModels
 
        public ParamViewModel()
        {
+            LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
+
             ParamCommand = new Command(OnSend);
 
             this.PropertyChanged += (_, __) => ParamCommand.ChangeCanExecute();
-        }
+        
+       }
+
         private bool ValidateSave()
         {
             if (min >= 0 && min <= 100 && max >= 0 && max <= 100)
@@ -56,11 +60,10 @@ namespace AppTCC.ViewModels
         {
             if (ValidateSave() == true)
             {
-                Person newItem = new Person()
+                Entity newItem = new Entity()
                 {
                     _id = Guid.NewGuid().ToString(),
-                    user = User,
-                    password = Password
+                    
                 };
 
                 await Data_Entities_Store.AddItemAsync(newItem);
@@ -72,6 +75,37 @@ namespace AppTCC.ViewModels
             else
                 CrossToastPopUp.Current.ShowToastMessage("Preencha os campos!", ToastLength.Long);
 
+        }
+
+        public ObservableCollection<Entity> Items { get; }
+        public Command LoadItemsCommand { get; }
+
+        async Task ExecuteLoadItemsCommand()
+        {
+            IsBusy = true;
+
+            try
+            {
+                Items.Clear();
+                var items = await Data_Entities_Store.GetItemsAsync();
+                foreach (var item in items)
+                {
+                    Items.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+
+        public void OnAppearing()
+        {
+            IsBusy = true;
         }
     }
 }

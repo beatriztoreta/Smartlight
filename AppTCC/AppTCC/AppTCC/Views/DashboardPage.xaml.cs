@@ -30,7 +30,7 @@ namespace AppTCC.Views
 
         private async void Projections_Tapped(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new ProjectionsPage());
+            await Navigation.PushAsync(new GraphicsFinanPage());
         }
 
         private async void Monitors_Tapped(object sender, System.EventArgs e)

@@ -20,7 +20,40 @@
                 </StackLayout>
             </Frame>
             <Label Text="Clique em um setor para ajustar" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
-            <Frame BackgroundColor="Yellow" Margin="30,10,30,0">
+
+
+            <RefreshView x:DataType="local:ParamViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+                <CollectionView x:Name="ItemsListView" ItemsSource="{Binding Items}" SelectionMode="None">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="10" x:DataType="model:Entity">
+                                <Frame BackgroundColor="Yellow" Margin="30,10,30,0">
+                                    <Label Text="{Binding sector_tag}" LineBreakMode="NoWrap" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="Section_Tapped"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+                                <Frame BackgroundColor="Orange" Margin="30,0,30,0">
+                                    <Label Text="{Binding sector}" LineBreakMode="NoWrap" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="Section_Tapped"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Frame>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+
+
+
+
+
+
+
+            <!--<Frame BackgroundColor="Yellow" Margin="30,10,30,0">
                 <Label Text="Setor Alpha" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Section_Tapped"/>
@@ -40,7 +73,7 @@
                         <TapGestureRecognizer Tapped="Section_Tapped"/>
                     </Label.GestureRecognizers>
                 </Label>
-            </Frame>
+            </Frame>-->
         </StackLayout>
     </ScrollView>
 </ContentPage>
