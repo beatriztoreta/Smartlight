@@ -53,6 +53,6 @@ namespace AppTCC.Models
     {
         public List<int> values { get; set; }
 
-        public int timestamp { get; set; }
+        public long timestamp { get; set; }
     }
 }
