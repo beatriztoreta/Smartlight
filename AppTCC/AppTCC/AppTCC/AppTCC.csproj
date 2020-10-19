@@ -55,9 +55,6 @@
     <Compile Update="Views\MonitorsPage.xaml.cs">
       <DependentUpon>MonitorsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\ProjectionsPage.xaml.cs">
-      <DependentUpon>ProjectionsPage.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>

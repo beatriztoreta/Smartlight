@@ -21,7 +21,7 @@
                 </StackLayout>
             </Frame>
             <Label Text="Eficiência Estimada" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center"/>
-            <forms:ChartView x:Name="Grafico" HeightRequest="150" />
+            <forms:ChartView x:Name="Grafico" HeightRequest="300" />
             <!--<Label Text="Gráficos" FontSize="Large" BackgroundColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="0,50,0,50" Margin="20"/>-->
             <StackLayout  VerticalOptions="Center">
                 <Button VerticalOptions="Center" Text="Análise Financeira" TextColor="Black" Clicked="OnFinanClicked" FontSize="Large" BackgroundColor="Orange" Margin="20"/>

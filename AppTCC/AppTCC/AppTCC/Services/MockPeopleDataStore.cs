@@ -15,12 +15,9 @@ namespace AppTCC.Services
         {
             items = new List<Person>()
             {
-                new Person { _id = Guid.NewGuid().ToString(), user = "First", password = "One" },
-                new Person { _id = Guid.NewGuid().ToString(), user = "Second", password = "Two" },
-                new Person { _id = Guid.NewGuid().ToString(), user = "Third", password = "Three" },
-                new Person { _id = Guid.NewGuid().ToString(), user = "Fourth", password = "Four" },
-                new Person { _id = Guid.NewGuid().ToString(), user = "Fifth", password = "Five" },
-                new Person { _id = Guid.NewGuid().ToString(), user = "Sixth", password = "Six" }
+                new Person { _id = Guid.NewGuid().ToString(), user = "teste", password = "teste" },
+                new Person { _id = Guid.NewGuid().ToString(), user = "pops", password = "popoya" }
+                
             };
         }
 

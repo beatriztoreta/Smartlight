@@ -29,10 +29,6 @@ namespace AppTCC.ViewModels
 
        public LoginViewModel()
        {
-            //LoginCommand = new Command(OnLoginClicked);
-
-            //FetchData();
-
             LoginCommand = new Command(OnSave);
 
             this.PropertyChanged += (_, __) => LoginCommand.ChangeCanExecute();
@@ -78,51 +74,5 @@ namespace AppTCC.ViewModels
 
         }
 
-        private async void OnLoginClicked(object obj)
-        {
-            Person newItem = new Person()
-            {
-                _id = Guid.NewGuid().ToString(),
-                user = User,
-                password = Password
-            };
-
-            await MongoService.InsertItem(newItem);
-
-            CrossToastPopUp.Current.ShowToastMessage("Registro efetuado com sucesso!", ToastLength.Long);
-        }
-
-        public IEnumerable<object> Data { get; private set; }
-
-        private async Task FetchData() 
-        {
-            var credentials = new Amazon.CognitoIdentity.CognitoAWSCredentials("us-east-1:45984fda-069a-4c08-bdb7-55c115e90259", Amazon.RegionEndpoint.USEast1);
-
-            var ddbClient = new Amazon.DynamoDBv2.AmazonDynamoDBClient(credentials, Amazon.RegionEndpoint.USEast1);
-
-            ScanRequest request = new ScanRequest
-            {
-                TableName = "Auth",
-                AttributesToGet = new List<string> { "id", "password", "user" }
-            };
-
-            var results = await ddbClient.ScanAsync(request);
-
-            Data = results.Items.Select(i => new
-            {
-                id = i["id"].S,
-                user = i["user"].S,
-                password = i["password"].S
-            }).OrderBy(i => i.user);
-
-            RaisePropertyChanged(nameof(Data));
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void RaisePropertyChanged(string prop)
-        {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(prop));
-        }
     }
 }

@@ -11,16 +11,10 @@ namespace AppTCC.Models
     public class Person
     {
         [PrimaryKey, AutoIncrement]
-        /*[BsonId, BsonRepresentation(BsonType.ObjectId)]*/
         public string _id { get; set; }
 
-        /*[MaxLength(20)]
-        [BsonElement("user")]*/
         public string user { get; set; }
-        
-        
-        /*[MaxLength(20)]
-        [BsonElement("password")]*/
+                
         public string password { get; set; }
 
     }

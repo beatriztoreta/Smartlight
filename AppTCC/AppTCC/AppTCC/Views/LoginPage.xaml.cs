@@ -10,6 +10,8 @@ using Plugin.Toast;
 using Plugin.Toast.Abstractions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 
 namespace AppTCC.Views
 {
@@ -18,14 +20,35 @@ namespace AppTCC.Views
     {
         private Person p = new Person();
         public ListView l = new ListView();
+        public ObservableCollection<Person> Items { get; }
 
+        public bool aux = false;
+        
         public LoginPage()
         {
             InitializeComponent();
             this.BindingContext = new LoginViewModel();
+            Items = new ObservableCollection<Person>();
+        }
+        
+        async void UserBackup()
+        {
+            await App.Database.SavePersonAsync(new Person
+            {
+                user = "teste",
+                password = "teste"
+            });
+
+            await App.Database.SavePersonAsync(new Person
+            {
+                user = "pops",
+                password = "popoya"
+            });
+
         }
 
-       async void OnRegisterClicked(object sender, EventArgs e)
+
+        async void OnRegisterClicked(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(userEntry.Text) && !string.IsNullOrWhiteSpace(passwordEntry.Text))
             {
@@ -48,23 +71,55 @@ namespace AppTCC.Views
 
         async void OnLoginClicked(object sender, EventArgs e)
         {
+            UserBackup();
+
+            aux = false;
+
             if (!string.IsNullOrWhiteSpace(userEntry.Text) && !string.IsNullOrWhiteSpace(passwordEntry.Text))
             {
-                await App.Database.SavePersonAsync(new Person
+                await ExecuteLoadItemsCommand();
+
+                foreach (var person in Items)
                 {
-                    user = userEntry.Text,
-                    password = passwordEntry.Text
-                });
+                    if (userEntry.Text == person.user && passwordEntry.Text == person.password)
+                    {
+                        aux = true;
 
-                p.user = userEntry.Text;
-                p.password = passwordEntry.Text;
-                userEntry.Text = passwordEntry.Text = string.Empty;
-                
-                CrossToastPopUp.Current.ShowToastMessage("Login efetuado com sucesso!", ToastLength.Long);
+                        CrossToastPopUp.Current.ShowToastMessage("Login efetuado com sucesso!", ToastLength.Long);
 
-                await Navigation.PushAsync(new AboutPage());
+                        await Navigation.PushAsync(new AboutPage());
+                    }
+                }
+                if (aux == false)
+                {
+                    CrossToastPopUp.Current.ShowToastMessage("Preencha os campos corretamente!", ToastLength.Long);
+                }
+
             }
-
+            else
+            {
+                CrossToastPopUp.Current.ShowToastMessage("Preencha os campos corretamente!", ToastLength.Long);
+            }
+            
         }
+
+        async Task ExecuteLoadItemsCommand()
+        {
+            try
+            {
+                Items.Clear();
+                var items = await App.Database.GetPeopleAsync();
+                foreach (var item in items)
+                {
+                    Items.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
+            
+        }
+
     }
 }
