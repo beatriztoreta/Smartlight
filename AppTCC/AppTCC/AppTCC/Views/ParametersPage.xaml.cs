@@ -21,7 +21,9 @@ namespace AppTCC.Views
             this.BindingContext = _viewModel = new ParamViewModel();
 
             aux.BindingContext = "Teste";
-            aux.Text = "1";                        
+            aux.Text = "1";  
+            
+            //aux2
         }
 
         private async void Section_Tapped(object sender, System.EventArgs e)
