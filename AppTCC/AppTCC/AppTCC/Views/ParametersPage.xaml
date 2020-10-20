@@ -22,7 +22,13 @@
                 </StackLayout>
             </Frame>
             <Label Text="Clique em um setor para ajustar" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
-
+            <Frame BackgroundColor="Yellow" Margin="30,10,30,0">
+                <Label x:Name="aux" Text="{Binding Teste}" LineBreakMode="NoWrap" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Section_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Frame>
 
             <RefreshView x:DataType="local:ParamViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
                 <CollectionView x:Name="ItemsListView" ItemsSource="{Binding Items}" SelectionMode="None">
@@ -30,7 +36,7 @@
                         <DataTemplate>
                             <StackLayout Padding="10" x:DataType="model:Obj_Sector">
                                 <Frame BackgroundColor="Yellow" Margin="30,10,30,0">
-                                    <Label Text="{Binding sector_tag}" LineBreakMode="NoWrap" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start">
+                                    <Label x:Name="aux2" Text="{Binding sector_tag, Mode=TwoWay}" LineBreakMode="NoWrap" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start">
                                         <Label.GestureRecognizers>
                                             <TapGestureRecognizer Tapped="Section_Tapped"/>
                                         </Label.GestureRecognizers>

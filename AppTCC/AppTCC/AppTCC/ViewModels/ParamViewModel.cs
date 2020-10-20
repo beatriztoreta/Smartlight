@@ -24,17 +24,25 @@ namespace AppTCC.ViewModels
         private int min;
         private int max;
 
+        private int sector_tag;
+
+        public int Sector_tag
+        {
+            get => sector_tag;
+            set => SetProperty(ref sector_tag, value);
+        }
+
         public Command ParamCommand { get; }
 
-       public ParamViewModel()
-       {
+        public ParamViewModel()
+        {
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
             ParamCommand = new Command(OnSend);
 
             this.PropertyChanged += (_, __) => ParamCommand.ChangeCanExecute();
         
-       }
+        }
 
         private bool ValidateSave()
         {

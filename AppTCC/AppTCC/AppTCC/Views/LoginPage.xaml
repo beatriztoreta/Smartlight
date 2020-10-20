@@ -33,18 +33,6 @@
                     <StackLayout  VerticalOptions="Center">
                         <Button VerticalOptions="Center" Text="Registrar" Clicked="OnRegisterClicked" FontSize="Large"/>
                     </StackLayout>
-                    <!--<ListView ItemsSource="{Binding Data}">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                    <StackLayout>
-                                        <Label Text="{Binding user}" FontSize="Large" FontAttributes="Bold"/>
-                                        <Label Text="{Binding password}" FontSize="Large" />
-                                    </StackLayout>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>-->
                 </StackLayout>
             </StackLayout>
         </ScrollView>
