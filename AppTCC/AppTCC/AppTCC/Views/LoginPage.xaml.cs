@@ -35,12 +35,14 @@ namespace AppTCC.Views
         {
             await App.Database.SavePersonAsync(new Person
             {
+                _id = Guid.NewGuid().ToString(),
                 user = "teste",
                 password = "teste"
             });
 
             await App.Database.SavePersonAsync(new Person
             {
+                _id = Guid.NewGuid().ToString(),
                 user = "pops",
                 password = "popoya"
             });
@@ -71,7 +73,19 @@ namespace AppTCC.Views
 
         async void OnLoginClicked(object sender, EventArgs e)
         {
-            UserBackup();
+            await App.Database.SavePersonAsync(new Person
+            {
+                _id = Guid.NewGuid().ToString(),
+                user = "teste",
+                password = "teste"
+            });
+
+            await App.Database.SavePersonAsync(new Person
+            {
+                _id = Guid.NewGuid().ToString(),
+                user = "pops",
+                password = "popoya"
+            });
 
             aux = false;
 

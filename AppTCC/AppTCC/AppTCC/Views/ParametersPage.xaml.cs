@@ -23,12 +23,13 @@ namespace AppTCC.Views
             aux.BindingContext = "Teste";
             aux.Text = "1";  
             
-            //aux2
         }
 
         private async void Section_Tapped(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new ParametersFixPage(Convert.ToInt32(aux.Text)));
+            var label = (sender as Label);
+
+            await Navigation.PushAsync(new ParametersFixPage(Convert.ToInt32(label.Text)));
         }
 
         protected override void OnAppearing()

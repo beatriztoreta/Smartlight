@@ -10,7 +10,7 @@ namespace AppTCC.Models
     [Table("users")]
     public class Person
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey]
         public string _id { get; set; }
 
         public string user { get; set; }

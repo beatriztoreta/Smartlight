@@ -28,7 +28,9 @@ namespace AppTCC.ViewModels
                                                      "Amanda Guttierres. Ruza - RA 081160013 " +
                                                      "Beatriz Toreta Pereira - RA 081160002            " +
                                                      "Ivan Zanutto Bastos - RA 081160003", ToastLength.Long);
-            //await DisplayAlert("Equipe", "Álisson H. P. Kawachi - RA 081160011 /n Amanda G. Ruza - RA 081160013 /n Beatriz T. Pereira - RA 081160002 /n Ivan Z. Bastos - RA 081160003", "OK");
+            var duration = TimeSpan.FromSeconds(2);
+            Vibration.Vibrate(duration);
+            
         }
 
         private Task DisplayAlert(string v1, string v2, string v3)
