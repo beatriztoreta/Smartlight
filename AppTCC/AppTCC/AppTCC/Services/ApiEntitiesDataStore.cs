@@ -11,8 +11,8 @@ namespace AppTCC.Services
 {
     class ApiEntitiesDataStore : IDataStore<Entity>
     {
-        private const string API_BASE_URL = "ec2-54-157-172-217.compute-1.amazonaws.com:6042";
-        private const string API_PROTO = "entities/proto";
+        private const string API_BASE_URL = "http://54.157.172.217:6042/";
+        private const string API_PROTO = "entities";
         
         public ApiEntitiesDataStore()
         {

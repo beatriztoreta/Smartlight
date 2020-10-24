@@ -22,15 +22,8 @@
                 </StackLayout>
             </Frame>
             <Label Text="Clique em um setor para ajustar" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
-            <Frame BackgroundColor="Yellow" Margin="30,10,30,0">
-                <Label x:Name="aux" Text="{Binding Teste}" LineBreakMode="NoWrap" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="Section_Tapped"/>
-                    </Label.GestureRecognizers>
-                </Label>
-            </Frame>
 
-            <RefreshView x:DataType="local:ParamViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+            <RefreshView x:DataType="local:ParamViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}" BackgroundColor="Yellow">
                 <CollectionView x:Name="ItemsListView" ItemsSource="{Binding Sec, Mode=TwoWay}" SelectionMode="None">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
@@ -50,12 +43,6 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </RefreshView>
-
-
-
-
-
-
 
             <!--<Frame BackgroundColor="Yellow" Margin="30,10,30,0">
                 <Label Text="Setor Alpha" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start">

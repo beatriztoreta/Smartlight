@@ -16,6 +16,7 @@ using System.Linq;
 using System.ComponentModel;
 using Android.Bluetooth.LE;
 using MongoDB.Bson;
+using Newtonsoft.Json;
 
 namespace AppTCC.ViewModels
 {
@@ -37,6 +38,8 @@ namespace AppTCC.ViewModels
         public ParamViewModel()
         {
             source = new List<Obj_Sector>();
+            Items = new ObservableCollection<Entity>();
+            Sec = new ObservableCollection<Obj_Sector>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
             ParamCommand = new Command(OnSend);
@@ -86,8 +89,8 @@ namespace AppTCC.ViewModels
 
         }
 
-        private ObservableCollection<Entity> Items { get; }
-        public ObservableCollection<Obj_Sector> Sec { get; private set; }
+        public ObservableCollection<Entity> Items { get; }
+        public ObservableCollection<Obj_Sector> Sec { get; set; }
         public Command LoadItemsCommand { get; }
 
         async Task CreateSectorCollection()
@@ -135,36 +138,33 @@ namespace AppTCC.ViewModels
         async Task ExecuteLoadItemsCommand()
         {
             IsBusy = true;
-
+            
             try
             {
-                Items.Clear();
                 Sec.Clear();
-                var items = await Data_Entities_Store.GetItemsAsync();
+
+                Entity item = await Data_Entities_Store.GetItemAsync("proto");
                 List<bool> st;
                 List<Info_sensor> sens;
                 List<Info> pow;
-                foreach (var item in items)
+                
+                foreach (var sec in item.sectors)
                 {
-                    Items.Add(item);
-                    foreach (var sec in item.sectors)
+                    st = sec.status;
+                    sens = sec.sensors;
+                    pow = sec.power;
+                    source.Add(new Obj_Sector
                     {
-                        st = sec.status;
-                        sens = sec.sensors;
-                        pow = sec.power;
-                        source.Add(new Obj_Sector
-                        {
-                            sector_tag = sec.sector_tag,
-                            sector = sec.sector,
-                            status = st,
-                            max_intensity = sec.max_intensity,
-                            min_intensity = sec.min_intensity,
-                            sensors = sens,
-                            power = pow
-                        });
-                    }
+                        sector_tag = sec.sector_tag,
+                        sector = sec.sector,
+                        status = st,
+                        max_intensity = sec.max_intensity,
+                        min_intensity = sec.min_intensity,
+                        sensors = sens,
+                        power = pow
+                    });
                 }
-
+                
                 Sec = new ObservableCollection<Obj_Sector>(source);
             }
             catch (Exception ex)

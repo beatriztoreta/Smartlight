@@ -16,11 +16,8 @@ namespace AppTCC.ViewModels
         public AboutViewModel()
         {
             Title = "About";
-            //OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamain-quickstart"));
             AboutCommand = new Command(OnAboutClicked);
         }
-
-        //public ICommand OpenWebCommand { get; }
 
         private async void OnAboutClicked(object obj)
         {
