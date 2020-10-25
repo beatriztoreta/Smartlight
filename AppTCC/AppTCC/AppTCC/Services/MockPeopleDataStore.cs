@@ -21,6 +21,16 @@ namespace AppTCC.Services
             };
         }
 
+        public async Task<Person> AddItemRetAsync(Person item)
+        {
+
+            items.Add(item);
+            var r = await Task.FromResult(true);
+
+            return item;
+        }
+
+
         public async Task<bool> AddItemAsync(Person item)
         {
             items.Add(item);

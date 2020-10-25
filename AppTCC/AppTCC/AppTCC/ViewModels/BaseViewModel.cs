@@ -14,6 +14,8 @@ namespace AppTCC.ViewModels
 
         public IDataStore<Entity> Data_Entities_Store => DependencyService.Get<IDataStore<Entity>>();
 
+        public IDataStore<Graphics_Data> Data_Graphics_Store => DependencyService.Get<IDataStore<Graphics_Data>>();
+
         bool isBusy = false;
         public bool IsBusy
         {

@@ -13,8 +13,8 @@
             </Frame>
             <Label Text="Economia Estimada" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center"/>
             <Label Text="R$ 4.251,00" FontSize="40" BackgroundColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="0,50,0,50" Margin="20" TextColor="Black"/>
-            <Frame BackgroundColor="#000000" BorderColor="Orange" Margin="20">
-                <forms:ChartView x:Name="Grafico" HeightRequest="200"/>
+            <Frame>
+                <forms:ChartView x:Name="Grafico" HeightRequest="300" BackgroundColor="Black"/>
             </Frame>
         </StackLayout>
     </ScrollView>

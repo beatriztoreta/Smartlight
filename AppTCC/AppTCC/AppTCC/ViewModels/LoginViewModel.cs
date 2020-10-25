@@ -27,7 +27,7 @@ namespace AppTCC.ViewModels
 
         public Command LoginCommand { get; }
 
-       public LoginViewModel()
+        public LoginViewModel()
        {
             LoginCommand = new Command(OnSave);
 
@@ -56,21 +56,30 @@ namespace AppTCC.ViewModels
         {
             if (ValidateSave() == true)
             {
-                Person newItem = new Person()
+                Person p = new Person();
+                p.user = user;
+                p.password = password;
+
+                Person pessoa = await DataStore.AddItemRetAsync(p);
+
+                if (pessoa != null)
                 {
-                    _id = Guid.NewGuid().ToString(),
-                    user = User,
-                    password = Password
-                };
-
-                await DataStore.AddItemAsync(newItem);
-
-                await Shell.Current.GoToAsync("..");
-
-                CrossToastPopUp.Current.ShowToastMessage("Login efetuado com sucesso!", ToastLength.Long);
+                    if (pessoa.permission == "dir")
+                    {
+                        CrossToastPopUp.Current.ShowToastMessage("Login efetuado com sucesso!", ToastLength.Long);
+                        await Shell.Current.GoToAsync("//DashboardPage");
+                    }
+                    else if (pessoa.permission == "oper")
+                    {
+                        CrossToastPopUp.Current.ShowToastMessage("Login efetuado com sucesso!", ToastLength.Long);
+                        await Shell.Current.GoToAsync("//DashboardOperPage");
+                    }
+                }
+                else
+                    CrossToastPopUp.Current.ShowToastMessage("Preencha os campos corretamente!", ToastLength.Long);
             }
             else
-                CrossToastPopUp.Current.ShowToastMessage("Preencha os campos!", ToastLength.Long);
+                CrossToastPopUp.Current.ShowToastMessage("Preencha os campos corretamente!", ToastLength.Long);
 
         }
 

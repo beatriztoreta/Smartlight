@@ -19,7 +19,9 @@ namespace AppTCC.Models
 
         [JsonProperty("sectors")]
         public List<Obj_Sector> sectors { get; set; }
-        
+
+        [JsonProperty("time_data")]
+        public List<Graphics_Data> time_data { get; set; }
     }
 
     [Table("tb_sectors")]
@@ -45,7 +47,6 @@ namespace AppTCC.Models
 
         [JsonProperty("power")]
         public List<Info> power { get; set; }
-
     }
 
     [Table("tb_sensors")]
@@ -62,13 +63,25 @@ namespace AppTCC.Models
 
         [JsonProperty("light")]
         public List<Info> light { get; set; }
-
     }
 
     public class Info
     {
         [JsonProperty("values")]
         public List<int> values { get; set; }
+
+        [JsonProperty("timestamp")]
+        public long timestamp { get; set; }
+    }
+
+    [Table("tb_graphics")]
+    public class Graphics_Data
+    {
+        [JsonProperty("min")]
+        public int min { get; set; }
+
+        [JsonProperty("max")]
+        public int max { get; set; }
 
         [JsonProperty("timestamp")]
         public long timestamp { get; set; }

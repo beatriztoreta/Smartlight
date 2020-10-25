@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SkiaSharp;
-
+using AppTCC.Models;
+using AppTCC.ViewModels;
 
 namespace AppTCC.Views
 {
@@ -41,10 +42,14 @@ namespace AppTCC.Views
             }
         };
 
+        Graphics_Data gra;
+
         public GraphicsEficienPage()
         {
             InitializeComponent();
-            Grafico.Chart = new Microcharts.DonutChart() { Entries = entries };
+            this.BindingContext = new GraphicsViewModel();
+            //gra = 
+            Grafico.Chart = new Microcharts.BarChart() { Entries = entries };
         }
 
         async void OnFinanClicked(object sender, EventArgs e)

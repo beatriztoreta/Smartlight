@@ -44,7 +44,7 @@ namespace AppTCC.Views
         public GraphicsFinanPage()
         {
             InitializeComponent();
-            Grafico.Chart = new Microcharts.BarChart() { Entries = entries };
+            Grafico.Chart = new Microcharts.DonutChart() { Entries = entries };
         }
     }
 }

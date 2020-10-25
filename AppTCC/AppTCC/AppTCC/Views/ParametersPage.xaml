@@ -27,18 +27,6 @@
                 <CollectionView x:Name="collectionView" x:DataType="local:ParamViewModel" ItemsSource="{Binding Sec, Mode=TwoWay}" SelectionMode="None">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <StackLayout x:Name="stack" Padding="10" x:DataType="model:Obj_Sector" Margin="30,10,30,0" BackgroundColor="Yellow">
-                                
-                            </StackLayout>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </RefreshView>
-
-            <!--<RefreshView x:Name="refreshView" x:DataType="local:ParamViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
-                <CollectionView x:Name="collectionView" x:DataType="local:ParamViewModel" ItemsSource="{Binding Sec, Mode=TwoWay}" SelectionMode="None">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
                             <StackLayout Padding="10" x:DataType="model:Obj_Sector" Margin="30,10,30,0" BackgroundColor="Yellow">
                                 <Label Text="{Binding sector_tag, Mode=TwoWay}" LineBreakMode="NoWrap" FontSize="Title" TextColor="Black" 
                                        HorizontalTextAlignment="Start" VerticalTextAlignment="Start">
@@ -56,7 +44,7 @@
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
-            </RefreshView>-->
+            </RefreshView>
 
         </StackLayout>
     </ScrollView>

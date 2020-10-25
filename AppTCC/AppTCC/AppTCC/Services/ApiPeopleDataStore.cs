@@ -11,7 +11,7 @@ namespace AppTCC.Services
 {
     class ApiPeopleDataStore : IDataStore<Person>
     {
-        private const string API_BASE_URL = "http://ec2-54-157-172-217.compute-1.amazonaws.com:6042/";
+        private const string API_BASE_URL = "http://54.157.172.217:6042/";
         private const string API_PESSOAS = "users";
         public ApiPeopleDataStore()
         {
@@ -22,6 +22,18 @@ namespace AppTCC.Services
         {
             var retorno = await MobileHelper.CallApi(HttpMethod.Post, API_PESSOAS, item);
             return retorno.IsSuccessStatusCode;
+        }
+
+        public async Task<Person> AddItemRetAsync(Person item)
+        {
+            Person retorno = null;
+            var resposta = await MobileHelper.CallApi(HttpMethod.Post, API_PESSOAS, item);
+            if (resposta.IsSuccessStatusCode)
+            {
+                var content = await resposta.Content.ReadAsStringAsync();
+                retorno = JsonConvert.DeserializeObject<Person>(content);
+            }
+            return retorno;
         }
 
         public async Task<bool> DeleteItemAsync(string id)

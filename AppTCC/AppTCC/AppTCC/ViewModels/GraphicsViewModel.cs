@@ -25,35 +25,29 @@ namespace AppTCC.ViewModels
         public Command BarrasCommand { get; }
 
         public Command PizzaCommand { get; }
-
-        public Command InfosCommand { get; }
-
+                
         public GraphicsViewModel()
         {
-            source = new List<Entity>();
-            Sec = new ObservableCollection<Entity>();
-
             BarrasCommand = new Command(async () => await ExecuteLoadItemsCommand());
             PizzaCommand = new Command(async () => await ExecuteLoadItemsCommand());
-            InfosCommand = new Command(async () => await ExecuteLoadItemsCommand());
-
+            
         }
         
-        public ObservableCollection<Entity> Sec { get; set; }
-        readonly IList<Entity> source;
+        public ObservableCollection<Graphics_Data> Barras { get; set; }
+       
         async Task ExecuteLoadItemsCommand()
         {
             IsBusy = true;
             
             try
             {
-                Sec.Clear();
+                Barras.Clear();
 
-                Entity item = await Data_Entities_Store.GetItemAsync("proto");
-                                
-                Sec.Add(item);
-                               
-                Sec = new ObservableCollection<Entity>(source);
+                Graphics_Data item = await Data_Graphics_Store.GetItemAsync("proto");
+
+                Barras.Add(item);
+
+                
             }
             catch (Exception ex)
             {

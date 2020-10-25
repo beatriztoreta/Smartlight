@@ -29,6 +29,7 @@ namespace AppTCC
 
             DependencyService.Register<ApiPeopleDataStore>();
             DependencyService.Register<ApiEntitiesDataStore>();
+            DependencyService.Register<ApiGraphicsDataStore>();
             MainPage = new AppShell();
         }
 
