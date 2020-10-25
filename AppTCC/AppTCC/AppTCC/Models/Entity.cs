@@ -8,6 +8,7 @@ using Newtonsoft.Json;
 
 namespace AppTCC.Models
 {
+    [Table("tb_entities")]
     public class Entity
     {
         [PrimaryKey]
@@ -21,6 +22,7 @@ namespace AppTCC.Models
         
     }
 
+    [Table("tb_sectors")]
     public class Obj_Sector
     {
         [JsonProperty("sector_tag")]
@@ -46,6 +48,7 @@ namespace AppTCC.Models
 
     }
 
+    [Table("tb_sensors")]
     public class Info_sensor
     {
         [JsonProperty("sensor_tag")]

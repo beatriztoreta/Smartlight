@@ -38,7 +38,7 @@ namespace AppTCC.ViewModels
         public ParamViewModel()
         {
             source = new List<Obj_Sector>();
-            Items = new ObservableCollection<Entity>();
+            
             Sec = new ObservableCollection<Obj_Sector>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
@@ -89,45 +89,9 @@ namespace AppTCC.ViewModels
 
         }
 
-        public ObservableCollection<Entity> Items { get; }
         public ObservableCollection<Obj_Sector> Sec { get; set; }
         public Command LoadItemsCommand { get; }
-
-        async Task CreateSectorCollection()
-        {
-            IsBusy = true;
-
-            try
-            {
-                Items.Clear();
-                Sec.Clear();
-                var items = await Data_Entities_Store.GetItemsAsync();
-                foreach (var item in items)
-                {
-                    Items.Add(item);
-                }
-                
-                foreach (var sec in Items)
-                {
-                    int i = sec.sectors.Count();
-                    while (i >= 0)
-                    {
-                        Sec.Add(sec.sectors[i]);
-                    }
-                }
-
-
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
-            finally
-            {
-                IsBusy = false;
-            }
-        }
-
+        
         public void OnAppearing()
         {
             IsBusy = true;
