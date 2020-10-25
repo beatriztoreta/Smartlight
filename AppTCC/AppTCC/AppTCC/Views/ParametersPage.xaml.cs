@@ -20,7 +20,12 @@ namespace AppTCC.Views
         {
             InitializeComponent();
             this.BindingContext = _viewModel = new ParamViewModel();
+
             
+
+
+
+
         }
 
         private async void Section_Tapped(object sender, System.EventArgs e)
@@ -34,6 +39,34 @@ namespace AppTCC.Views
         {
             base.OnAppearing();
             _viewModel.OnAppearing();
+
+            RefreshView refreshView = new RefreshView();
+
+            CollectionView collectionView = new CollectionView();
+            collectionView.SetBinding(ItemsView.ItemsSourceProperty, "Sec");
+
+            collectionView.ItemTemplate = new DataTemplate(() =>
+            {
+
+                Label sector_tag_Label = new Label { HorizontalOptions = LayoutOptions.Start, VerticalOptions = LayoutOptions.Start, BackgroundColor = Color.Yellow };
+                sector_tag_Label.SetBinding(Label.TextProperty, "sector_tag");
+
+                Label sector_Label = new Label { HorizontalOptions = LayoutOptions.Start, VerticalOptions = LayoutOptions.Start, BackgroundColor = Color.Yellow };
+                sector_Label.SetBinding(Label.TextProperty, "sector");
+
+                StackLayout stack = new StackLayout {Padding = 10, Margin = new Thickness(30,10,30,0), 
+                    Children = {
+                       sector_tag_Label,
+                       sector_Label
+                    }
+                };
+                
+                
+
+                return stack;
+            });
+
+            refreshView.Content = collectionView;
         }
     }
 }

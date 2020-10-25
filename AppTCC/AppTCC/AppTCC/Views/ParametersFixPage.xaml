@@ -22,7 +22,7 @@
                         <Entry x:Name="maxEntry" Text="{Binding Max, Mode=TwoWay}" FontSize="Medium" BackgroundColor="DarkOrange"/>
                     </Frame>
                     <StackLayout  VerticalOptions="Center">
-                        <Button VerticalOptions="Center" Text="ENVIAR" Command="{Binding ParamCommand}" FontSize="Large"/>
+                        <Button VerticalOptions="Center" Text="ENVIAR" Command="{Binding ParamCommand}" FontSize="Large" FontAttributes="Bold"/>
                     </StackLayout>
                 </StackLayout>
             </Frame>

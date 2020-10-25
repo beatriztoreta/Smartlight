@@ -86,7 +86,6 @@ namespace AppTCC.ViewModels
             }
             else
                 CrossToastPopUp.Current.ShowToastMessage("Preencha os campos!", ToastLength.Long);
-
         }
 
         public ObservableCollection<Obj_Sector> Sec { get; set; }

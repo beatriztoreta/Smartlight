@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
              x:Class="AppTCC.Views.GraphicsFinanPage">
 
     <ScrollView>
@@ -12,14 +13,8 @@
             </Frame>
             <Label Text="Economia Estimada" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center"/>
             <Label Text="R$ 4.251,00" FontSize="40" BackgroundColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="0,50,0,50" Margin="20" TextColor="Black"/>
-            <Label Text="Status Semanal" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center"/>
             <Frame BackgroundColor="#000000" BorderColor="Orange" Margin="20">
-                <StackLayout>
-                    <Label Text="Período Ativo  10 h 18 min" FontSize="Large" TextColor="White" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-                    <Label Text="Apagado    5 h 18 min" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="OrangeRed"/>
-                    <Label Text="Intensidade Mínima 3 h" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="Orange"/>
-                    <Label Text="Intensidade Máxima 2 h" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="Yellow"/>
-                </StackLayout>
+                <forms:ChartView x:Name="Grafico" HeightRequest="200"/>
             </Frame>
         </StackLayout>
     </ScrollView>

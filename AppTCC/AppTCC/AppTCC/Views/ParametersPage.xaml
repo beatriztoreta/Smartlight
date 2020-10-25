@@ -23,17 +23,29 @@
             </Frame>
             <Label Text="Clique em um setor para ajustar" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
 
-            <RefreshView x:DataType="local:ParamViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
-                <CollectionView ItemsSource="{Binding Sec, Mode=TwoWay}" SelectionMode="None">
+            <RefreshView x:Name="refreshView" x:DataType="local:ParamViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+                <CollectionView x:Name="collectionView" x:DataType="local:ParamViewModel" ItemsSource="{Binding Sec, Mode=TwoWay}" SelectionMode="None">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout x:Name="stack" Padding="10" x:DataType="model:Obj_Sector" Margin="30,10,30,0" BackgroundColor="Yellow">
+                                
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+
+            <!--<RefreshView x:Name="refreshView" x:DataType="local:ParamViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+                <CollectionView x:Name="collectionView" x:DataType="local:ParamViewModel" ItemsSource="{Binding Sec, Mode=TwoWay}" SelectionMode="None">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout Padding="10" x:DataType="model:Obj_Sector" Margin="30,10,30,0" BackgroundColor="Yellow">
-                                <!--<Label Text="{Binding sector_tag, Mode=TwoWay}" LineBreakMode="NoWrap" FontSize="Title" TextColor="Black" 
+                                <Label Text="{Binding sector_tag, Mode=TwoWay}" LineBreakMode="NoWrap" FontSize="Title" TextColor="Black" 
                                        HorizontalTextAlignment="Start" VerticalTextAlignment="Start">
                                     <Label.GestureRecognizers>
                                         <TapGestureRecognizer Tapped="Section_Tapped"/>
                                     </Label.GestureRecognizers>
-                                </Label>-->
+                                </Label>
                                 <Label Text="{Binding sector, Mode=TwoWay}" LineBreakMode="NoWrap" FontSize="Title" TextColor="Black" 
                                        HorizontalTextAlignment="Start" VerticalTextAlignment="Start">
                                     <Label.GestureRecognizers>
@@ -44,7 +56,7 @@
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
-            </RefreshView>
+            </RefreshView>-->
 
         </StackLayout>
     </ScrollView>

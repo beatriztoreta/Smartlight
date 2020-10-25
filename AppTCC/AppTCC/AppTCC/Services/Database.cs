@@ -27,5 +27,10 @@ namespace AppTCC
             return _database.InsertAsync(person);
         }
 
+        /*public async Task<int> DeleteItemAsync(int id)
+        {
+            return _database.Table<int>().DeleteAsync(id);
+        }*/
+
     }
 }

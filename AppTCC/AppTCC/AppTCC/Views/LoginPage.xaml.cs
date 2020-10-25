@@ -29,6 +29,8 @@ namespace AppTCC.Views
             InitializeComponent();
             this.BindingContext = new LoginViewModel();
             Items = new ObservableCollection<Person>();
+
+            //await App.Database.SavePersonAsync;
         }
         
         async void UserBackup()
@@ -73,20 +75,6 @@ namespace AppTCC.Views
 
         async void OnLoginClicked(object sender, EventArgs e)
         {
-            await App.Database.SavePersonAsync(new Person
-            {
-                _id = Guid.NewGuid().ToString(),
-                user = "teste",
-                password = "teste"
-            });
-
-            await App.Database.SavePersonAsync(new Person
-            {
-                _id = Guid.NewGuid().ToString(),
-                user = "pops",
-                password = "popoya"
-            });
-
             aux = false;
 
             if (!string.IsNullOrWhiteSpace(userEntry.Text) && !string.IsNullOrWhiteSpace(passwordEntry.Text))
@@ -102,6 +90,8 @@ namespace AppTCC.Views
                         CrossToastPopUp.Current.ShowToastMessage("Login efetuado com sucesso!", ToastLength.Long);
 
                         await Navigation.PushAsync(new AboutPage());
+                        
+                        break;
                     }
                 }
                 if (aux == false)

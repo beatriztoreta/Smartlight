@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using AppTCC.Models;
+using Plugin.Toast;
+using Plugin.Toast.Abstractions;
 
 namespace AppTCC.Views
 {
