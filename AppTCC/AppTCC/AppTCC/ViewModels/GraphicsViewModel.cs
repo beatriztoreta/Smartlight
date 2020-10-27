@@ -28,26 +28,36 @@ namespace AppTCC.ViewModels
                 
         public GraphicsViewModel()
         {
-            BarrasCommand = new Command(async () => await ExecuteLoadItemsCommand());
-            PizzaCommand = new Command(async () => await ExecuteLoadItemsCommand());
-            
+            BarrasCommand = new Command(async () => await ExecuteLoadBarrasCommand());
+            PizzaCommand = new Command(async () => await ExecuteLoadPizzaCommand());
         }
         
-        public ObservableCollection<Graphics_Data> Barras { get; set; }
-       
-        async Task ExecuteLoadItemsCommand()
+        public Graphics_Data Barras { get; set; }
+
+        public Graphics_Data Pizza { get; set; }
+
+        public async Task ExecuteLoadBarrasCommand()
         {
             IsBusy = true;
             
             try
             {
-                Barras.Clear();
-
-                Graphics_Data item = await Data_Graphics_Store.GetItemAsync("proto");
-
-                Barras.Add(item);
-
+                int min = 0;
+                int max = 0;
                 
+                Barras = new Graphics_Data();
+                
+                var items = await Data_Graphics_Store.GetItemAsync("proto");
+                
+                foreach (var item in (items as Graph_aux).aux)
+                {
+                    min += item.min;
+                    max += item.max;
+                }
+
+                Barras.max = max;
+                Barras.min = min;
+
             }
             catch (Exception ex)
             {
@@ -57,6 +67,44 @@ namespace AppTCC.ViewModels
             {
                 IsBusy = false;
             }
+        }
+
+        public async Task ExecuteLoadPizzaCommand()
+        {
+            IsBusy = true;
+
+            try
+            {
+                int min = 0;
+                int max = 0;
+
+                Pizza = new Graphics_Data();
+
+                var items = await Data_Graphics_Store.GetItemAsync("proto");
+
+                foreach (var item in (items as Graph_aux).aux)
+                {
+                    min += item.min;
+                    max += item.max;
+                }
+
+                Pizza.max = max;
+                Pizza.min = min;
+
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+
+        public void OnAppearing()
+        {
+            IsBusy = true;
         }
 
     }

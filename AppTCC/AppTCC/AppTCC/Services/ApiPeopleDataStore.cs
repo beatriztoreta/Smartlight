@@ -67,6 +67,19 @@ namespace AppTCC.Services
             return lista;
         }
 
+        public async Task<IEnumerable<Person>> GetItemsAsync(string id)
+        {
+            List<Person> lista = new List<Person>();
+            var resposta = await MobileHelper.CallApi(HttpMethod.Get, API_PESSOAS);
+            if (resposta.IsSuccessStatusCode)
+            {
+                var content = await resposta.Content.ReadAsStringAsync();
+                var retorno = JsonConvert.DeserializeObject<List<Person>>(content);
+                lista.AddRange(retorno);
+            }
+            return lista;
+        }
+
         public async Task<bool> UpdateItemAsync(Person item)
         {
             var retorno = await MobileHelper.CallApi(HttpMethod.Put, $"{API_PESSOAS}/{item._id}", item);

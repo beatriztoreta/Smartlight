@@ -9,29 +9,29 @@ using System.Threading.Tasks;
 
 namespace AppTCC.Services
 {
-    class ApiGraphicsDataStore : IDataStore<Graphics_Data>
+    class ApiGraphicsDataStore : IDataStore<Graph_aux>
     {
         private const string API_BASE_URL = "http://54.157.172.217:6042/";
-        private const string API_PROTO = "entities";
+        private const string API_PROTO = "entities/proto/time_data/algumacoisa";
         
         public ApiGraphicsDataStore()
         {
             MobileHelper.SetApiUrl(API_BASE_URL);
         }
 
-        public async Task<Graphics_Data> AddItemRetAsync(Graphics_Data item)
+        public async Task<Graph_aux> AddItemRetAsync(Graph_aux item)
         {
-            Graphics_Data retorno = null;
+            Graph_aux retorno = null;
             var resposta = await MobileHelper.CallApi(HttpMethod.Post, API_PROTO, item);
             if (resposta.IsSuccessStatusCode)
             {
                 var content = await resposta.Content.ReadAsStringAsync();
-                retorno = JsonConvert.DeserializeObject<Graphics_Data>(content);
+                retorno = JsonConvert.DeserializeObject<Graph_aux>(content);
             }
             return retorno;
         }
 
-        public async Task<bool> AddItemAsync(Graphics_Data item)
+        public async Task<bool> AddItemAsync(Graph_aux item)
         {
             var retorno = await MobileHelper.CallApi(HttpMethod.Post, API_PROTO, item);
             return retorno.IsSuccessStatusCode;
@@ -43,32 +43,46 @@ namespace AppTCC.Services
             return retorno.IsSuccessStatusCode;
         }
 
-        public async Task<Graphics_Data> GetItemAsync(string id)
+        public async Task<Graph_aux> GetItemAsync(string id)
         {
-            Graphics_Data retorno = null;
-            var resposta = await MobileHelper.CallApi(HttpMethod.Get, $"{API_PROTO}/{id}");
+            Graph_aux retorno = null;
+            var resposta = await MobileHelper.CallApi(HttpMethod.Get, $"{API_PROTO}");
             if (resposta.IsSuccessStatusCode)
             {
                 var content = await resposta.Content.ReadAsStringAsync();
-                retorno = JsonConvert.DeserializeObject<Graphics_Data>(content);
+                retorno = JsonConvert.DeserializeObject<Graph_aux>(content);
             }
             return retorno;
         }
 
-        public async Task<IEnumerable<Graphics_Data>> GetItemsAsync()
+        public async Task<IEnumerable<Graph_aux>> GetItemsAsync()
         {
-            List<Graphics_Data> lista = new List<Graphics_Data>();
+            List<Graph_aux> lista = new List<Graph_aux>();
             var resposta = await MobileHelper.CallApi(HttpMethod.Get, API_PROTO);
             if (resposta.IsSuccessStatusCode)
             {
                 var content = await resposta.Content.ReadAsStringAsync();
-                var retorno = JsonConvert.DeserializeObject<List<Graphics_Data>>(content);
+                var retorno = JsonConvert.DeserializeObject<List<Graph_aux>>(content);
+                lista.AddRange(retorno);
+            }
+            return lista;
+        }
+        
+        public async Task<IEnumerable<Graph_aux>> GetItemsAsync(string id)
+        {
+            List<Graph_aux> lista = new List<Graph_aux>();
+            var resposta = await MobileHelper.CallApi(HttpMethod.Get, API_PROTO);
+            if (resposta.IsSuccessStatusCode)
+            {
+                var content = await resposta.Content.ReadAsStringAsync();
+                var retorno = JsonConvert.DeserializeObject<List<Graph_aux>>(content);
                 lista.AddRange(retorno);
             }
             return lista;
         }
 
-        public async Task<bool> UpdateItemAsync(Graphics_Data item)
+
+        public async Task<bool> UpdateItemAsync(Graph_aux item)
         {
             var retorno = await MobileHelper.CallApi(HttpMethod.Put, $"{API_PROTO}", item);
             return retorno.IsSuccessStatusCode;

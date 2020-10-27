@@ -49,6 +49,13 @@ namespace AppTCC.Models
         public List<Info> power { get; set; }
     }
 
+    public class List_Sec 
+    {
+        public int sector_tag { get; set; }
+
+        public string sector { get; set; }
+    }
+
     [Table("tb_sensors")]
     public class Info_sensor
     {
@@ -85,5 +92,11 @@ namespace AppTCC.Models
 
         [JsonProperty("timestamp")]
         public long timestamp { get; set; }
+    }
+
+    public class Graph_aux
+    {
+        [JsonProperty("time_data")]
+        public List<Graphics_Data> aux { get; set; }    
     }
 }

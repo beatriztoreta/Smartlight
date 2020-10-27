@@ -11,19 +11,12 @@
                     <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
                 </ContentView>
             </Frame>
-            <Label Text="Status Semanal" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center"/>
-            <Frame BackgroundColor="#000000" BorderColor="Orange" Margin="20">
-                <StackLayout>
-                    <Label Text="Período Ativo  10 h 18 min" FontSize="Large" TextColor="White" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
-                    <Label Text="Apagado    5 h 18 min" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="OrangeRed"/>
-                    <Label Text="Intensidade Mínima 3 h" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="Orange"/>
-                    <Label Text="Intensidade Máxima 2 h" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" BackgroundColor="Yellow"/>
-                </StackLayout>
-            </Frame>
-            <Label Text="Eficiência Estimada" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center"/>
-            <StackLayout BindingContext="BarrasCommand">
-                <forms:ChartView x:Name="Grafico" HeightRequest="300" BindingContext="Barras"/>
-            </StackLayout>
+            <Label Text="Status Semanal" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center" Margin="10"/>
+
+            <Label x:Name="label" FontSize="Medium" TextColor="Orange" HorizontalTextAlignment="Center"/>
+
+            <forms:ChartView x:Name="Grafico" HeightRequest="300" WidthRequest="100"/>
+            
             <StackLayout  VerticalOptions="Center">
                 <Button VerticalOptions="Center" Text="Análise Financeira" TextColor="Black" Clicked="OnFinanClicked" FontSize="Large" BackgroundColor="Orange" Margin="20"/>
             </StackLayout>

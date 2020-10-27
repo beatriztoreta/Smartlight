@@ -37,10 +37,9 @@ namespace AppTCC.ViewModels
 
         public ParamViewModel()
         {
-            source = new List<Obj_Sector>();
-            
-            Sec = new ObservableCollection<Obj_Sector>();
-            LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
+            source = new List<List_Sec>();
+            Sec = new ObservableCollection<List_Sec>();
+            LoadItemsCommand = new Command(async () => ExecuteLoadItemsCommand());
 
             ParamCommand = new Command(OnSend);
 
@@ -88,7 +87,7 @@ namespace AppTCC.ViewModels
                 CrossToastPopUp.Current.ShowToastMessage("Preencha os campos!", ToastLength.Long);
         }
 
-        public ObservableCollection<Obj_Sector> Sec { get; set; }
+        public ObservableCollection<List_Sec> Sec { get; set; }
         public Command LoadItemsCommand { get; }
         
         public void OnAppearing()
@@ -96,9 +95,9 @@ namespace AppTCC.ViewModels
             IsBusy = true;
         }
 
-        readonly IList<Obj_Sector> source;
+        public List<List_Sec> source;
 
-        async Task ExecuteLoadItemsCommand()
+        async void ExecuteLoadItemsCommand()
         {
             IsBusy = true;
             
@@ -107,28 +106,17 @@ namespace AppTCC.ViewModels
                 Sec.Clear();
 
                 Entity item = await Data_Entities_Store.GetItemAsync("proto");
-                List<bool> st;
-                List<Info_sensor> sens;
-                List<Info> pow;
-                
+                                
                 foreach (var sec in item.sectors)
                 {
-                    st = sec.status;
-                    sens = sec.sensors;
-                    pow = sec.power;
-                    source.Add(new Obj_Sector
+                    source.Add(new List_Sec
                     {
                         sector_tag = sec.sector_tag,
                         sector = sec.sector,
-                        status = st,
-                        max_intensity = sec.max_intensity,
-                        min_intensity = sec.min_intensity,
-                        sensors = sens,
-                        power = pow
                     });
                 }
                 
-                Sec = new ObservableCollection<Obj_Sector>(source);
+                Sec = new ObservableCollection<List_Sec>(source);
             }
             catch (Exception ex)
             {
@@ -140,5 +128,6 @@ namespace AppTCC.ViewModels
             }
         }
 
+        
     }
 }

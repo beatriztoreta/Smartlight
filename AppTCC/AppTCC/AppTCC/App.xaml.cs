@@ -5,6 +5,8 @@ using Xamarin.Forms.Xaml;
 using AppTCC.Views;
 using AppTCC.ViewModels;
 using AppTCC.Services;
+using Xamarin.Forms.Internals;
+using System.Diagnostics;
 
 namespace AppTCC
 {
@@ -26,6 +28,8 @@ namespace AppTCC
         public App()
         {
             InitializeComponent();
+
+            Xamarin.Forms.Internals.Log.Listeners.Add(new DelegateLogListener((arg1, arg2) => Debug.WriteLine(arg2)));
 
             DependencyService.Register<ApiPeopleDataStore>();
             DependencyService.Register<ApiEntitiesDataStore>();

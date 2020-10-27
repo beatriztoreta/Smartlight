@@ -64,5 +64,10 @@ namespace AppTCC.Services
         {
             return await Task.FromResult(items);
         }
+
+        public async Task<IEnumerable<Person>> GetItemsAsync(string id)
+        {
+            return await Task.FromResult(items);
+        }
     }
 }

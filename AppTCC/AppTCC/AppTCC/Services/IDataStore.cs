@@ -16,5 +16,7 @@ namespace AppTCC.Services
 
         Task<T> AddItemRetAsync(T item);
 
+        Task<IEnumerable<T>> GetItemsAsync(string id);
+
     }
 }
