@@ -18,7 +18,9 @@ namespace AppTCC.Views
     {
         List<Microcharts.ChartEntry> entries;
 
-        Graphics_Data gra;
+        float gra;
+
+        double f;
 
         GraphicsViewModel _viewModel;
 
@@ -35,41 +37,32 @@ namespace AppTCC.Views
             _viewModel.OnAppearing();
 
             await _viewModel.ExecuteLoadPizzaCommand();
+            await _viewModel.ExecuteLoadFinanCommand();
 
             gra = _viewModel.Pizza;
-            float max = (float)(gra.max / 3600.0);
-            float min = (float)(gra.min / 3600.0);
-            float ligado = (float)(max + min);
-            DateTime agora = DateTime.Now;
-            DateTime tempo = new DateTime(agora.Year, agora.Month, 1);
+            f = _viewModel.fin;
 
-            float desligado = (float)(agora - tempo).TotalHours - ligado;
+            float economia = 100 - gra;
 
             entries = new List<Microcharts.ChartEntry>
             {
-                new Microcharts.ChartEntry(max)
+                new Microcharts.ChartEntry(economia)
                 {
-                    Label = "Horas em intensidade máxima",
-                    ValueLabel = max.ToString(),
-                    Color = SKColor.Parse("#266489")
+                    Label = "Economia estimada",
+                    ValueLabel = economia.ToString(),
+                    Color = SKColor.Parse("#F5790B")
                 },
-                new Microcharts.ChartEntry(min)
+                new Microcharts.ChartEntry(gra)
                 {
-                    Label = "Horas em intensidade mínima",
-                    ValueLabel = min.ToString(),
-                    Color = SKColor.Parse("#68B9C0")
-                },
-                new Microcharts.ChartEntry(desligado)
-                {
-                    Label = "Total de horas desligado",
-                    ValueLabel = desligado.ToString(),
-                    Color = SKColor.Parse("#90D585")
+                    Label = "Consumo estimado",
+                    ValueLabel = gra.ToString(),
+                    Color = SKColor.Parse("#666666")
                 }
             };
 
             Grafico.Chart = new Microcharts.DonutChart() { Entries = entries };
 
-            economia_label.Text = "teste";
+            economia_label.Text = f.ToString("C");
         }
     }
 }

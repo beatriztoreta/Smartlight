@@ -99,4 +99,31 @@ namespace AppTCC.Models
         [JsonProperty("time_data")]
         public List<Graphics_Data> aux { get; set; }    
     }
+
+    public class Graph_Entity
+    {
+        [JsonProperty("sectors")]
+        public List<Graph_Sector> gra_sec { get; set; }
+    }
+
+    public class Graph_Sector
+    {
+        [JsonProperty("time_data")]
+        public List<Graphics_Data> gra_data { get; set; }
+
+        [JsonProperty("min_intensity")]
+        public int min_intensity { get; set; }
+
+        [JsonProperty("max_intensity")]
+        public int max_intensity { get; set; }
+    }
+
+    public class Graph_Finan
+    {
+        [JsonProperty("kwh_cost")]
+        public double kwh_cost { get; set; }
+
+        [JsonProperty("power")]
+        public List<Info> power { get; set; }
+    }
 }

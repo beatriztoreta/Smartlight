@@ -59,19 +59,19 @@ namespace AppTCC.Views
                 {
                     Label = "Horas em intensidade máxima",
                     ValueLabel = max.ToString(),
-                    Color = SKColor.Parse("#266489")
+                    Color = SKColor.Parse("#F5790B")
                 },
                 new Microcharts.ChartEntry(min)
                 {
                     Label = "Horas em intensidade mínima",
                     ValueLabel = min.ToString(),
-                    Color = SKColor.Parse("#68B9C0")
+                    Color = SKColor.Parse("#FEFA59")
                 },
                 new Microcharts.ChartEntry(desligado)
                 {
                     Label = "Total de horas desligado",
                     ValueLabel = desligado.ToString(),
-                    Color = SKColor.Parse("#90D585")
+                    Color = SKColor.Parse("#666666")
                 }
             };
 

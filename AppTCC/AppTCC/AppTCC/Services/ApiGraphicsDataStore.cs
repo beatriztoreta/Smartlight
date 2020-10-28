@@ -12,7 +12,7 @@ namespace AppTCC.Services
     class ApiGraphicsDataStore : IDataStore<Graph_aux>
     {
         private const string API_BASE_URL = "http://54.157.172.217:6042/";
-        private const string API_PROTO = "entities/proto/time_data/algumacoisa";
+        private const string API_PROTO = "entities/proto/time_data/week";
         
         public ApiGraphicsDataStore()
         {
