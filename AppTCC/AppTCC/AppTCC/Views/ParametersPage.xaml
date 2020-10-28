@@ -4,10 +4,11 @@
              xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
              x:Class="AppTCC.Views.ParametersPage"
              xmlns:local="clr-namespace:AppTCC.ViewModels"  
-             xmlns:model="clr-namespace:AppTCC.Models">
+             xmlns:model="clr-namespace:AppTCC.Models"
+             xmlns:local1="clr-namespace:AppTCC.Views">
 
-    <ScrollView>
-        <StackLayout BackgroundColor="#000000">
+    <ScrollView BackgroundColor="#000000">
+        <StackLayout>
             <Frame BackgroundColor="#000000">
                 <ContentView VerticalOptions="FillAndExpand">
                     <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
@@ -16,11 +17,54 @@
             <Label Text="Parametrização" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center" Margin="10"/>
             
             <Label x:Name="label" FontSize="Medium" TextColor="Orange" HorizontalTextAlignment="Center"/>
-            <forms:ChartView x:Name="Grafico" HeightRequest="300" WidthRequest="100"/>
+            <forms:ChartView x:Name="Grafico" HeightRequest="300" WidthRequest="100" BackgroundColor="Black"/>
             
             <Label Text="Clique em um setor para ajustar" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
 
-            <!--<RefreshView x:Name="refreshView" x:DataType="local:ParamViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}"/>-->
+            <!--<ListView x:Name="listView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <local1:CustomCell Sector_Tag="{Binding Sector_Tag}" Sector="{Binding Sector}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+            <ListView x:Name="listview" x:DataType="local:ParamViewModel" ItemsSource="{Binding Sec}" ItemTapped="OnListViewItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                                             
+                        <ViewCell x:DataType="model:List_Sec">
+                            <StackLayout BackgroundColor="#eee" Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding sector_tag}" />
+                                    <Label Text="{Binding sector}" TextColor="#f35e20" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+            
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding sector_tag}" FontAttributes="Bold" />
+                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding sector}" VerticalOptions="End" />
+                            </Grid>
+                        </ViewCell>
+
+                        <TextCell Text="{Binding sector_tag}" TextColor="White"/>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+
+            <!--<RefreshView x:Name="refreshView" x:DataType="local:ParamViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}"/>
 
             <RefreshView x:Name="refreshView" x:DataType="local:ParamViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
                 <CollectionView x:Name="collectionView" x:DataType="local:ParamViewModel" ItemsSource="{Binding Sec}" SelectionMode="None">
@@ -43,7 +87,7 @@
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
-            </RefreshView>
+            </RefreshView> -->
 
         </StackLayout>
     </ScrollView>

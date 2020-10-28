@@ -38,9 +38,12 @@ namespace AppTCC.Views
             await Navigation.PushAsync(new ParametersFixPage(Convert.ToInt32(label.Text)));
         }
 
+        public IList<List_Sec> sectors_lista { get; private set; }
+
+
         protected override async void OnAppearing()
         {
-            
+            this.BindingContext = _viewModel = new ParamViewModel();
             base.OnAppearing();
             _viewModel.OnAppearing();
 
@@ -81,6 +84,69 @@ namespace AppTCC.Views
             label.Text = "O Smart Light ficou ligado por " + ligado.ToString() + " horas";
 
             Grafico.Chart = new Microcharts.BarChart() { Entries = entries };
+
+            BindingContext = this;
+
+            sectors_lista = new List<List_Sec>();
+
+            await _viewModel.ExecuteLoadItemsCommand();
+
+            sectors_lista = _viewModel.source;
+
+            var customCell = new DataTemplate(typeof(CustomCell));
+            customCell.SetBinding(CustomCell.Sector_Tag_Property, "Sector_Tag");
+            customCell.SetBinding(CustomCell.Sector_Property, "Sector");
+     
+            var listView = new ListView
+            {
+                ItemsSource = sectors_lista,
+                ItemTemplate = customCell
+            };
+
+
+        }
+
+        private async void OnListViewItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var label = (sender as Label);
+
+            await Navigation.PushAsync(new ParametersFixPage(Convert.ToInt32(label.Text)));
+        }
+    }
+
+
+
+
+
+
+    public class CustomCell : ViewCell
+    {
+        Label sector_tag_Label, sector_Label;
+
+        public static readonly BindableProperty Sector_Tag_Property = BindableProperty.Create("Sector_Tag", typeof(int), typeof(CustomCell), 0);
+        public static readonly BindableProperty Sector_Property = BindableProperty.Create("Sector", typeof(string), typeof(CustomCell), "Sector");
+
+        public int Sector_Tag
+        {
+            get { return (int)GetValue(Sector_Tag_Property); }
+            set { SetValue(Sector_Tag_Property, value); }
+        }
+
+        public string Sector
+        {
+            get { return (string)GetValue(Sector_Property); }
+            set { SetValue(Sector_Property, value); }
+        }
+
+        protected override void OnBindingContextChanged()
+        {
+            base.OnBindingContextChanged();
+
+            if (BindingContext != null)
+            {
+                sector_tag_Label.Text = Sector_Tag.ToString();
+                sector_Label.Text = Sector;
+            }
         }
     }
 }

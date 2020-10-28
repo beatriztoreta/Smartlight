@@ -39,12 +39,11 @@ namespace AppTCC.ViewModels
         {
             source = new List<List_Sec>();
             Sec = new ObservableCollection<List_Sec>();
-            LoadItemsCommand = new Command(async () => ExecuteLoadItemsCommand());
+            LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
             ParamCommand = new Command(OnSend);
 
             this.PropertyChanged += (_, __) => ParamCommand.ChangeCanExecute();
-        
         }
 
         private bool ValidateSave()
@@ -97,7 +96,7 @@ namespace AppTCC.ViewModels
 
         public List<List_Sec> source;
 
-        async void ExecuteLoadItemsCommand()
+        public async Task ExecuteLoadItemsCommand()
         {
             IsBusy = true;
             
