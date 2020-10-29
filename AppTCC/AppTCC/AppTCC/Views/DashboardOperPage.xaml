@@ -17,8 +17,10 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="40"/>
                 </Grid.RowDefinitions>
 
                 <Image Grid.Row="0" Grid.Column="0" Source="monitor.png" BackgroundColor="Yellow">
@@ -26,11 +28,13 @@
                         <TapGestureRecognizer Tapped="Monitors_Tapped"/>
                     </Image.GestureRecognizers>
                 </Image>
-                <Image Grid.Row="1" Grid.Column="0" Source="parametros.png" BackgroundColor="Orange">
+                <Label Grid.Row="1" Grid.Column="0" Text="Monitoramento" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Yellow" FontAttributes="Bold"/>
+                <Image Grid.Row="2" Grid.Column="0" Source="parametros.png" BackgroundColor="Orange">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="Parameters_Tapped"/>
                     </Image.GestureRecognizers>
                 </Image>
+                <Label Grid.Row="3" Grid.Column="0" Text="Parâmetros" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Orange" FontAttributes="Bold"/>
             </Grid>
         </StackLayout>
     </ScrollView>

@@ -14,20 +14,20 @@
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
-        <ScrollView>
+        <ScrollView BackgroundColor="#000000">
             <StackLayout>
                 <Frame BackgroundColor="#000000">
                     <ContentView VerticalOptions="FillAndExpand">
                         <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
                     </ContentView>
                 </Frame>
-                <StackLayout Padding="50">
-                    <Label Text="Usuário" FontSize="Large" />
-                    <Entry x:Name="userEntry" Text="{Binding User, Mode=TwoWay}" FontSize="Large"/>
-                    <Label Text="Senha" FontSize="Large" />
-                    <Entry x:Name="passwordEntry" Text="{Binding Password, Mode=TwoWay}" FontSize="Large" IsPassword="true" />
-                    <StackLayout  VerticalOptions="Center">
-                        <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}" FontSize="Large"/>
+                <StackLayout Padding="50" BackgroundColor="#000000">
+                    <Label Text="Usuário" FontSize="Large" TextColor="White"/>
+                    <Entry x:Name="userEntry" Text="{Binding User, Mode=TwoWay}" FontSize="Large" TextColor="White" BackgroundColor="Orange"/>
+                    <Label Text="Senha" FontSize="Large" TextColor="White"/>
+                    <Entry x:Name="passwordEntry" Text="{Binding Password, Mode=TwoWay}" FontSize="Large" IsPassword="true" TextColor="White" BackgroundColor="Orange"/>
+                    <StackLayout  VerticalOptions="Center" Padding="0,20,0,20">
+                        <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}" FontSize="Large" BackgroundColor="Yellow" TextColor="Black"/>
                         <!--<Button VerticalOptions="Center" Text="Login" Clicked="OnLoginClicked" FontSize="Large"/>-->
                     </StackLayout>
                 </StackLayout>

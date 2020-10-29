@@ -50,17 +50,20 @@ namespace AppTCC.Views
                 {
                     Label = "Economia estimada",
                     ValueLabel = economia.ToString(),
+                    TextColor = SKColor.Parse("#FFFFFF"),
                     Color = SKColor.Parse("#F5790B")
                 },
                 new Microcharts.ChartEntry(gra)
                 {
                     Label = "Consumo estimado",
                     ValueLabel = gra.ToString(),
+                    TextColor = SKColor.Parse("#FFFFFF"),
                     Color = SKColor.Parse("#666666")
                 }
             };
 
             Grafico.Chart = new Microcharts.DonutChart() { Entries = entries };
+            Grafico.Chart.BackgroundColor = SKColor.Parse("#000000");
 
             economia_label.Text = f.ToString("C");
         }

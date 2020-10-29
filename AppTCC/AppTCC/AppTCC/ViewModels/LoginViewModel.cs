@@ -69,7 +69,7 @@ namespace AppTCC.ViewModels
                         CrossToastPopUp.Current.ShowToastMessage("Login efetuado com sucesso!", ToastLength.Long);
                         await Shell.Current.GoToAsync("//DashboardPage");
                     }
-                    else if (pessoa.permission == "oper")
+                    else
                     {
                         CrossToastPopUp.Current.ShowToastMessage("Login efetuado com sucesso!", ToastLength.Long);
                         await Shell.Current.GoToAsync("//DashboardOperPage");

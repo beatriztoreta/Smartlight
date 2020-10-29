@@ -21,6 +21,21 @@
             
             <Label Text="Clique em um setor para ajustar" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
 
+            <Frame BackgroundColor="Orange" Margin="30,10,30,0">
+                <Label Text="Setor 1" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Section_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Frame>
+            <Frame BackgroundColor="Orange" Margin="30,10,30,0">
+                <Label Text="Setor 2" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Section_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Frame>
+
             <!--<ListView x:Name="listView">
                 <ListView.ItemTemplate>
                     <DataTemplate>

@@ -12,7 +12,7 @@
                 </ContentView>
             </Frame>
             <Label Text="Economia Mensal Estimada" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center"/>
-            <Label x:Name="economia_label" FontSize="40" BackgroundColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="0,50,0,50" Margin="20" TextColor="Black"/>
+            <Label x:Name="economia_label" FontSize="30" BackgroundColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="0,30,0,30" Margin="20" TextColor="Black"/>
             <Label Text="Eficiência Mensal Estimada" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center"/>
             <forms:ChartView x:Name="Grafico" HeightRequest="300" BackgroundColor="Black"/>
         </StackLayout>

@@ -34,8 +34,9 @@ namespace AppTCC.Views
         private async void Section_Tapped(object sender, System.EventArgs e)
         {
             var label = (sender as Label);
+            string text = label.Text.Remove(0, 6);
 
-            await Navigation.PushAsync(new ParametersFixPage(Convert.ToInt32(label.Text)));
+            await Navigation.PushAsync(new ParametersFixPage(Convert.ToInt32(text)));
         }
 
         public IList<List_Sec> sectors_lista { get; private set; }
@@ -65,25 +66,29 @@ namespace AppTCC.Views
                 {
                     Label = "Horas em intensidade máxima",
                     ValueLabel = max.ToString(),
-                    Color = SKColor.Parse("#F5790B")
+                    TextColor = SKColor.Parse("#FFFFFF"),
+                    Color = SKColor.Parse("#F5790B")                    
                 },
                 new Microcharts.ChartEntry(min)
                 {
                     Label = "Horas em intensidade mínima",
                     ValueLabel = min.ToString(),
+                    TextColor = SKColor.Parse("#FFFFFF"),
                     Color = SKColor.Parse("#FEFA59")
                 },
                 new Microcharts.ChartEntry(desligado)
                 {
                     Label = "Total de horas desligado",
                     ValueLabel = desligado.ToString(),
+                    TextColor = SKColor.Parse("#FFFFFF"),
                     Color = SKColor.Parse("#666666")
                 }
             };
 
             label.Text = "O Smart Light ficou ligado por " + ligado.ToString() + " horas";
-
+            
             Grafico.Chart = new Microcharts.BarChart() { Entries = entries };
+            Grafico.Chart.BackgroundColor = SKColor.Parse("#000000");
 
             BindingContext = this;
 

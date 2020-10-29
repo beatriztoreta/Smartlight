@@ -59,18 +59,21 @@ namespace AppTCC.Views
                 {
                     Label = "Horas em intensidade máxima",
                     ValueLabel = max.ToString(),
+                    TextColor = SKColor.Parse("#FFFFFF"),
                     Color = SKColor.Parse("#F5790B")
                 },
                 new Microcharts.ChartEntry(min)
                 {
                     Label = "Horas em intensidade mínima",
                     ValueLabel = min.ToString(),
+                    TextColor = SKColor.Parse("#FFFFFF"),
                     Color = SKColor.Parse("#FEFA59")
                 },
                 new Microcharts.ChartEntry(desligado)
                 {
                     Label = "Total de horas desligado",
                     ValueLabel = desligado.ToString(),
+                    TextColor = SKColor.Parse("#FFFFFF"),
                     Color = SKColor.Parse("#666666")
                 }
             };
@@ -78,6 +81,7 @@ namespace AppTCC.Views
             label.Text = "O Smart Light ficou ligado por " + ligado.ToString() + " horas";
             
             Grafico.Chart = new Microcharts.BarChart() { Entries = entries };
+            Grafico.Chart.BackgroundColor = SKColor.Parse("#000000");
         }
     }
 }
