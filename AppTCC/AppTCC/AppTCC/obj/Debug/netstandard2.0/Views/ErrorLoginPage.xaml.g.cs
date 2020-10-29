@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppTCC.Views.ErrorLoginPage.xaml", "Views/ErrorLoginPage.xaml", typeof(global::AppTCC.Views.ErrorLoginPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SmartLight.Views.ErrorLoginPage.xaml", "Views/ErrorLoginPage.xaml", typeof(global::AppTCC.Views.ErrorLoginPage))]
 
 namespace AppTCC.Views {
     

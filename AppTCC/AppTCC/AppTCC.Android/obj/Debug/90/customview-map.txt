@@ -31,7 +31,7 @@ FrameLayout;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\D
 item;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\lp\48\jl\res\values\styles.xml
 LinearLayout;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\lp\48\jl\res\layout\bottomtablayout.xml
 paths;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\lp\47\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
-resources;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\lp\3\jl\res\values\strings.xml
+resources;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\lp\2\jl\res\values\strings.xml
 resources;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\lp\48\jl\res\values\attrs.xml
 resources;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\lp\48\jl\res\values\strings.xml
 resources;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\lp\48\jl\res\values\styles.xml
@@ -41,7 +41,7 @@ set;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\
 set;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\lp\48\jl\res\anim\enterfromright.xml
 set;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\lp\48\jl\res\anim\exittoleft.xml
 set;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\lp\48\jl\res\anim\exittoright.xml
-string;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\lp\3\jl\res\values\strings.xml
+string;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\lp\2\jl\res\values\strings.xml
 string;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\lp\48\jl\res\values\strings.xml
 style;C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\lp\48\jl\res\values\styles.xml
 style;obj\Debug\90\res\values\styles.xml

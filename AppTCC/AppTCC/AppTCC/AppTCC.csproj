@@ -5,6 +5,8 @@
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
     <ApplicationIcon>slicon.ico</ApplicationIcon>
     <PackageIcon>slicon.png</PackageIcon>
+    <AssemblyName>SmartLight</AssemblyName>
+    <RootNamespace>SmartLight</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

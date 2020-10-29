@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppTCC.Views.GraphicsFinanPage.xaml", "Views/GraphicsFinanPage.xaml", typeof(global::AppTCC.Views.GraphicsFinanPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SmartLight.Views.GraphicsFinanPage.xaml", "Views/GraphicsFinanPage.xaml", typeof(global::AppTCC.Views.GraphicsFinanPage))]
 
 namespace AppTCC.Views {
     

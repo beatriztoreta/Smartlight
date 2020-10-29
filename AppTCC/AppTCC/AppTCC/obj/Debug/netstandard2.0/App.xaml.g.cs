@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppTCC.App.xaml", "App.xaml", typeof(global::AppTCC.App))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SmartLight.App.xaml", "App.xaml", typeof(global::AppTCC.App))]
 
 namespace AppTCC {
     

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppTCC.Views.ErrorConPage.xaml", "Views/ErrorConPage.xaml", typeof(global::AppTCC.Views.ErrorConPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SmartLight.Views.ErrorConPage.xaml", "Views/ErrorConPage.xaml", typeof(global::AppTCC.Views.ErrorConPage))]
 
 namespace AppTCC.Views {
     

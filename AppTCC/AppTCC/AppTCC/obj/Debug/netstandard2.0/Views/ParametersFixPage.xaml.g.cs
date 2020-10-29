@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppTCC.Views.ParametersFixPage.xaml", "Views/ParametersFixPage.xaml", typeof(global::AppTCC.Views.ParametersFixPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SmartLight.Views.ParametersFixPage.xaml", "Views/ParametersFixPage.xaml", typeof(global::AppTCC.Views.ParametersFixPage))]
 
 namespace AppTCC.Views {
     

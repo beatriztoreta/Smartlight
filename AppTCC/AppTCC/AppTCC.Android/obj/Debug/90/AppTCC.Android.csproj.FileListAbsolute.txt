@@ -471,8 +471,6 @@ C:\Users\beatr\Desktop\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\res\drawable\an
 C:\Users\beatr\Desktop\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\res\drawable\grafico.png
 C:\Users\beatr\Desktop\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\res\drawable\monitor.png
 C:\Users\beatr\Desktop\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\res\drawable\parametros.png
-C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\bin\Debug\AppTCC.dll
-C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\bin\Debug\AppTCC.pdb
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\build.props
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\adb.props
@@ -516,8 +514,6 @@ C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\res\
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\res\drawable\login.png
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\uploadflags.txt
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\resolvedassemblies.hash
-C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\android\assets\AppTCC.dll
-C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\android\assets\AppTCC.pdb
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\android\assets\FormsViewGroup.dll
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\android\assets\FormsViewGroup.pdb
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\android\assets\Java.Interop.dll
@@ -1055,3 +1051,7 @@ C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\res\
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\res\mipmap-xhdpi\slicon.png
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\res\mipmap-xxhdpi\slicon.png
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\res\mipmap-xxxhdpi\slicon.png
+C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\bin\Debug\SmartLight.dll
+C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\bin\Debug\SmartLight.pdb
+C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\android\assets\SmartLight.dll
+C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\android\assets\SmartLight.pdb

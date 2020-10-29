@@ -1742,7 +1742,7 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "AppTCC/1.0.0": {
+      "SmartLight/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -1759,10 +1759,10 @@
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
-          "bin/placeholder/AppTCC.dll": {}
+          "bin/placeholder/SmartLight.dll": {}
         },
         "runtime": {
-          "bin/placeholder/AppTCC.dll": {}
+          "bin/placeholder/SmartLight.dll": {}
         }
       }
     }
@@ -6553,7 +6553,7 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "AppTCC/1.0.0": {
+    "SmartLight/1.0.0": {
       "type": "project",
       "path": "../AppTCC/AppTCC.csproj",
       "msbuildProject": "../AppTCC/AppTCC.csproj"
@@ -6564,7 +6564,6 @@
       "AWSSDK.CognitoIdentity >= 3.5.0.28",
       "AWSSDK.DocDB >= 3.5.1.15",
       "AWSSDK.DynamoDBv2 >= 3.5.1.4",
-      "AppTCC >= 1.0.0",
       "Microcharts.Forms >= 0.9.5.8",
       "MongoDB.Bson >= 2.11.3",
       "MongoDB.Driver >= 2.11.3",
@@ -6572,6 +6571,7 @@
       "Newtonsoft.Json >= 12.0.3",
       "PCLExt.FileStorage >= 1.4.1.1",
       "Plugin.Toast >= 2.2.0",
+      "SmartLight >= 1.0.0",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.8.0.1560",
       "sqlite-net-pcl >= 1.7.335"

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppTCC.Views.MonitorsPage.xaml", "Views/MonitorsPage.xaml", typeof(global::AppTCC.Views.MonitorsPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SmartLight.Views.MonitorsPage.xaml", "Views/MonitorsPage.xaml", typeof(global::AppTCC.Views.MonitorsPage))]
 
 namespace AppTCC.Views {
     

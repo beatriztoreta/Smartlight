@@ -37,7 +37,6 @@ namespace AppTCC.ViewModels
 
         public ParamViewModel()
         {
-            source = new List<List_Sec>();
             Sec = new ObservableCollection<List_Sec>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
@@ -94,9 +93,7 @@ namespace AppTCC.ViewModels
             IsBusy = true;
         }
 
-        public List<List_Sec> source;
-
-        public async Task ExecuteLoadItemsCommand()
+       public async Task ExecuteLoadItemsCommand()
         {
             IsBusy = true;
             
@@ -108,14 +105,12 @@ namespace AppTCC.ViewModels
                                 
                 foreach (var sec in item.sectors)
                 {
-                    source.Add(new List_Sec
+                    Sec.Add(new List_Sec
                     {
                         sector_tag = sec.sector_tag,
                         sector = sec.sector,
                     });
                 }
-                
-                Sec = new ObservableCollection<List_Sec>(source);
             }
             catch (Exception ex)
             {
@@ -127,6 +122,5 @@ namespace AppTCC.ViewModels
             }
         }
 
-        
     }
 }

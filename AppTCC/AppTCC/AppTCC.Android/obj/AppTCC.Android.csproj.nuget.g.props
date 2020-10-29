@@ -22,7 +22,7 @@
     <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\beatr\.nuget\packages\awssdk.core\3.5.1.26</PkgAWSSDK_Core>
     <PkgAWSSDK_SecurityToken Condition=" '$(PkgAWSSDK_SecurityToken)' == '' ">C:\Users\beatr\.nuget\packages\awssdk.securitytoken\3.5.1.8</PkgAWSSDK_SecurityToken>
     <PkgAWSSDK_DynamoDBv2 Condition=" '$(PkgAWSSDK_DynamoDBv2)' == '' ">C:\Users\beatr\.nuget\packages\awssdk.dynamodbv2\3.5.1.4</PkgAWSSDK_DynamoDBv2>
-    <PkgAWSSDK_DocDB Condition=" '$(PkgAWSSDK_DocDB)' == '' ">C:\Users\beatr\.nuget\packages\awssdk.docdb\3.5.1.15</PkgAWSSDK_DocDB>
     <PkgAWSSDK_CognitoIdentity Condition=" '$(PkgAWSSDK_CognitoIdentity)' == '' ">C:\Users\beatr\.nuget\packages\awssdk.cognitoidentity\3.5.0.28</PkgAWSSDK_CognitoIdentity>
+    <PkgAWSSDK_DocDB Condition=" '$(PkgAWSSDK_DocDB)' == '' ">C:\Users\beatr\.nuget\packages\awssdk.docdb\3.5.1.15</PkgAWSSDK_DocDB>
   </PropertyGroup>
 </Project>

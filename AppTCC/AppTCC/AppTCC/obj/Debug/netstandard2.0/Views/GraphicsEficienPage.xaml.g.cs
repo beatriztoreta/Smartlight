@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppTCC.Views.GraphicsEficienPage.xaml", "Views/GraphicsEficienPage.xaml", typeof(global::AppTCC.Views.GraphicsEficienPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SmartLight.Views.GraphicsEficienPage.xaml", "Views/GraphicsEficienPage.xaml", typeof(global::AppTCC.Views.GraphicsEficienPage))]
 
 namespace AppTCC.Views {
     

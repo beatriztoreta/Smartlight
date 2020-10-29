@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("AppTCC")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("SmartLight")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("AppTCC")]
-[assembly: System.Reflection.AssemblyTitleAttribute("AppTCC")]
+[assembly: System.Reflection.AssemblyProductAttribute("SmartLight")]
+[assembly: System.Reflection.AssemblyTitleAttribute("SmartLight")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
