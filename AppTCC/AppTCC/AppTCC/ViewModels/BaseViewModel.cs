@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 using AppTCC.Models;
 using AppTCC.Services;
+using SmartLight.Models;
 
 namespace AppTCC.ViewModels
 {
@@ -19,6 +20,10 @@ namespace AppTCC.ViewModels
         public IDataStore<Graph_Entity> Data_Graphics_Eficien_Store => DependencyService.Get<IDataStore<Graph_Entity>>();
 
         public IDataStore<Graph_Finan> Data_Graphics_Finan_Store => DependencyService.Get<IDataStore<Graph_Finan>>();
+
+        public IDataStore<Obj_Sector> Data_Param_Store => DependencyService.Get<IDataStore<Obj_Sector>>();
+
+        public IDataStore<Sector_status_aux> Data_Monitor_Store => DependencyService.Get<IDataStore<Sector_status_aux>>();
 
         bool isBusy = false;
         public bool IsBusy

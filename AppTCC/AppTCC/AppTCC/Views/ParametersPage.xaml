@@ -21,8 +21,8 @@
             
             <Label Text="Clique em um setor para ajustar" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
 
-            <RefreshView x:Name="refreshView" x:DataType="local:ParamViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
-                <CollectionView x:Name="collectionView" x:DataType="local:ParamViewModel" ItemsSource="{Binding Sec}" SelectionMode="None">
+            <RefreshView x:Name="refreshView" x:DataType="local:MonitorViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+                <CollectionView x:Name="collectionView" x:DataType="local:MonitorViewModel" ItemsSource="{Binding Sec}" SelectionMode="None">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout Padding="10" x:DataType="model:List_Sec" Margin="30,10,30,0">

@@ -26,6 +26,30 @@
                     <Label Text="Não recebidos sinais do sensor de luminosidade, por favor, vá até o local!" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
                 </StackLayout>
             </Frame>
+
+            <RefreshView x:Name="refreshView" x:DataType="local:ParamViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+                <CollectionView x:Name="collectionView" x:DataType="local:ParamViewModel" ItemsSource="{Binding Sec}" SelectionMode="None">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="10" x:DataType="model:List_Sec" Margin="30,10,30,0">
+                                <Label Text="{Binding sector_tag}" LineBreakMode="NoWrap" FontSize="Title" TextColor="Black" 
+                                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Yellow">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="Section_Tapped"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                                <Label Text="{Binding sector}" LineBreakMode="NoWrap" FontSize="Title" TextColor="Black" 
+                                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Orange">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="Section_Tapped"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

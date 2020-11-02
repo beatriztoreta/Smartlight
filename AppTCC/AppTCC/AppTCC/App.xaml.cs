@@ -36,6 +36,8 @@ namespace AppTCC
             DependencyService.Register<ApiGraphicsDataStore>();
             DependencyService.Register<ApiGraphicsEficienDataStore>();
             DependencyService.Register<ApiGraphicsFinanDataStore>();
+            DependencyService.Register<ApiParamDataStore>();
+            DependencyService.Register<ApiMonitorDataStore>();
             MainPage = new AppShell();
         }
 

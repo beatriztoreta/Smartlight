@@ -18,7 +18,7 @@ namespace AppTCC.Views
         public ParametersFixPage(int sector_tag)
         {
             InitializeComponent();
-            this.BindingContext = new ParamViewModel();
+            this.BindingContext = new ParamFixViewModel(sector_tag);
         }
 
     }

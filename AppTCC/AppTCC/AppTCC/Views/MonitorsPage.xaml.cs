@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppTCC.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,19 @@ namespace AppTCC.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MonitorsPage : ContentPage
     {
+        MonitorViewModel _viewModel;
+
         public MonitorsPage()
         {
             InitializeComponent();
+            this.BindingContext = _viewModel = new MonitorViewModel();
+        }
+
+        protected override async void OnAppearing()
+        {
+            this.BindingContext = _viewModel = new MonitorViewModel();
+            base.OnAppearing();
+            _viewModel.OnAppearing();            
         }
     }
 }
