@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="SmartLight.Views.ParametersPage"
+             xmlns:local="clr-namespace:SmartLight.ViewModels"  
+             xmlns:model="clr-namespace:SmartLight.Models"
+             xmlns:local1="clr-namespace:SmartLight.Views">
+
+    <ScrollView BackgroundColor="#000000">
+        <StackLayout>
+            <Frame BackgroundColor="#000000">
+                <ContentView VerticalOptions="FillAndExpand">
+                    <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
+                </ContentView>
+            </Frame>
+            <Label Text="Parametrização" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center" Margin="10"/>
+            
+            <Label x:Name="label" FontSize="Medium" TextColor="Orange" HorizontalTextAlignment="Center"/>
+            <forms:ChartView x:Name="Grafico" HeightRequest="300" WidthRequest="100" BackgroundColor="Black"/>
+            
+            <Label Text="Clique em um setor para ajustar" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+
+            <RefreshView x:Name="refreshView" x:DataType="local:MonitorViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+                <CollectionView x:Name="collectionView" x:DataType="local:MonitorViewModel" ItemsSource="{Binding Sec}" SelectionMode="None">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="10" x:DataType="model:List_Sec" Margin="30,10,30,0">
+                                <Label Text="{Binding sector_tag}" LineBreakMode="NoWrap" FontSize="Title" TextColor="Black" 
+                                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Yellow">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="Section_Tapped"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                                <Label Text="{Binding sector}" LineBreakMode="NoWrap" FontSize="Title" TextColor="Black" 
+                                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Orange">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="Section_Tapped"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

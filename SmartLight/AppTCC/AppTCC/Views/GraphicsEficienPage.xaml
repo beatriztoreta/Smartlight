@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="SmartLight.Views.GraphicsEficienPage">
+
+    <ScrollView>
+        <StackLayout BackgroundColor="#000000">
+            <Frame BackgroundColor="#000000">
+                <ContentView VerticalOptions="FillAndExpand">
+                    <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
+                </ContentView>
+            </Frame>
+            <Label Text="Status Semanal" FontSize="Title" TextColor="Yellow" HorizontalTextAlignment="Center" Margin="10"/>
+
+            <Label x:Name="label" FontSize="Medium" TextColor="Orange" HorizontalTextAlignment="Center"/>
+
+            <forms:ChartView x:Name="Grafico" HeightRequest="300" WidthRequest="100"/>
+            
+            <StackLayout  VerticalOptions="Center">
+                <Button VerticalOptions="Center" Text="Análise Financeira" TextColor="Black" Clicked="OnFinanClicked" FontSize="Large" BackgroundColor="Orange" Margin="20"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

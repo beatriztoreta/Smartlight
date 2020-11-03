@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartLight.Views.DashboardPage"
+             xmlns:vm="clr-namespace:SmartLight.ViewModels"
+             Shell.NavBarIsVisible="True">
+
+    <ContentPage.BindingContext>
+        <vm:DashboardViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <StackLayout BackgroundColor="#000000">
+            <Frame BackgroundColor="#000000">
+                <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
+            </Frame>
+            <Grid Padding="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="180"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="180"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Grid.Column="0" Source="grafico.png" BackgroundColor="Yellow">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Graphics_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Grid.Row="1" Grid.Column="0" Text="Análises" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Yellow" FontAttributes="Bold"/>
+                <Image Grid.Row="0" Grid.Column="1" Source="analytics.png" BackgroundColor="Orange">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Projections_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Grid.Row="1" Grid.Column="1" Text="Projeções" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Orange" FontAttributes="Bold"/>
+                <Image Grid.Row="2" Grid.Column="0" Source="monitor.png" BackgroundColor="Orange">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Monitors_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Grid.Row="3" Grid.Column="0" Text="Monitoramento" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Orange" FontAttributes="Bold"/>
+                <Image Grid.Row="2" Grid.Column="1" Source="parametros.png" BackgroundColor="Yellow">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Parameters_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Grid.Row="3" Grid.Column="1" Text="Parâmetros" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Yellow" FontAttributes="Bold"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

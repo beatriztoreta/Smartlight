@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SmartLight.ViewModels"
+             xmlns:model="clr-namespace:SmartLight.Models"
+             x:Class="SmartLight.Views.MonitorsPage">
+
+    <ScrollView>    
+        <StackLayout BackgroundColor="#000000">
+            <Frame BackgroundColor="#000000">
+                <ContentView VerticalOptions="FillAndExpand">
+                    <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
+                </ContentView>
+            </Frame>
+            <StackLayout>
+                    <Label Text="Status do Edifício" FontSize="Title" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="10"/>
+                    <Label Text="Tudo em ordem, por enquanto!" FontSize="Medium" TextColor="Yellow" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" Padding="10"/>
+            </StackLayout>
+            <Frame BackgroundColor="LightGreen" Margin="10,0,10,0">
+                <StackLayout>
+                    <Label Text="Setor 1" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                    <Label Text="Todos os sensores estão funcionando corretamente!" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="Red" Margin="10,0,10,0">
+                <StackLayout>
+                    <Label Text="Setor 2" FontSize="Title" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                    <Label Text="Não recebidos sinais do sensor de luminosidade, por favor, vá até o local!" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Start"/>
+                </StackLayout>
+            </Frame>
+
+            <RefreshView x:Name="refreshView" x:DataType="local:MonitorViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+                <CollectionView x:Name="collectionView" x:DataType="local:MonitorViewModel" ItemsSource="{Binding Sec}" SelectionMode="None">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="10" Margin="30,10,30,0">
+                                <StackLayout x:DataType="model:Sector_status" BackgroundColor="DarkOrange">
+                                    <Label Text="{Binding sector}" LineBreakMode="NoWrap" FontSize="Title" TextColor="Black" 
+                                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                    <Label Text="{Binding status_code_sector_text}" LineBreakMode="NoWrap" FontSize="Medium" TextColor="Black" 
+                                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                                    <StackLayout x:DataType="model:Sensor_status" BackgroundColor="DarkOrange">
+                                        <Label Text="{Binding sensor_name}" LineBreakMode="NoWrap" FontSize="Medium" TextColor="Black" 
+                                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                        <Label Text="{Binding status_code_sensor_text}" LineBreakMode="NoWrap" FontSize="Medium" TextColor="Black" 
+                                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
