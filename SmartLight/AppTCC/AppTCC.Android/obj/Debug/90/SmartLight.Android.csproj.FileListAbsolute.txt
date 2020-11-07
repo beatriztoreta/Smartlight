@@ -581,6 +581,8 @@ C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\stam
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\beatr\Desktop\Smartlight\AppTCC\AppTCC\AppTCC.Android\obj\Debug\90\SmartLight.Android.csprojAssemblyReference.cache
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\90\app_shared_libraries\x86\libxamarin-app.so
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\90\app_shared_libraries\x86_64\libxamarin-app.so
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\bin\Debug\br.com.smartlight.Android.dll
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\bin\Debug\br.com.smartlight.Android.pdb
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\bin\Debug\br.com.smartlight.apk
@@ -1155,8 +1157,6 @@ C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\90\
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\90\android\compressed_assemblies.x86_64.o
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\90\app_shared_libraries\arm64-v8a\libxamarin-app.so
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\90\app_shared_libraries\armeabi-v7a\libxamarin-app.so
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\90\app_shared_libraries\x86\libxamarin-app.so
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\90\app_shared_libraries\x86_64\libxamarin-app.so
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\90\android\bin\classes.dex
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\90\stamp\_CleanIntermediateIfNeeded.stamp
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\90\stamp\_CompileToDalvik.stamp

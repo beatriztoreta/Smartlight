@@ -21,7 +21,7 @@
             <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
 
-            <Style Class="FlyoutItemLabelStyle" TargetType="Label">
+            <Style Class="FlyoutItemLabelStyle" TargetType="Label" >
                 <Setter Property="TextColor" Value="Yellow"></Setter>
             </Style>
             <Style Class="FlyoutItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
@@ -44,12 +44,16 @@
     </Shell.Resources>
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="Login" Icon="login.png" Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
-        <ShellContent Title="Dashboard" Icon="dashboard.png" Route="DashboardPage" ContentTemplate="{DataTemplate local:DashboardPage}" />
-        <!--<ShellContent Title="Dashboard" Icon="dashboard.png" Route="DashboardOperPage" ContentTemplate="{DataTemplate local:DashboardOperPage}" />-->
-        <ShellContent Title="About" Icon="tab_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Login" Icon="login.png" Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}"/>
+        <ShellContent Title="Dashboard DIR" Icon="dashboard.png" Route="DashboardPage" ContentTemplate="{DataTemplate local:DashboardPage}"/>
+        <ShellContent Title="Dashboard OPER" Icon="dashboard.png" Route="DashboardOperPage" ContentTemplate="{DataTemplate local:DashboardOperPage}"/>
+        <ShellContent Title="About" Icon="tab_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}"/>
     </FlyoutItem>
-    
+
+    <MenuItem Text="Login" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked"></MenuItem>
+    <MenuItem Text="Dashboard Gerencial" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked"></MenuItem>
+    <MenuItem Text="Dashboard Operacional" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked"></MenuItem>
+    <MenuItem Text="About" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked"></MenuItem>
     <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked"></MenuItem>
 
 </Shell>
