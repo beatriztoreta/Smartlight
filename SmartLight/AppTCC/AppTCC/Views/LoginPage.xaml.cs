@@ -23,6 +23,7 @@ namespace SmartLight.Views
         {
             InitializeComponent();
             this.BindingContext = new LoginViewModel();
+            
         }
 
     }
