@@ -11,7 +11,7 @@ namespace SmartLight.Services
 {
     class ApiPeopleDataStore : IDataStore<Person>
     {
-        private const string API_BASE_URL = "http://54.157.172.217:6042/";
+        private const string API_BASE_URL = "http://18.207.140.250:6042/";
         private const string API_PESSOAS = "users";
         public ApiPeopleDataStore()
         {

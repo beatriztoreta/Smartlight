@@ -11,7 +11,7 @@ namespace SmartLight.Services
 {
     class ApiGraphicsEficienDataStore : IDataStore<Graph_Entity>
     {
-        private const string API_BASE_URL = "http://54.157.172.217:6042/";
+        private const string API_BASE_URL = "http://18.207.140.250:6042/";
         private const string API_PROTO = "entities/proto/time_data/month";
         
         public ApiGraphicsEficienDataStore()
