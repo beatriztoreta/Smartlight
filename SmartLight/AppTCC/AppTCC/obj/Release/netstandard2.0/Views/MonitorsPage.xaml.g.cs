@@ -8,17 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppTCC.Views.MonitorsPage.xaml", "Views/MonitorsPage.xaml", typeof(global::AppTCC.Views.MonitorsPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SmartLight.Views.MonitorsPage.xaml", "Views/MonitorsPage.xaml", typeof(global::SmartLight.Views.MonitorsPage))]
 
-namespace AppTCC.Views {
+namespace SmartLight.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MonitorsPage.xaml")]
     public partial class MonitorsPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.CollectionView collectionViewSector;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MonitorsPage));
+            collectionViewSector = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.CollectionView>(this, "collectionViewSector");
         }
     }
 }

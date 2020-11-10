@@ -8,13 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppTCC.Views.GraphicsEficienPage.xaml", "Views/GraphicsEficienPage.xaml", typeof(global::AppTCC.Views.GraphicsEficienPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SmartLight.Views.GraphicsEficienPage.xaml", "Views/GraphicsEficienPage.xaml", typeof(global::SmartLight.Views.GraphicsEficienPage))]
 
-namespace AppTCC.Views {
+namespace SmartLight.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\GraphicsEficienPage.xaml")]
     public partial class GraphicsEficienPage : global::Xamarin.Forms.ContentPage {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Label label;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Microcharts.Forms.ChartView Grafico;
@@ -22,6 +25,7 @@ namespace AppTCC.Views {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(GraphicsEficienPage));
+            label = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "label");
             Grafico = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Microcharts.Forms.ChartView>(this, "Grafico");
         }
     }

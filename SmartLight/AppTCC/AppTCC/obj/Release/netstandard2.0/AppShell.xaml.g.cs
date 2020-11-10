@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppTCC.AppShell.xaml", "AppShell.xaml", typeof(global::AppTCC.AppShell))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SmartLight.AppShell.xaml", "AppShell.xaml", typeof(global::SmartLight.AppShell))]
 
-namespace AppTCC {
+namespace SmartLight {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("AppShell.xaml")]

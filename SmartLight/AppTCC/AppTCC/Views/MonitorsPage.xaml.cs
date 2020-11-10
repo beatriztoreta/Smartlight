@@ -17,43 +17,13 @@ namespace SmartLight.Views
     {
         MonitorViewModel _viewModel;
 
-        //List<Sector_status> lista;
-
-        //ObservableCollection<Sector_status> lista_aux;
+        //ObservableCollection<Sensor_status_aux> lista;
 
         public MonitorsPage()
         {
             InitializeComponent();
             this.BindingContext = _viewModel = new MonitorViewModel();
-
-            //StackLayout stackLayout1 = new StackLayout();
-            //StackLayout stackLayout2 = new StackLayout();
-
-            //lista_aux = new ObservableCollection<Sector_status>();
-            //lista = new List<Sector_status>();
-            
-            //listView = new ListView();
-           
         }
-
-        /*private void Listagem()
-        {
-            listView = new ListView();
-            foreach (var sector in lista)
-            {
-                lista_aux.Add(sector.sector);
-                lista_aux.Add(sector.status_code_sector_text);
-
-                foreach (var sensor in sector.status)
-                {
-                    lista_aux.Add(sensor.sensor_name);
-                    lista_aux.Add(sensor.status_code_sensor_text);
-                }
-            }
-
-            listView.ItemsSource = lista_aux;
-        }*/
-
 
         protected override async void OnAppearing()
         {
@@ -61,61 +31,44 @@ namespace SmartLight.Views
             base.OnAppearing();
             _viewModel.OnAppearing();
 
-            //await _viewModel.ExecuteLoadItemsCommand();
-            //lista = _viewModel.Lista;
+            /*await _viewModel.ExecuteLoadItemsCommand();
+            lista = _viewModel.Lista_aux;
 
-            /*Listagem();
-            lista_aux.Clear();
+            string msg = "";
 
-            var listView = new ListView();
-            foreach (var sector in lista)
+            foreach (var i in lista)
             {
-                lista_aux.Add(sector);
-
-            }
-
-            listView.ItemsSource = lista_aux;
-
-
-            stackLayout1 = new StackLayout();
-            stackLayout2 = new StackLayout();
-
-            await _viewModel.ExecuteLoadItemsCommand();
-            lista = _viewModel.Lista;
-
-            foreach (var sector in lista)
-            {
-                stackLayout1.Children.Add(new Label() { Text = sector.sector, FontSize = 30, TextColor = Color.Black });
-                stackLayout1.Children.Add(new Label() { Text = sector.status_code_sector_text, FontSize = 20, TextColor = Color.Black });
-
-                foreach (var sensor in sector.status)
+                msg = "";
+                if (i.status_code_sector == 1)
                 {
-                    stackLayout2.Children.Add(new Label() { Text = sensor.sensor_name, FontSize = 20, TextColor = Color.Black });
-                    stackLayout2.Children.Add(new Label() { Text = sensor.status_code_sensor_text, FontSize = 20, TextColor = Color.Black });
-
-                    if (sensor.status_code == 1 || sensor.status_code == 2)
-                    {
-                        stackLayout1.BackgroundColor = Color.Red;
-                        stackLayout2.BackgroundColor = Color.Red;
-                    }
-                    else
-                    {
-                        stackLayout1.BackgroundColor = Color.Green;
-                        stackLayout2.BackgroundColor = Color.Green;
-                    }
+                    msg += i.sector + ": " + i.status_code_sector_text;
+                    //enviar a vriável msg na notificação
                 }
-
-                if (sector.status_code == 1 || sector.status_code == 2)
+                else if (i.status_code_sector == 2)
                 {
-                    stackLayout1.BackgroundColor = Color.Red;
-                    stackLayout2.BackgroundColor = Color.Red;
+                    msg += i.sector + ": " + i.status_code_sector_text;
+                    //enviar a vriável msg na notificação
                 }
-                else
+                else if (i.status_code_1 == 1)
                 {
-                    stackLayout1.BackgroundColor = Color.Green;
-                    stackLayout2.BackgroundColor = Color.Green;
+                    msg += i.sector + ": " + i.status_code_sensor_text_1;
+                    //enviar a vriável msg na notificação
                 }
-
+                else if (i.status_code_1 == 2)
+                {
+                    msg += i.sector + ": " + i.status_code_sensor_text_1;
+                    //enviar a vriável msg na notificação
+                }
+                else if (i.status_code_2 == 1)
+                {
+                    msg += i.sector + ": " + i.status_code_sensor_text_2;
+                    //enviar a vriável msg na notificação
+                }
+                else if (i.status_code_2 == 2)
+                {
+                    msg += i.sector + ": " + i.status_code_sensor_text_2;
+                    //enviar a vriável msg na notificação
+                }
             }*/
 
         }

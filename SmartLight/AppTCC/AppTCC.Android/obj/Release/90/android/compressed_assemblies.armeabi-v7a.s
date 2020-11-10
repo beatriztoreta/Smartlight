@@ -71,288 +71,288 @@
 	.zero	3
 	.long	compressed_assembly_data_4
 
-	/* 5: AppTCC.dll */
-	/* uncompressed_file_size */
-	.long	226304
-	/* loaded */
-	.byte	0
-	/* data */
-	.zero	3
-	.long	compressed_assembly_data_5
-
-	/* 6: CommonServiceLocator.dll */
+	/* 5: CommonServiceLocator.dll */
 	/* uncompressed_file_size */
 	.long	9728
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_6
+	.long	compressed_assembly_data_5
 
-	/* 7: DnsClient.dll */
+	/* 6: DnsClient.dll */
 	/* uncompressed_file_size */
 	.long	128000
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_7
+	.long	compressed_assembly_data_6
 
-	/* 8: FormsViewGroup.dll */
+	/* 7: FormsViewGroup.dll */
 	/* uncompressed_file_size */
 	.long	15360
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_8
+	.long	compressed_assembly_data_7
 
-	/* 9: GalaSoft.MvvmLight.Extras.dll */
+	/* 8: GalaSoft.MvvmLight.Extras.dll */
 	/* uncompressed_file_size */
 	.long	20480
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_9
+	.long	compressed_assembly_data_8
 
-	/* 10: GalaSoft.MvvmLight.Platform.dll */
+	/* 9: GalaSoft.MvvmLight.Platform.dll */
 	/* uncompressed_file_size */
 	.long	40960
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_10
+	.long	compressed_assembly_data_9
 
-	/* 11: GalaSoft.MvvmLight.dll */
+	/* 10: GalaSoft.MvvmLight.dll */
 	/* uncompressed_file_size */
 	.long	29696
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_11
+	.long	compressed_assembly_data_10
 
-	/* 12: Java.Interop.dll */
+	/* 11: Java.Interop.dll */
 	/* uncompressed_file_size */
 	.long	164352
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_12
+	.long	compressed_assembly_data_11
 
-	/* 13: Microcharts.Droid.dll */
+	/* 12: Microcharts.Droid.dll */
 	/* uncompressed_file_size */
 	.long	5632
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_13
+	.long	compressed_assembly_data_12
 
-	/* 14: Microcharts.Forms.dll */
+	/* 13: Microcharts.Forms.dll */
 	/* uncompressed_file_size */
 	.long	6144
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_14
+	.long	compressed_assembly_data_13
 
-	/* 15: Microcharts.dll */
+	/* 14: Microcharts.dll */
 	/* uncompressed_file_size */
 	.long	39936
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_15
+	.long	compressed_assembly_data_14
 
-	/* 16: Microsoft.Bcl.AsyncInterfaces.dll */
+	/* 15: Microsoft.Bcl.AsyncInterfaces.dll */
 	/* uncompressed_file_size */
 	.long	5120
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_16
+	.long	compressed_assembly_data_15
 
-	/* 17: MongoDB.Bson.dll */
+	/* 16: MongoDB.Bson.dll */
 	/* uncompressed_file_size */
 	.long	463360
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_17
+	.long	compressed_assembly_data_16
 
-	/* 18: MongoDB.Driver.Core.dll */
+	/* 17: MongoDB.Driver.Core.dll */
 	/* uncompressed_file_size */
 	.long	901120
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_18
+	.long	compressed_assembly_data_17
 
-	/* 19: MongoDB.Driver.dll */
+	/* 18: MongoDB.Driver.dll */
 	/* uncompressed_file_size */
 	.long	803328
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_19
+	.long	compressed_assembly_data_18
 
-	/* 20: MongoDB.Libmongocrypt.dll */
+	/* 19: MongoDB.Libmongocrypt.dll */
 	/* uncompressed_file_size */
 	.long	40448
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_20
+	.long	compressed_assembly_data_19
 
-	/* 21: Mono.Android.dll */
+	/* 20: Mono.Android.dll */
 	/* uncompressed_file_size */
-	.long	2054656
+	.long	2058240
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_21
+	.long	compressed_assembly_data_20
 
-	/* 22: Mono.Security.dll */
+	/* 21: Mono.Security.dll */
 	/* uncompressed_file_size */
 	.long	121856
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_22
+	.long	compressed_assembly_data_21
 
-	/* 23: Newtonsoft.Json.dll */
+	/* 22: Newtonsoft.Json.dll */
 	/* uncompressed_file_size */
 	.long	682496
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_23
+	.long	compressed_assembly_data_22
 
-	/* 24: PCLExt.FileStorage.Abstractions.dll */
+	/* 23: PCLExt.FileStorage.Abstractions.dll */
 	/* uncompressed_file_size */
 	.long	11264
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_24
+	.long	compressed_assembly_data_23
 
-	/* 25: PCLExt.FileStorage.dll */
+	/* 24: PCLExt.FileStorage.dll */
 	/* uncompressed_file_size */
 	.long	44032
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_25
+	.long	compressed_assembly_data_24
 
-	/* 26: Plugin.Toast.Abstractions.dll */
+	/* 25: Plugin.Toast.Abstractions.dll */
 	/* uncompressed_file_size */
 	.long	4096
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_26
+	.long	compressed_assembly_data_25
 
-	/* 27: Plugin.Toast.dll */
+	/* 26: Plugin.Toast.dll */
 	/* uncompressed_file_size */
 	.long	6656
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_27
+	.long	compressed_assembly_data_26
 
-	/* 28: SQLite-net.dll */
+	/* 27: SQLite-net.dll */
 	/* uncompressed_file_size */
 	.long	92160
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_28
+	.long	compressed_assembly_data_27
 
-	/* 29: SQLitePCLRaw.batteries_v2.dll */
+	/* 28: SQLitePCLRaw.batteries_v2.dll */
 	/* uncompressed_file_size */
 	.long	5120
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_29
+	.long	compressed_assembly_data_28
 
-	/* 30: SQLitePCLRaw.core.dll */
+	/* 29: SQLitePCLRaw.core.dll */
 	/* uncompressed_file_size */
 	.long	46080
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_30
+	.long	compressed_assembly_data_29
 
-	/* 31: SQLitePCLRaw.lib.e_sqlite3.android.dll */
+	/* 30: SQLitePCLRaw.lib.e_sqlite3.android.dll */
 	/* uncompressed_file_size */
 	.long	5120
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_31
+	.long	compressed_assembly_data_30
 
-	/* 32: SQLitePCLRaw.provider.e_sqlite3.dll */
+	/* 31: SQLitePCLRaw.provider.e_sqlite3.dll */
 	/* uncompressed_file_size */
 	.long	35328
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_32
+	.long	compressed_assembly_data_31
 
-	/* 33: SharpCompress.dll */
+	/* 32: SharpCompress.dll */
 	/* uncompressed_file_size */
 	.long	530944
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_33
+	.long	compressed_assembly_data_32
 
-	/* 34: SkiaSharp.Views.Android.dll */
+	/* 33: SkiaSharp.Views.Android.dll */
 	/* uncompressed_file_size */
 	.long	49504
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_34
+	.long	compressed_assembly_data_33
 
-	/* 35: SkiaSharp.Views.Forms.dll */
+	/* 34: SkiaSharp.Views.Forms.dll */
 	/* uncompressed_file_size */
 	.long	155488
 	/* loaded */
 	.byte	0
 	/* data */
 	.zero	3
-	.long	compressed_assembly_data_35
+	.long	compressed_assembly_data_34
 
-	/* 36: SkiaSharp.dll */
+	/* 35: SkiaSharp.dll */
 	/* uncompressed_file_size */
 	.long	405872
+	/* loaded */
+	.byte	0
+	/* data */
+	.zero	3
+	.long	compressed_assembly_data_35
+
+	/* 36: SmartLight.dll */
+	/* uncompressed_file_size */
+	.long	281600
 	/* loaded */
 	.byte	0
 	/* data */
@@ -811,7 +811,7 @@
 
 	/* 87: Xamarin.Essentials.dll */
 	/* uncompressed_file_size */
-	.long	25088
+	.long	27648
 	/* loaded */
 	.byte	0
 	/* data */
@@ -856,7 +856,7 @@
 
 	/* 92: br.com.smartlight.Android.dll */
 	/* uncompressed_file_size */
-	.long	236544
+	.long	237056
 	/* loaded */
 	.byte	0
 	/* data */

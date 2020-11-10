@@ -1,6 +1,6 @@
-AppTCC.Droid.MainActivity, br.com.smartlight.Android;crc643ed3d1c290aadc39.MainActivity
-AppTCC.Droid.MainActivity;crc643ed3d1c290aadc39.MainActivity
-apptcc.droid.MainActivity;crc643ed3d1c290aadc39.MainActivity
+SmartLight.Droid.MainActivity, br.com.smartlight.Android;crc64410b262a6d0b0cff.MainActivity
+SmartLight.Droid.MainActivity;crc64410b262a6d0b0cff.MainActivity
+smartlight.droid.MainActivity;crc64410b262a6d0b0cff.MainActivity
 GalaSoft.MvvmLight.Views.ActivityBase, GalaSoft.MvvmLight.Platform;crc64e6bbec0cebca6418.ActivityBase
 GalaSoft.MvvmLight.Views.ActivityBase;crc64e6bbec0cebca6418.ActivityBase
 galasoft.mvvmlight.views.ActivityBase;crc64e6bbec0cebca6418.ActivityBase

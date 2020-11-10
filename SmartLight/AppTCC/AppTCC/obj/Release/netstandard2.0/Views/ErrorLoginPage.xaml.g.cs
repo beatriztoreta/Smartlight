@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AppTCC.Views.ErrorLoginPage.xaml", "Views/ErrorLoginPage.xaml", typeof(global::AppTCC.Views.ErrorLoginPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SmartLight.Views.ErrorLoginPage.xaml", "Views/ErrorLoginPage.xaml", typeof(global::SmartLight.Views.ErrorLoginPage))]
 
-namespace AppTCC.Views {
+namespace SmartLight.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\ErrorLoginPage.xaml")]
