@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using br.com.smartlight.Droid;
+using Xamarin.Forms;
 
 namespace SmartLight.Droid
 {

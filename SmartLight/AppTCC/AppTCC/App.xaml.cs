@@ -7,12 +7,15 @@ using SmartLight.ViewModels;
 using SmartLight.Services;
 using Xamarin.Forms.Internals;
 using System.Diagnostics;
+using System.Collections.ObjectModel;
+using SmartLight.Models;
 
 namespace SmartLight
 {
     public partial class App : Application
     {
         static Database database;
+
         public static Database Database
         {
             get
@@ -40,13 +43,57 @@ namespace SmartLight
             DependencyService.Register<ApiMonitorDataStore>();
             MainPage = new AppShell();
         }
+        
+        //MonitorViewModel _viewModel;
+
+        //ObservableCollection<Sensor_status_aux> lista;
 
         protected override void OnStart()
         {
         }
 
-        protected override void OnSleep()
+        protected override async void OnSleep()
         {
+            /*(await _viewModel.ExecuteLoadItemsCommand();
+            lista = _viewModel.Lista_aux;
+
+            string msg = "";
+
+            foreach (var i in lista)
+            {
+                msg = "";
+                if (i.status_code_sector == 1)
+                {
+                    msg += i.sector + ": " + i.status_code_sector_text;
+                    //enviar a vriável msg na notificação
+                }
+                else if (i.status_code_sector == 2)
+                {
+                    msg += i.sector + ": " + i.status_code_sector_text;
+                    //enviar a vriável msg na notificação
+                }
+                else if (i.status_code_1 == 1)
+                {
+                    msg += i.sector + ": " + i.status_code_sensor_text_1;
+                    //enviar a vriável msg na notificação
+                }
+                else if (i.status_code_1 == 2)
+                {
+                    msg += i.sector + ": " + i.status_code_sensor_text_1;
+                    //enviar a vriável msg na notificação
+                }
+                else if (i.status_code_2 == 1)
+                {
+                    msg += i.sector + ": " + i.status_code_sensor_text_2;
+                    //enviar a vriável msg na notificação
+                }
+                else if (i.status_code_2 == 2)
+                {
+                    msg += i.sector + ": " + i.status_code_sensor_text_2;
+                    //enviar a vriável msg na notificação
+                }
+            }*/
+
         }
 
         protected override void OnResume()
