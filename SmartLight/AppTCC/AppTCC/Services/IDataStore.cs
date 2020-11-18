@@ -1,7 +1,4 @@
-﻿using SmartLight.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace SmartLight.Services
@@ -13,9 +10,7 @@ namespace SmartLight.Services
         Task<bool> DeleteItemAsync(string id);
         Task<T> GetItemAsync(string id);
         Task<IEnumerable<T>> GetItemsAsync();
-
         Task<T> AddItemRetAsync(T item);
-
         Task<IEnumerable<T>> GetItemsAsync(string id);
 
     }

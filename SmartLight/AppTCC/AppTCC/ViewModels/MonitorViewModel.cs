@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 using SmartLight.Models;
-using SmartLight.Services;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Diagnostics;
-using SmartLight.Models;
 
 namespace SmartLight.ViewModels
 {

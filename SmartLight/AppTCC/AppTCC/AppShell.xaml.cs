@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using SmartLight.ViewModels;
 using SmartLight.Views;
 using Xamarin.Forms;
 

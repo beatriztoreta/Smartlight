@@ -1,22 +1,9 @@
-﻿using SmartLight.Views;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 using Xamarin.Forms;
-using SmartLight;
-using Plugin.Toast;
-using SmartLight.Services;
 using SmartLight.Models;
-using Plugin.Toast.Abstractions;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using Amazon.DynamoDBv2.Model;
-using System.Linq;
-using System.ComponentModel;
-using Android.Bluetooth.LE;
-using MongoDB.Bson;
-using Newtonsoft.Json;
 
 namespace SmartLight.ViewModels
 {

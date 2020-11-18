@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using SQLite;
-using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
+﻿using SQLite;
 using Newtonsoft.Json;
 
 namespace SmartLight.Models

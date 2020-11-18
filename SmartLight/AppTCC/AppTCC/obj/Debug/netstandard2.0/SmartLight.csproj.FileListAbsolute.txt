@@ -12,7 +12,6 @@ C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC\bin\Debug\netstandard
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC\bin\Debug\netstandard2.0\Mono.Android.dll
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC\bin\Debug\netstandard2.0\Mono.Android.pdb
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC\bin\Debug\netstandard2.0\Mono.Android.xml
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC\obj\Debug\netstandard2.0\SmartLight.csprojAssemblyReference.cache
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs

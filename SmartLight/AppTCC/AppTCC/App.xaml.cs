@@ -1,8 +1,6 @@
 ﻿using System;
 using System.IO;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using SmartLight.Views;
 using SmartLight.ViewModels;
 using SmartLight.Services;
 using Xamarin.Forms.Internals;
@@ -50,11 +48,12 @@ namespace SmartLight
 
         protected override void OnStart()
         {
+            
         }
 
         protected override async void OnSleep()
         {
-            /*(await _viewModel.ExecuteLoadItemsCommand();
+            /*await _viewModel.ExecuteLoadItemsCommand();
             lista = _viewModel.Lista_aux;
 
             string msg = "";
@@ -65,35 +64,34 @@ namespace SmartLight
                 if (i.status_code_sector == 1)
                 {
                     msg += i.sector + ": " + i.status_code_sector_text;
-                    //enviar a vriável msg na notificação
+                    
                 }
                 else if (i.status_code_sector == 2)
                 {
                     msg += i.sector + ": " + i.status_code_sector_text;
-                    //enviar a vriável msg na notificação
+                    
                 }
                 else if (i.status_code_1 == 1)
                 {
                     msg += i.sector + ": " + i.status_code_sensor_text_1;
-                    //enviar a vriável msg na notificação
+                    
                 }
                 else if (i.status_code_1 == 2)
                 {
                     msg += i.sector + ": " + i.status_code_sensor_text_1;
-                    //enviar a vriável msg na notificação
+                    
                 }
                 else if (i.status_code_2 == 1)
                 {
                     msg += i.sector + ": " + i.status_code_sensor_text_2;
-                    //enviar a vriável msg na notificação
+                    
                 }
                 else if (i.status_code_2 == 2)
                 {
                     msg += i.sector + ": " + i.status_code_sensor_text_2;
-                    //enviar a vriável msg na notificação
+                   
                 }
             }*/
-
         }
 
         protected override void OnResume()

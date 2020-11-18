@@ -1,12 +1,6 @@
-﻿using SmartLight.Models;
-using SmartLight.ViewModels;
+﻿using SmartLight.ViewModels;
 using SkiaSharp;
-using SQLitePCL;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

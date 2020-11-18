@@ -1,10 +1,8 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SmartLight.Models
-{    public class Sensor_status
+{
+    public class Sensor_status
     {
         [JsonProperty("sensor_name")]
         public string sensor_name { get; set; }

@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using SmartLight.Views;
 using System.Threading.Tasks;
 using Plugin.Toast;
 using Plugin.Toast.Abstractions;

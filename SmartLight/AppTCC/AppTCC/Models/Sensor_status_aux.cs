@@ -1,10 +1,6 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SmartLight.Models
-{    public class Sensor_status_aux
+﻿namespace SmartLight.Models
+{
+    public class Sensor_status_aux
     {
         public string sector { get; set; }
 

@@ -1,14 +1,6 @@
 ﻿using SmartLight.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using SmartLight.Models;
-using Plugin.Toast;
-using Plugin.Toast.Abstractions;
 
 namespace SmartLight.Views
 {
