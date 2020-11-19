@@ -13,7 +13,7 @@ namespace SmartLight.Views
             try
             {
                 InitializeComponent();
-                BindingContext = new DashboardViewModel();
+                //BindingContext = new DashboardViewModel();
             }
             catch (Exception err)
             {
@@ -47,6 +47,20 @@ namespace SmartLight.Views
             var duration = TimeSpan.FromSeconds(1);
             Vibration.Vibrate(duration);
             await Navigation.PushAsync(new ParametersPage());
+        }
+
+        private async void About_Tapped(object sender, System.EventArgs e)
+        {
+            var duration = TimeSpan.FromSeconds(1);
+            Vibration.Vibrate(duration);
+            await Navigation.PushAsync(new AboutPage());
+        }
+
+        private async void Logout_Tapped(object sender, System.EventArgs e)
+        {
+            var duration = TimeSpan.FromSeconds(2);
+            Vibration.Vibrate(duration);
+            Application.Current.MainPage = new LoginPage();
         }
     }
 }

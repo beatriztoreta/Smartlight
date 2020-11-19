@@ -26,3 +26,4 @@ C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC\obj\Release\netstanda
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC\obj\Release\netstandard2.0\SmartLight.dll
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC\obj\Release\netstandard2.0\ref\SmartLight.dll
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC\obj\Release\netstandard2.0\SmartLight.pdb
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC\obj\Release\netstandard2.0\SmartLight.csprojAssemblyReference.cache

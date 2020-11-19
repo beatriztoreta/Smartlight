@@ -597,10 +597,10 @@ C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\1
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\stamp\_GenerateJavaStubs.stamp
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\androidx\proguard\1ba23c53-7f35-47cc-8352-ccda898ca73d.txt
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\androidx\proguard\33ad0cd3-bfaa-4c4f-95ea-2b3221ae7770.txt
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\androidx\proguard\3c40d8ef-36a6-4ffd-b176-63af5255fbc6.txt
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\androidx\proguard\815de948-1d45-4325-8a4c-920ae56b73b6.txt
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\androidx\proguard\c9b4516f-8fde-4779-b743-1fca1bd61ac8.txt
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\androidx\proguard\cd594678-13a6-4df8-ac95-ce2ee67d1757.cfg
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\androidx\proguard\fc045f71-4431-4ba9-8f3c-5ab11a6f6226.txt
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\androidx\proguard\5249e505-4324-4d76-905b-a4c9684d54ac.txt
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\androidx\proguard\5f273940-7df2-4942-8ddf-eb13e848e3e1.txt
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\androidx\proguard\7dc68589-36e1-4e1e-85d0-649ab661ba09.txt
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\androidx\proguard\a903dd7f-a613-4916-97b2-ae12dc2654e3.txt
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\androidx\proguard\af9b5649-9203-413b-9a0e-6858b6783b28.txt
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\androidx\proguard\afe55a1d-f10c-467f-8a2f-f30917ad366e.txt
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Release\100\androidx\proguard\cf786b2d-815a-4871-8c04-7dbce731b49a.cfg

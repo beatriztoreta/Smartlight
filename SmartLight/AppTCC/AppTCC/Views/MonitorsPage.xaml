@@ -5,7 +5,7 @@
              xmlns:model="clr-namespace:SmartLight.Models"
              x:Class="SmartLight.Views.MonitorsPage">
 
-    <ScrollView>    
+    <ScrollView BackgroundColor="#000000">    
         <StackLayout BackgroundColor="#000000">
             <Frame BackgroundColor="#000000">
                 <ContentView VerticalOptions="FillAndExpand">
@@ -14,7 +14,7 @@
             </Frame>
             <StackLayout>
                     <Label Text="Status do Edifício" FontSize="Title" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="10"/>
-                    <Label Text="Tudo em ordem, por enquanto!" FontSize="Medium" TextColor="Yellow" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" Padding="10"/>
+                    <!--<Label Text="Tudo em ordem, por enquanto!" FontSize="Medium" TextColor="Yellow" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" Padding="10"/>-->
             </StackLayout>
             
             <RefreshView x:DataType="local:MonitorViewModel" Command="{Binding ListagemCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">

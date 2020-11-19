@@ -275,13 +275,6 @@ C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\android\assets\Xamarin.Forms.Xaml.pdb
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\android\assets\Xamarin.Google.Android.Material.dll
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\android\assets\Xamarin.Google.Android.Material.pdb
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\androidx\proguard\172332e8-835f-466a-9a4b-d506d5fc9388.txt
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\androidx\proguard\298264bf-9e8b-4aa7-8c81-cadcaa143660.cfg
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\androidx\proguard\4e49bf6d-8dba-4d7c-8cb7-5d748eb2920d.txt
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\androidx\proguard\5768bbc6-53c0-45c4-9ac5-a892b7619e70.txt
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\androidx\proguard\8f0bc688-fd08-40bf-b681-27f82a5a22db.txt
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\androidx\proguard\a5141a77-009a-4ad0-b54a-8ef8883dcc09.txt
-C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\androidx\proguard\e746f40f-1fe2-4448-af76-81e47fca3215.txt
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\stamp\_AndroidXJetifyProguardRules.stamp
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\androidx\_AndroidXJetifyProguardRules.jetify
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\stamp\_AndroidXCecilfy.stamp
@@ -657,3 +650,10 @@ C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\stamp\_GenerateJavaStubs.stamp
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\androidx\proguard\0109bc95-a66f-4d8f-8d0f-c316277bff48.txt
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\androidx\proguard\940e1dc9-7773-4b89-9032-07ab1543fdeb.cfg
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\androidx\proguard\b1b7f7e2-a808-4256-8829-bf6abb0069bb.txt
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\androidx\proguard\b5601b5e-25d2-4f6d-b263-7a514e1704ac.txt
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\androidx\proguard\b6b5cb8f-1c64-4629-81f5-0d13a041b50d.txt
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\androidx\proguard\dadb6816-a04b-4d2d-9114-a61662fe3220.txt
+C:\Users\beatr\Desktop\Smartlight\SmartLight\AppTCC\AppTCC.Android\obj\Debug\100\androidx\proguard\f8908a69-c093-4676-9adc-fe53750caa4b.txt

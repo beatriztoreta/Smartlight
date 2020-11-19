@@ -224,7 +224,7 @@
 
 	/* 24: SmartLight.dll */
 	/* uncompressed_file_size */
-	.word	283136
+	.word	286720
 	/* loaded */
 	.byte	0
 	/* data */

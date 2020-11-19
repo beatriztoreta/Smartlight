@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Plugin.Toast;
 using SmartLight.Models;
 using Plugin.Toast.Abstractions;
+using SmartLight.Views;
 
 namespace SmartLight.ViewModels
 {
@@ -53,12 +54,14 @@ namespace SmartLight.ViewModels
                     if (pessoa.permission == "dir")
                     {
                         CrossToastPopUp.Current.ShowToastMessage("Login efetuado com sucesso!", ToastLength.Long);
-                        await Shell.Current.GoToAsync("//DashboardPage");
+                        //await Shell.Current.GoToAsync("//DashboardPage");
+                        Application.Current.MainPage = new NavigationPage(new DashboardPage());
                     }
                     else
                     {
                         CrossToastPopUp.Current.ShowToastMessage("Login efetuado com sucesso!", ToastLength.Long);
-                        await Shell.Current.GoToAsync("//DashboardOperPage");
+                        //await Shell.Current.GoToAsync("//DashboardOperPage");
+                        Application.Current.MainPage = new NavigationPage(new DashboardOperPage());
                     }
                 }
                 else

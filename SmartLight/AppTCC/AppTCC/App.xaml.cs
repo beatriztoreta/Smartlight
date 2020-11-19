@@ -7,6 +7,7 @@ using Xamarin.Forms.Internals;
 using System.Diagnostics;
 using System.Collections.ObjectModel;
 using SmartLight.Models;
+using SmartLight.Views;
 
 namespace SmartLight
 {
@@ -39,7 +40,8 @@ namespace SmartLight
             DependencyService.Register<ApiGraphicsFinanDataStore>();
             DependencyService.Register<ApiParamDataStore>();
             DependencyService.Register<ApiMonitorDataStore>();
-            MainPage = new AppShell();
+            //MainPage = new AppShell();
+            MainPage = new LoginPage();
         }
         
         //MonitorViewModel _viewModel;

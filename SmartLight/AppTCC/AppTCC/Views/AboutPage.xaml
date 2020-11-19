@@ -14,8 +14,8 @@
             <Color x:Key="Accent">black</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
-    
-    <ScrollView>
+
+    <ScrollView BackgroundColor="#000000">
         <Grid BackgroundColor="#000000">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />

@@ -7,6 +7,7 @@ using Xamarin.Forms;
 using SmartLight.Models;
 using Android.Support.V4.App;
 using Android.Content;
+using System;
 
 namespace SmartLight.Droid
 {
@@ -77,6 +78,8 @@ namespace SmartLight.Droid
 
             var notificationManager = NotificationManagerCompat.From(this);
             notificationManager.Notify(NOTIFICATION_ID, builder.Build());
+            var duration = TimeSpan.FromSeconds(2);
+            Xamarin.Essentials.Vibration.Vibrate(duration);
         }
     }
 }

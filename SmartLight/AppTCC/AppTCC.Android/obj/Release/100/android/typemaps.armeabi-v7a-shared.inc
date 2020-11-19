@@ -37,62 +37,62 @@
 	.section	.rodata.map_aname.6,"aMS",%progbits,1
 	.type	.L.map_aname.6, %object
 .L.map_aname.6:
-	.asciz	"Xamarin.Forms.Platform.Android"
-	.size	.L.map_aname.6, 31
+	.asciz	"br.com.smartlight.Android"
+	.size	.L.map_aname.6, 26
 
 	.section	.rodata.map_aname.7,"aMS",%progbits,1
 	.type	.L.map_aname.7, %object
 .L.map_aname.7:
-	.asciz	"Xamarin.AndroidX.Activity"
-	.size	.L.map_aname.7, 26
+	.asciz	"Xamarin.Forms.Platform.Android"
+	.size	.L.map_aname.7, 31
 
 	.section	.rodata.map_aname.8,"aMS",%progbits,1
 	.type	.L.map_aname.8, %object
 .L.map_aname.8:
-	.asciz	"FormsViewGroup"
-	.size	.L.map_aname.8, 15
+	.asciz	"Xamarin.AndroidX.Activity"
+	.size	.L.map_aname.8, 26
 
 	.section	.rodata.map_aname.9,"aMS",%progbits,1
 	.type	.L.map_aname.9, %object
 .L.map_aname.9:
-	.asciz	"Xamarin.AndroidX.Fragment"
-	.size	.L.map_aname.9, 26
+	.asciz	"FormsViewGroup"
+	.size	.L.map_aname.9, 15
 
 	.section	.rodata.map_aname.10,"aMS",%progbits,1
 	.type	.L.map_aname.10, %object
 .L.map_aname.10:
-	.asciz	"Xamarin.AndroidX.VersionedParcelable"
-	.size	.L.map_aname.10, 37
+	.asciz	"Xamarin.AndroidX.Fragment"
+	.size	.L.map_aname.10, 26
 
 	.section	.rodata.map_aname.11,"aMS",%progbits,1
 	.type	.L.map_aname.11, %object
 .L.map_aname.11:
-	.asciz	"SkiaSharp.Views.Forms"
-	.size	.L.map_aname.11, 22
+	.asciz	"Xamarin.AndroidX.VersionedParcelable"
+	.size	.L.map_aname.11, 37
 
 	.section	.rodata.map_aname.12,"aMS",%progbits,1
 	.type	.L.map_aname.12, %object
 .L.map_aname.12:
-	.asciz	"Xamarin.AndroidX.Core"
+	.asciz	"SkiaSharp.Views.Forms"
 	.size	.L.map_aname.12, 22
 
 	.section	.rodata.map_aname.13,"aMS",%progbits,1
 	.type	.L.map_aname.13, %object
 .L.map_aname.13:
-	.asciz	"Xamarin.AndroidX.DrawerLayout"
-	.size	.L.map_aname.13, 30
+	.asciz	"Xamarin.AndroidX.Core"
+	.size	.L.map_aname.13, 22
 
 	.section	.rodata.map_aname.14,"aMS",%progbits,1
 	.type	.L.map_aname.14, %object
 .L.map_aname.14:
-	.asciz	"Xamarin.AndroidX.RecyclerView"
+	.asciz	"Xamarin.AndroidX.DrawerLayout"
 	.size	.L.map_aname.14, 30
 
 	.section	.rodata.map_aname.15,"aMS",%progbits,1
 	.type	.L.map_aname.15, %object
 .L.map_aname.15:
-	.asciz	"br.com.smartlight.Android"
-	.size	.L.map_aname.15, 26
+	.asciz	"Xamarin.AndroidX.RecyclerView"
+	.size	.L.map_aname.15, 30
 
 	.section	.rodata.map_aname.16,"aMS",%progbits,1
 	.type	.L.map_aname.16, %object

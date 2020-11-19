@@ -5,8 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:vm="clr-namespace:SmartLight.ViewModels"
-             x:Class="SmartLight.Views.LoginPage"
-             Shell.NavBarIsVisible="True">
+             x:Class="SmartLight.Views.LoginPage">
     
     
     <ContentPage.BindingContext>
@@ -33,5 +32,6 @@
                 </StackLayout>
             </StackLayout>
         </ScrollView>
+
     </ContentPage.Content>
 </ContentPage>

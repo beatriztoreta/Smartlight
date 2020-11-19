@@ -2,14 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartLight.Views.DashboardPage"
-             xmlns:vm="clr-namespace:SmartLight.ViewModels"
-             Shell.NavBarIsVisible="True">
+             xmlns:vm="clr-namespace:SmartLight.ViewModels">
 
-    <ContentPage.BindingContext>
-        <vm:DashboardViewModel />
-    </ContentPage.BindingContext>
-
-    <ScrollView>
+    <ScrollView BackgroundColor="#000000">
         <StackLayout BackgroundColor="#000000">
             <Frame BackgroundColor="#000000">
                 <Image Source="logofinv.png" VerticalOptions="FillAndExpand" />
@@ -50,6 +45,27 @@
                     </Image.GestureRecognizers>
                 </Image>
                 <Label Grid.Row="3" Grid.Column="1" Text="Parâmetros" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="Yellow" FontAttributes="Bold"/>
+            </Grid>
+            <Grid BackgroundColor="Black">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="About" FontSize="20" TextColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="About_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+
+                <Label Grid.Row="0" Grid.Column="1" Text="Logout" FontSize="20" TextColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Logout_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
             </Grid>
         </StackLayout>
     </ScrollView>
